@@ -1,0 +1,2 @@
+Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/project/LIO-SAM -DCMAKE_INSTALL_PREFIX=/home/m/project/LIO-SAM/install/lio_sam
+Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/project/LIO-SAM -DCMAKE_INSTALL_PREFIX=/home/m/project/LIO-SAM/install/lio_sam

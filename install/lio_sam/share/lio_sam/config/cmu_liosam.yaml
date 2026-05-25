@@ -1,0 +1,92 @@
+/**:
+  ros__parameters:
+
+    # Topics
+    pointCloudTopic: "/velodyne_points"                   # Point cloud data
+    imuTopic: "/imu/data"                        # IMU data
+    odomTopic: "odometry/imu"                    # IMU pre-preintegration odometry, same frequency as IMU
+    gpsTopic: "odometry/gpsz"                    # GPS odometry topic from navsat, see module_navsat.launch file
+
+    # Frames
+    lidarFrame: "laser_sensor_frame"              
+    baselinkFrame: "base_link"
+    odometryFrame: "odom"
+    mapFrame: "map"
+
+    # GPS Settings
+    useImuHeadingInitialization: false           # if using GPS data, set to "true"
+    useGpsElevation: false                       # if GPS elevation is bad, set to "false"
+    gpsCovThreshold: 2.0                         # m^2, threshold for using GPS data
+    poseCovThreshold: 25.0                       # m^2, threshold for using GPS data
+
+    # Export settings
+    savePCD: False                                # https://github.com/TixiaoShan/LIO-SAM/issues/3
+    savePCDDirectory: "/home/m/project/longroad_data/converted_bag/pcd_maps/"         # in your home folder, starts and ends with "/". Warning: the code deletes "LOAM" folder then recreates it. See "mapOptimization" for implementation
+
+    # Sensor Settings
+    sensor: velodyne                             # lidar sensor type, either 'velodyne', 'ouster' or 'livox'
+    N_SCAN: 16                                   # 根据你的bag数据改为16线雷达（原64）
+    Horizon_SCAN: 1800                           # 根据Velodyne 16线雷达改为1800（原512）
+    downsampleRate: 1                            # default: 1. Downsample your data if too many
+    # points. i.e., 16 = 64 / 4, 16 = 16 / 1
+    lidarMinRange: 1.0                           # default: 1.0, minimum lidar range to be used
+    lidarMaxRange: 100.0                         # 根据走廊场景改为100.0米（原1000.0）
+
+    # IMU Settings - 根据你提供的参数更新
+    imuAccNoise: 0.08                            # 更新为 acc_n: 0.08
+    imuGyrNoise: 0.01                           # 更新为 gyr_n: 0.004
+    imuAccBiasN: 0.00004                         # 更新为 acc_w: 0.00004
+    imuGyrBiasN: 2.0e-6                          # 更新为 gyr_w: 2.0e-6
+
+    imuGravity: 9.805                            # 保持原值
+    imuRPYWeight: 0.01                           # 保持原值
+
+    # 外参变换 - 根据你提供的 laser_to_imu 矩阵更新
+    extrinsicTrans: [0.08, 0.029, 0.03]          # 从激光到IMU的平移 [x, y, z] 单位：米
+    extrinsicRot: [0.999212900, -0.000519121, 0.004000000,
+                   0.000516111, 0.999218492, -0.000939132,
+                  -0.004000000, 0.000802565, 0.999993652]  # 从激光到IMU的旋转矩阵
+    # extrinsicRPY 保持原值（坐标系定义不同）
+    extrinsicRPY: [1.0, 0.0, 0.0,
+                   0.0, 1.0, 0.0,
+                   0.0, 0.0, 1.0] 
+
+    # LOAM feature threshold
+    edgeThreshold: 0.1                           # 室内场景改为0.1（原1.0）
+    surfThreshold: 0.1
+    edgeFeatureMinValidNum: 10
+    surfFeatureMinValidNum: 100
+
+    # voxel filter paprams
+    odometrySurfLeafSize: 0.2                    # 室内场景改为0.2（原0.4）
+    mappingCornerLeafSize: 0.1                   # 室内场景改为0.1（原0.2）
+    mappingSurfLeafSize: 0.2                     # 室内场景改为0.2（原0.4）
+
+    # robot motion constraint (in case you are using a 2D robot)
+    z_tollerance: 1.0                          # meters 1000
+    rotation_tollerance: 0.5                   # radians 1000
+
+    # CPU Params
+    numberOfCores: 6                              # number of cores for mapping optimization
+    mappingProcessInterval: 0.3                  # seconds, regulate mapping frequency 0.15
+
+    # Surrounding map
+    surroundingkeyframeAddingDistThreshold: 1.0   # meters, regulate keyframe adding threshold
+    surroundingkeyframeAddingAngleThreshold: 0.2  # radians, regulate keyframe adding threshold
+    surroundingKeyframeDensity: 1.0               # 室内场景改为1.0（原2.0）
+    surroundingKeyframeSearchRadius: 20.0         # 室内场景改为20.0米（原50.0）
+    # (when loop closure disabled)
+
+    # Loop closure
+    loopClosureEnableFlag: true
+    loopClosureFrequency: 1.0                     # Hz, regulate loop closure constraint add frequency
+    surroundingKeyframeSize: 30                   # 室内场景改为30（原50）
+    historyKeyframeSearchRadius: 10.0             # 室内场景改为10.0米（原15.0）
+    historyKeyframeSearchTimeDiff: 20.0           # 室内场景改为20.0秒（原30.0）
+    historyKeyframeSearchNum: 20                  # 室内场景改为20（原25）
+    historyKeyframeFitnessScore: 0.3              # icp threshold, the smaller the better alignment
+
+    # Visualization
+    globalMapVisualizationSearchRadius: 50.0      # 室内场景改为50.0米（原1000.0）
+    globalMapVisualizationPoseDensity: 5.0        # 室内场景改为5.0米（原10.0）
+    globalMapVisualizationLeafSize: 0.2           # 室内场景改为0.2米（原1.0）

@@ -1,0 +1,74 @@
+/**:
+  ros__parameters:
+
+    use_sim_time: true
+
+    # Topics
+    pointCloudTopic: "/velodyne_points"                   # Point cloud data (see notes below for velodyne_packets -> points conversion)
+    imuTopic: /imu/data_shifted
+    odomTopic: "odometry/imu"                    # IMU pre-preintegration odometry (not present in dataset)
+    gpsTopic: "odometry/gpsz"                    # GPS odometry (not used here)
+
+    # Frames
+    lidarFrame: "lidar_link"
+    baselinkFrame: "base_link"
+    odometryFrame: "odom"
+    mapFrame: "map"
+
+    # Sensor Settings
+    sensor: velodyne                              # dataset provides velodyne_packets
+    N_SCAN: 64                                   # try 64 (adjust if wrong)
+    Horizon_SCAN: 512                            # typical for Ouster; for Velodyne you may need to set higher (e.g., 1800) depending on sensor
+    downsampleRate: 1
+    lidarMinRange: 1.0
+    lidarMaxRange: 1000.0
+
+    # IMU Settings (from provided dataset yaml)
+    imuAccNoise: 0.08
+    imuGyrNoise: 0.004
+    imuAccBiasN: 0.00004
+    imuGyrBiasN: 2.0e-6
+
+    imuGravity: 9.80511
+    imuRPYWeight: 0.01
+
+    # Extrinsics (laser_to_imu from provided yaml)
+    extrinsicTrans: [0.080000000, 0.029000000, 0.030000000]
+    # rotation matrix flattened row-major (4x4) -> use the 3x3 rotation part here in row-major
+    # Provided 4x4 laser_to_imu: [r00,r01,r02,tx, r10,r11,r12,ty, r20,r21,r22,tz, ...]
+    extrinsicRot: [0.999212900, -0.000519121, 0.004000000,
+                   0.000516111, 0.999218492, -0.000939132,
+                  -0.004000000, 0.000802565, 0.999993652]
+
+    # LOAM feature threshold (keep defaults)
+    edgeThreshold: 1.0
+    surfThreshold: 0.1
+    edgeFeatureMinValidNum: 10
+    surfFeatureMinValidNum: 100
+
+    # voxel filter params
+    odometrySurfLeafSize: 0.4
+    mappingCornerLeafSize: 0.2
+    mappingSurfLeafSize: 0.4
+
+    # CPU Params
+    numberOfCores: 4
+    mappingProcessInterval: 0.15
+
+    # Loop closure
+    loopClosureEnableFlag: true
+    loopClosureFrequency: 1.0
+
+    # Visualization
+    globalMapVisualizationSearchRadius: 1000.0
+    globalMapVisualizationPoseDensity: 10.0
+    globalMapVisualizationLeafSize: 1.0
+
+# Additional dataset-specific notes:
+# - The bag contains topics: /imu/data (sensor_msgs/Imu), /camera_1/image_raw (sensor_msgs/Image), and /velodyne_packets (velodyne_msgs/VelodyneScan).
+# - LIO-SAM expects a PointCloud2 topic (default "/points"). To convert /velodyne_packets -> /points, use a Velodyne driver/convert node, for example:
+#     - velodyne_pointcloud package: run velodyne_driver or velodyne_pointcloud/convert node to publish /velodyne_points or /points as sensor_msgs/PointCloud2.
+#     - Alternatively, use a small converter node that subscribes to /velodyne_packets and publishes /points.
+# - If your velodyne driver publishes on a different topic (e.g., /velodyne_points), set `pointCloudTopic` accordingly.
+# - Adjust N_SCAN and Horizon_SCAN to match your lidar (e.g., VLP-16: N_SCAN=16, Horizon_SCAN~1800).
+# - If IMU frames differ, set imuTopic and frame ids in the bag playback remapping.

@@ -16,6 +16,16 @@
 
 #include <gtsam/nonlinear/ISAM2.h>
 
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <array>
+#include <cmath>
+#include <deque>
+#include <limits>
+#include <vector>
+#include <Eigen/Eigenvalues>
+
 using namespace gtsam;
 
 using symbol_shorthand::X; // Pose3 (x,y,z,r,p,y)
@@ -1229,7 +1239,7 @@ public:
         matAtB = matAt * matB;
         cv::solve(matAtA, matAtB, matX, cv::DECOMP_QR);
 
-        if (iterCount == 0) {
+        if (iterCount == 0) {       
 
             cv::Mat matE(1, 6, CV_32F, cv::Scalar::all(0));
             cv::Mat matV(6, 6, CV_32F, cv::Scalar::all(0));
@@ -1239,9 +1249,15 @@ public:
             matV.copyTo(matV2);
 
             isDegenerate = false;
-            float eignThre[6] = {100, 100, 100, 100, 100, 100};
+            float eignThre[6] = {100, 100, 100, 100, 100, 100}; //固定阈值
+
+            // 记录哪些特征方向被判定为退化
+            bool degenerateDirection[6] = {false, false, false, false, false, false};
+
             for (int i = 5; i >= 0; i--) {
                 if (matE.at<float>(0, i) < eignThre[i]) {
+                    // 该特征方向被判定为退化，记录下来并将其对应的特征值置零
+                    degenerateDirection[i] = true;
                     for (int j = 0; j < 6; j++) {
                         matV2.at<float>(i, j) = 0;
                     }
@@ -1251,6 +1267,35 @@ public:
                 }
             }
             matP = matV.inv() * matV2;
+
+            const char* stateName[6] = {"roll", "pitch", "yaw", "x", "y", "z"};
+            // 输出退化信息
+            if (isDegenerate)
+                {
+                    std::cout << "\033[1;31m"
+                            << std::fixed << std::setprecision(6)
+                            << "[DEGENERACY DETECTED] time = "
+                            << timeLaserInfoCur
+                            << " | weak eigen directions: ";
+                    for (int i = 0; i < 6; i++)
+                    {
+                        if (degenerateDirection[i])
+                        {
+                            std::cout << "V" << i
+                                    << " lambda=" << matE.at<float>(0, i)
+                                    << " vector=[";
+                            for (int j = 0; j < 6; ++j)
+                            {
+                                std::cout << stateName[j]
+                                        << ":" << matV.at<float>(i, j);
+                                if (j < 5)
+                                std::cout << ", ";
+                            }
+                            std::cout << "]" << std::endl;
+                        }
+                    }
+                    std::cout << "\033[0m" << std::endl;
+                }
         }
 
         if (isDegenerate)

@@ -277,6 +277,10 @@
 					"path" : "/opt/ros/humble/include/pcl_conversions"
 				},
 				{
+					"backtrace" : 21,
+					"path" : "/opt/ros/humble/include"
+				},
+				{
 					"backtrace" : 6,
 					"path" : "/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_cpp"
 				},
@@ -339,11 +343,6 @@
 					"backtrace" : 21,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/message_filters"
-				},
-				{
-					"backtrace" : 21,
-					"isSystem" : true,
-					"path" : "/opt/ros/humble/include"
 				},
 				{
 					"backtrace" : 21,
@@ -568,17 +567,12 @@
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "/opt/ros/humble/include/gtsam/3rdparty/SuiteSparse_config"
+					"path" : "/usr/include/gtsam/3rdparty/SuiteSparse_config"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "/opt/ros/humble/include/gtsam/3rdparty/CCOLAMD"
-				},
-				{
-					"backtrace" : 6,
-					"isSystem" : true,
-					"path" : "/opt/ros/humble/include/gtsam/3rdparty/metis"
+					"path" : "/usr/include/gtsam/3rdparty/CCOLAMD"
 				}
 			],
 			"language" : "CXX",
@@ -627,7 +621,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/m/project/LIO-SAM/build/lio_sam:",
+				"fragment" : "-Wl,-rpath,/opt/ros/humble/lib:/home/m/project/LIO-SAM/build/lio_sam:",
 				"role" : "libraries"
 			},
 			{
@@ -1247,7 +1241,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "/opt/ros/humble/lib/x86_64-linux-gnu/libgtsam.so.4.2.0",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgtsam.so.4.1.1",
 				"role" : "libraries"
 			},
 			{
@@ -2128,6 +2122,10 @@
 				"role" : "libraries"
 			},
 			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 5,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0",
 				"role" : "libraries"
@@ -2176,11 +2174,7 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "/opt/ros/humble/lib/x86_64-linux-gnu/libmetis-gtsam.so",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-lm",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libmetis.so",
 				"role" : "libraries"
 			},
 			{

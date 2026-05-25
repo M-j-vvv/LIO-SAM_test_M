@@ -419,7 +419,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_imuPreintegration")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_imuPreintegration"
-         OLD_RPATH "/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/m/project/LIO-SAM/build/lio_sam:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/m/project/LIO-SAM/build/lio_sam:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_imuPreintegration")
@@ -459,7 +459,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_mapOptimization")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_mapOptimization"
-         OLD_RPATH "/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/m/project/LIO-SAM/build/lio_sam:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/m/project/LIO-SAM/build/lio_sam:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/lio_sam/lio_sam_mapOptimization")

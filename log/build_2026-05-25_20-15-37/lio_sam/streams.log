@@ -1,0 +1,352 @@
+[0.031s] Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j16 -l16
+[0.092s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.311s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.332s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.397s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.455s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.546s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.551s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.698s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.805s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.806s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.881s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.907s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.942s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.996s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.996s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.044s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.555s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.563s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.728s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.736s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.745s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.898s] -- Found Qhull version 8.0.2
+[2.057s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.220s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[2.234s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.246s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.249s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.394s] -- Found tf2_sensor_msgs: 0.25.16 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[2.400s] -- Found tf2_eigen: 0.25.16 (/opt/ros/humble/share/tf2_eigen/cmake)
+[2.408s] [33mCMake Warning (dev) at CMakeLists.txt:29 (find_package):
+[2.408s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.408s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.408s]   command to set the policy and suppress this warning.
+[2.408s] 
+[2.408s]   CMake variable PCL_ROOT is set to:
+[2.408s] 
+[2.408s]     /usr
+[2.408s] 
+[2.408s]   For compatibility, CMake is ignoring the variable.
+[2.408s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.408s] [0m
+[2.450s] -- GTSAM include directory:  /opt/ros/humble/lib/cmake/GTSAM/../../../include
+[2.460s] -- Found Eigen: /usr/include/eigen3  
+[2.460s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.827s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.160s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.607s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.638s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.638s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.638s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.769s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.803s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.893s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.895s] -- Configured cppcheck include dirs: /home/m/project/LIO-SAM/include/lio_sam;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_c>;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/m/project/LIO-SAM/build/lio_sam/rosidl_typesupport_introspection_cpp>;/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_c;/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_py
+[3.895s] -- Configured cppcheck exclude dirs and/or files: 
+[3.980s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.981s] -- Configured cpplint exclude dirs and/or files: 
+[3.991s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.011s] -- Added test 'lint_cmake' to check CMake code style
+[4.022s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.106s] -- Added test 'uncrustify' to check C / C++ code style
+[4.106s] -- Configured uncrustify additional arguments: 
+[4.117s] -- Added test 'xmllint' to check XML markup files
+[4.123s] -- Configuring done
+[4.393s] -- Generating done
+[4.442s] -- Build files have been written to: /home/m/project/LIO-SAM/build/lio_sam
+[4.492s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_generator_c[0m
+[4.507s] [  2%] Built target lio_sam__cpp
+[4.520s] [  4%] [32m[1mLinking C shared library liblio_sam__rosidl_generator_c.so[0m
+[4.521s] [  4%] Built target ament_cmake_python_copy_lio_sam
+[4.523s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_cpp[0m
+[4.525s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_fastrtps_cpp[0m
+[4.527s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_introspection_cpp[0m
+[4.555s] [  6%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_cpp.so[0m
+[4.556s] [ 10%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_introspection_cpp.so[0m
+[4.556s] [ 10%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lio_sam/msg/detail/dds_fastrtps/cloud_info__type_support.cpp.o[0m
+[4.559s] [ 12%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lio_sam/srv/detail/dds_fastrtps/save_map__type_support.cpp.o[0m
+[4.585s] [ 19%] Built target lio_sam__rosidl_generator_c
+[4.606s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_fastrtps_c[0m
+[4.609s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_c[0m
+[4.609s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_introspection_c[0m
+[4.635s] [ 21%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_c.so[0m
+[4.638s] [ 29%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lio_sam/msg/detail/cloud_info__type_support_c.cpp.o[0m
+[4.638s] [ 29%] Built target lio_sam__rosidl_typesupport_cpp
+[4.641s] [ 31%] [32m[1mLinking C shared library liblio_sam__rosidl_typesupport_introspection_c.so[0m
+[4.656s] [ 34%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lio_sam/srv/detail/save_map__type_support_c.cpp.o[0m
+[4.679s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_featureExtraction[0m
+[4.687s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imuPreintegration[0m
+[4.689s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[4.709s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_imageProjection[0m
+[4.714s] [ 40%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[4.761s] [ 46%] Built target lio_sam__rosidl_typesupport_introspection_c
+[4.768s] [ 53%] Built target lio_sam__rosidl_typesupport_c
+[4.886s] [ 55%] [32mBuilding CXX object CMakeFiles/lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o[0m
+[4.888s] [ 57%] [32mBuilding CXX object CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o[0m
+[4.890s] [ 59%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[4.890s] [ 61%] [32mBuilding CXX object CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o[0m
+[4.933s] running egg_info
+[4.935s] writing lio_sam.egg-info/PKG-INFO
+[4.936s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[4.936s] writing top-level names to lio_sam.egg-info/top_level.txt
+[4.953s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[4.954s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[5.011s] [ 61%] Built target ament_cmake_python_build_lio_sam_egg
+[5.439s] [ 63%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_fastrtps_c.so[0m
+[5.552s] [ 65%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[5.572s] [ 68%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.669s] [ 70%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[5.706s] [ 70%] Built target lio_sam
+[5.755s] [ 72%] Built target lio_sam__py
+[5.778s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_generator_py[0m
+[5.804s] [ 74%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/liblio_sam__rosidl_generator_py.so[0m
+[5.890s] [ 78%] Built target lio_sam__rosidl_generator_py
+[5.915s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_introspection_c__pyext[0m
+[5.916s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.919s] [35m[1mConsolidate compiler generated dependencies of target lio_sam__rosidl_typesupport_c__pyext[0m
+[5.944s] [ 80%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.951s] [ 82%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c.o[0m
+[5.951s] [ 85%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.287s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.287s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.293s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.396s] [ 91%] Built target lio_sam__rosidl_typesupport_c__pyext
+[6.400s] [ 91%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[6.415s] [ 91%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[49.627s] [ 93%] [32m[1mLinking CXX executable lio_sam_featureExtraction[0m
+[50.574s] [ 93%] Built target lio_sam_featureExtraction
+[58.225s] [ 95%] [32m[1mLinking CXX executable lio_sam_imageProjection[0m
+[58.870s] [ 95%] Built target lio_sam_imageProjection
+[71.700s] [ 97%] [32m[1mLinking CXX executable lio_sam_imuPreintegration[0m
+[72.387s] [ 97%] Built target lio_sam_imuPreintegration
+[98.954s] [100%] [32m[1mLinking CXX executable lio_sam_mapOptimization[0m
+[99.612s] /usr/bin/ld: warning: libtbb.so.2, needed by /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d, may conflict with libtbb.so.12
+[99.850s] [100%] Built target lio_sam_mapOptimization
+[99.865s] Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j16 -l16
+[99.874s] Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/project/LIO-SAM/build/lio_sam
+[99.880s] -- Install configuration: "Release"
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/ament_index/resource_index/rosidl_interfaces/lio_sam
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__functions.c
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__functions.h
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.h
+[99.881s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_c__visibility_control.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__functions.h
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__functions.c
+[99.882s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.h
+[99.882s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/library_path.sh
+[99.882s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/library_path.dsv
+[99.883s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so
+[99.883s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so" to ""
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.883s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[99.883s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so
+[99.883s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so" to ""
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.c
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_c.h
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[99.884s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.c
+[99.884s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so
+[99.885s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so" to ""
+[99.885s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so
+[99.885s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so" to ""
+[99.885s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.885s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.885s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.885s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__traits.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__builder.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_cpp__visibility_control.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__builder.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__traits.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.hpp
+[99.886s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/dds_fastrtps
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_cpp.hpp
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/dds_fastrtps
+[99.887s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[99.887s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so
+[99.887s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so" to ""
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.cpp
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_cpp.hpp
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.cpp
+[99.888s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so
+[99.888s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so" to ""
+[99.888s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so
+[99.888s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so" to ""
+[99.888s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/pythonpath.sh
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/pythonpath.dsv
+[99.889s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/PKG-INFO
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/SOURCES.txt
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/top_level.txt
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam-1.0.0-py3.10.egg-info/dependency_links.txt
+[99.889s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam
+[99.889s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/liblio_sam__rosidl_generator_py.so
+[99.890s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[99.890s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c
+[99.890s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/__init__.py
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c
+[99.890s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info.py
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/_cloud_info_s.c
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg/__init__.py
+[99.890s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv
+[99.891s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map_s.c
+[99.891s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/__init__.py
+[99.891s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv/_save_map.py
+[99.937s] Listing '/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam'...
+[99.937s] Compiling '/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/__init__.py'...
+[99.937s] Listing '/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/msg'...
+[99.937s] Listing '/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/srv'...
+[99.942s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[99.943s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[99.943s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[99.943s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[99.943s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[99.944s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/local/lib/python3.10/dist-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[99.944s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so
+[99.945s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so" to ""
+[99.945s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/msg/CloudInfo.idl
+[99.945s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/srv/SaveMap.idl
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/msg/CloudInfo.msg
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/srv/SaveMap.srv
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/srv/SaveMap_Request.msg
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/srv/SaveMap_Response.msg
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//launch
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//launch/run.launch.py
+[99.946s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/rviz2.rviz
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/robot.urdf.xacro
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/params.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/corridor01_params.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/cmu_liosam.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/1.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/default_vbr.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/test.cpp
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/cmu.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/corridor01_params_shifted.yaml
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/system.png
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/device-hand-2.png
+[99.947s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/kitti2bag
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/kitti2bag/kitti2bag.py
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/kitti2bag/README.md
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/loop-closure-2.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/loop-closure.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/imu-transform.png
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/ouster-device.jpg
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/imu-debug.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/kitti-map.png
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/device-hand.png
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/demo.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/kitti-demo.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/device-jackal.png
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/ouster-demo.gif
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/paper.pdf
+[99.948s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/device-boat.png
+[99.949s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam//config/doc/gps-demo.gif
+[99.949s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_imageProjection
+[99.949s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_imageProjection" to ""
+[99.949s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_imuPreintegration
+[99.951s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_imuPreintegration" to ""
+[99.951s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_featureExtraction
+[99.953s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_featureExtraction" to ""
+[99.953s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_mapOptimization
+[99.956s] -- Set runtime path of "/home/m/project/LIO-SAM/install/lio_sam/lib/lio_sam/lio_sam_mapOptimization" to ""
+[99.956s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include
+[99.956s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam
+[99.956s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/include/lio_sam/utility.hpp
+[99.956s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/ament_index/resource_index/package_run_dependencies/lio_sam
+[99.957s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/ament_index/resource_index/parent_prefix_path/lio_sam
+[99.957s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/ament_prefix_path.sh
+[99.957s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/ament_prefix_path.dsv
+[99.957s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/path.sh
+[99.957s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/environment/path.dsv
+[99.957s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/local_setup.bash
+[99.957s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/local_setup.sh
+[99.958s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/local_setup.zsh
+[99.958s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/local_setup.dsv
+[99.958s] -- Installing: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/package.dsv
+[99.958s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/ament_index/resource_index/packages/lio_sam
+[99.958s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport.cmake
+[99.959s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport-release.cmake
+[99.959s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport.cmake
+[99.959s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport-release.cmake
+[99.959s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport.cmake
+[99.959s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport-release.cmake
+[99.960s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport.cmake
+[99.960s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport-release.cmake
+[99.960s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cppExport.cmake
+[99.960s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport.cmake
+[99.960s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport-release.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport-release.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport-release.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/rosidl_cmake-extras.cmake
+[99.961s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_dependencies-extras.cmake
+[99.962s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_include_directories-extras.cmake
+[99.962s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_libraries-extras.cmake
+[99.963s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_targets-extras.cmake
+[99.964s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[99.964s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[99.964s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_samConfig.cmake
+[99.964s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/cmake/lio_samConfig-version.cmake
+[99.965s] -- Up-to-date: /home/m/project/LIO-SAM/install/lio_sam/share/lio_sam/package.xml
+[99.965s] Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/project/LIO-SAM/build/lio_sam

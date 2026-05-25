@@ -214,7 +214,7 @@ lio_sam_mapOptimization: /usr/lib/libOpenNI.so
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libOpenNI2.so
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-lio_sam_mapOptimization: /opt/ros/humble/lib/x86_64-linux-gnu/libgtsam.so.4.2.0
+lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libgtsam.so.4.1.1
 lio_sam_mapOptimization: liblio_sam__rosidl_typesupport_cpp.so
 lio_sam_mapOptimization: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 lio_sam_mapOptimization: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
@@ -406,7 +406,7 @@ lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libboost_timer.so.1.74.0
 lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0
-lio_sam_mapOptimization: /opt/ros/humble/lib/x86_64-linux-gnu/libmetis-gtsam.so
+lio_sam_mapOptimization: /usr/lib/x86_64-linux-gnu/libmetis.so
 lio_sam_mapOptimization: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 lio_sam_mapOptimization: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 lio_sam_mapOptimization: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so

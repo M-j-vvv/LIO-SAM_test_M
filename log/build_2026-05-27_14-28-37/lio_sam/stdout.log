@@ -1,0 +1,28 @@
+[  2%] Built target lio_sam__cpp
+[  4%] Built target lio_sam__rs
+[  4%] Built target ament_cmake_python_copy_lio_sam
+[ 12%] Built target lio_sam__rosidl_generator_c
+[ 20%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[ 29%] Built target lio_sam__rosidl_typesupport_cpp
+[ 37%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[ 54%] Built target lio_sam__rosidl_typesupport_c
+[ 54%] Built target lio_sam__rosidl_typesupport_introspection_c
+[ 62%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[ 62%] Built target lio_sam
+[ 64%] Built target lio_sam__py
+[ 70%] Built target lio_sam__rosidl_generator_py
+[ 75%] Built target lio_sam_imageProjection
+[ 79%] Built target lio_sam_featureExtraction
+[ 83%] Built target lio_sam_imuPreintegration
+[ 85%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[ 93%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target lio_sam__rosidl_typesupport_c__pyext
+running egg_info
+writing lio_sam.egg-info/PKG-INFO
+writing dependency_links to lio_sam.egg-info/dependency_links.txt
+writing top-level names to lio_sam.egg-info/top_level.txt
+reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_lio_sam_egg

@@ -1,0 +1,37 @@
+[0.014s] Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8
+[0.082s] [  2%] Built target lio_sam__rs
+[0.083s] [  4%] Built target lio_sam__cpp
+[0.086s] [ 12%] Built target lio_sam__rosidl_generator_c
+[0.096s] [ 12%] Built target ament_cmake_python_copy_lio_sam
+[0.115s] [ 20%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.117s] [ 29%] Built target lio_sam__rosidl_typesupport_cpp
+[0.121s] [ 37%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.137s] [ 45%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.137s] [ 56%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.137s] [ 62%] Built target lio_sam__rosidl_typesupport_c
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[0.165s] [ 62%] Built target lio_sam
+[0.168s] [ 66%] Built target lio_sam_featureExtraction
+[0.180s] [ 70%] Built target lio_sam_imageProjection
+[0.182s] [ 75%] Built target lio_sam_imuPreintegration
+[0.197s] [ 77%] Built target lio_sam__py
+[0.209s] [ 79%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[0.224s] [ 85%] Built target lio_sam__rosidl_generator_py
+[0.254s] [ 89%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[0.254s] [ 93%] Built target lio_sam__rosidl_typesupport_c__pyext
+[0.261s] [ 97%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[0.382s] running egg_info
+[0.382s] writing lio_sam.egg-info/PKG-INFO
+[0.382s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.383s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.384s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.385s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.417s] [ 97%] Built target ament_cmake_python_build_lio_sam_egg
+[12.721s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kvoid mapOptimization::monitorDegeneracyByIQR(const cv::Mat&, const cv::Mat&)[m[K’:
+[12.721s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1282:30:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeQuantile[m[K’ was not declared in this scope
+[12.721s]  1282 |             const float q1 = [01;31m[KcomputeQuantile[m[K(sortedValues, 0.25f);
+[12.721s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[42.343s] gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76：CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] 错误 1
+[42.343s] gmake[1]: *** [CMakeFiles/Makefile2:699：CMakeFiles/lio_sam_mapOptimization.dir/all] 错误 2
+[42.343s] gmake: *** [Makefile:146：all] 错误 2
+[42.346s] Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8

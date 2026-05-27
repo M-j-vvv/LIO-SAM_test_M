@@ -1,0 +1,92 @@
+/**:
+  ros__parameters:
+
+    # Topics
+    pointCloudTopic: "/velodyne_points"
+    imuTopic: "/imu/data"
+    odomTopic: "odometry/imu"
+    gpsTopic: "odometry/gpsz"
+
+    # Frames
+    lidarFrame: "lidar_link"
+    baselinkFrame: "base_link"
+    odometryFrame: "odom"
+    mapFrame: "map"
+
+    # GPS Settings
+    useImuHeadingInitialization: false
+    useGpsElevation: false
+    gpsCovThreshold: 2.0
+    poseCovThreshold: 25.0
+
+    # Export settings
+    savePCD: false
+    savePCDDirectory: "/Downloads/LOAM/"
+
+    # Sensor Settings
+    sensor: velodyne
+    N_SCAN: 16
+    Horizon_SCAN: 1024
+    downsampleRate: 1
+    lidarMinRange: 1.0
+    lidarMaxRange: 100.0
+
+    # IMU Settings（✅ 已更新）
+    imuAccNoise: 1.0481546278947311e-02
+    imuGyrNoise: 9.6690835928856730e-03
+    imuAccBiasN: 1.8451561389195461e-04
+    imuGyrBiasN: 8.2887875865635737e-05
+    imuGravity: 9.805
+    imuRPYWeight: 0.01
+
+    # 外参变换（✅ 来自新的 T_IMU_LiDAR）
+    extrinsicTrans: [-0.0961, 0.1338, -0.3032]
+    extrinsicRot: [
+      0.9999, -0.0050, -0.0153,
+      0.0049,  1.0000, -0.0022,
+      0.0153,  0.0021,  0.9999
+    ]
+    extrinsicRPY: [
+      1.0, 0.0, 0.0,
+      0.0, 1.0, 0.0,
+      0.0, 0.0, 1.0
+    ]
+
+    # LOAM feature threshold
+    edgeThreshold: 0.1
+    surfThreshold: 0.1
+    edgeFeatureMinValidNum: 10
+    surfFeatureMinValidNum: 100
+
+    # voxel filter params
+    odometrySurfLeafSize: 0.2
+    mappingCornerLeafSize: 0.1
+    mappingSurfLeafSize: 0.2
+
+    # robot motion constraint
+    z_tollerance: 1.0
+    rotation_tollerance: 0.5
+
+    # CPU Params
+    numberOfCores: 4
+    mappingProcessInterval: 0.3
+
+    # Surrounding map
+    surroundingkeyframeAddingDistThreshold: 1.0
+    surroundingkeyframeAddingAngleThreshold: 0.2
+    surroundingKeyframeDensity: 1.0
+    surroundingKeyframeSearchRadius: 20.0
+
+    # Loop closure
+    loopClosureEnableFlag: true
+    loopClosureFrequency: 1.0
+    surroundingKeyframeSize: 30
+    historyKeyframeSearchRadius: 10.0
+    historyKeyframeSearchTimeDiff: 20.0
+    historyKeyframeSearchNum: 20
+    historyKeyframeFitnessScore: 0.3
+
+    # Visualization
+    globalMapVisualizationSearchRadius: 50.0
+    globalMapVisualizationPoseDensity: 5.0
+    globalMapVisualizationLeafSize: 0.2

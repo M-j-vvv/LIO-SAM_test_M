@@ -356,6 +356,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rust_packages" TYPE FILE FILES "/home/m/project/LIO-SAM/build/lio_sam/ament_cmake_index/share/ament_index/resource_index/rust_packages/lio_sam")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lio_sam" TYPE DIRECTORY FILES "/home/m/project/LIO-SAM/build/lio_sam/rosidl_generator_rs/lio_sam/rust")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lio_sam/msg" TYPE FILE FILES "/home/m/project/LIO-SAM/build/lio_sam/rosidl_adapter/lio_sam/msg/CloudInfo.idl")
 endif()
 
@@ -729,6 +737,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/m/project/LIO-SAM/build/lio_sam/lio_sam__py/cmake_install.cmake")
+  include("/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/cmake_install.cmake")
 
 endif()
 

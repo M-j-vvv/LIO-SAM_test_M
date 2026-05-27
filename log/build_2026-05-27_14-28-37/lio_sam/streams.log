@@ -1,0 +1,737 @@
+[0.030s] Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8
+[0.186s] [  2%] Built target lio_sam__cpp
+[0.188s] [  4%] Built target lio_sam__rs
+[0.200s] [  4%] Built target ament_cmake_python_copy_lio_sam
+[0.201s] [ 12%] Built target lio_sam__rosidl_generator_c
+[0.218s] [ 20%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[0.218s] [ 29%] Built target lio_sam__rosidl_typesupport_cpp
+[0.237s] [ 37%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.238s] [ 54%] Built target lio_sam__rosidl_typesupport_c
+[0.239s] [ 54%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.246s] [ 62%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.273s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[0.278s] [ 62%] Built target lio_sam
+[0.309s] [ 64%] Built target lio_sam__py
+[0.349s] [ 70%] Built target lio_sam__rosidl_generator_py
+[0.351s] [ 75%] Built target lio_sam_imageProjection
+[0.352s] [ 79%] Built target lio_sam_featureExtraction
+[0.354s] [ 83%] Built target lio_sam_imuPreintegration
+[0.357s] [ 85%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[0.381s] [ 93%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[0.381s] [ 93%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[0.382s] [ 97%] Built target lio_sam__rosidl_typesupport_c__pyext
+[0.512s] running egg_info
+[0.513s] writing lio_sam.egg-info/PKG-INFO
+[0.514s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.514s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.518s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.520s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.554s] [ 97%] Built target ament_cmake_python_build_lio_sam_egg
+[22.867s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1570:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[22.867s]  1570 |         [01;31m[Kif[m[K (isDegenerate)
+[22.867s]       |         [01;31m[K^~[m[K
+[22.881s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1577:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.881s]  1577 |         [01;31m[KtransformTobeMapped[m[K[0] += matX.at<float>(0, 0);
+[22.881s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.894s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1578:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.894s]  1578 |         [01;31m[KtransformTobeMapped[m[K[1] += matX.at<float>(1, 0);
+[22.894s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.911s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1579:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.911s]  1579 |         [01;31m[KtransformTobeMapped[m[K[2] += matX.at<float>(2, 0);
+[22.911s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.923s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1580:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.923s]  1580 |         [01;31m[KtransformTobeMapped[m[K[3] += matX.at<float>(3, 0);
+[22.923s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.937s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1581:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.937s]  1581 |         [01;31m[KtransformTobeMapped[m[K[4] += matX.at<float>(4, 0);
+[22.937s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.955s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1582:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ does not name a type
+[22.955s]  1582 |         [01;31m[KtransformTobeMapped[m[K[5] += matX.at<float>(5, 0);
+[22.955s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[22.955s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1593:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[22.955s]  1593 |         [01;31m[Kif[m[K (deltaR < 0.05 && deltaT < 0.05) {
+[22.955s]       |         [01;31m[K^~[m[K
+[22.955s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1596:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[22.956s]  1596 |         [01;31m[Kreturn[m[K false; // keep optimizing
+[22.956s]       |         [01;31m[K^~~~~~[m[K
+[22.958s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1597:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[22.958s]  1597 |     }
+[22.958s]       |      [01;31m[K^[m[K
+[22.958s]       |      [32m[K;[m[K
+[22.975s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1585:46:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[22.975s]  1585 |                             pow(pcl::rad2deg([01;31m[KmatX[m[K.at<float>(0, 0)), 2) +
+[22.975s]       |                                              [01;31m[K^~~~[m[K
+[22.975s]       |                                              [32m[KmatP[m[K
+[22.975s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1585:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[22.975s]  1585 |                             pow(pcl::rad2deg(matX.at<[01;31m[Kfloat[m[K>(0, 0)), 2) +
+[22.975s]       |                                                      [01;31m[K^~~~~[m[K
+[22.992s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1586:46:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[22.992s]  1586 |                             pow(pcl::rad2deg([01;31m[KmatX[m[K.at<float>(1, 0)), 2) +
+[22.992s]       |                                              [01;31m[K^~~~[m[K
+[22.992s]       |                                              [32m[KmatP[m[K
+[22.993s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1586:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[22.993s]  1586 |                             pow(pcl::rad2deg(matX.at<[01;31m[Kfloat[m[K>(1, 0)), 2) +
+[22.993s]       |                                                      [01;31m[K^~~~~[m[K
+[23.007s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1587:46:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[23.007s]  1587 |                             pow(pcl::rad2deg([01;31m[KmatX[m[K.at<float>(2, 0)), 2));
+[23.007s]       |                                              [01;31m[K^~~~[m[K
+[23.008s]       |                                              [32m[KmatP[m[K
+[23.008s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1587:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[23.008s]  1587 |                             pow(pcl::rad2deg(matX.at<[01;31m[Kfloat[m[K>(2, 0)), 2));
+[23.011s]       |                                                      [01;31m[K^~~~~[m[K
+[23.027s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1589:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[23.027s]  1589 |                             pow([01;31m[KmatX[m[K.at<float>(3, 0) * 100, 2) +
+[23.027s]       |                                 [01;31m[K^~~~[m[K
+[23.027s]       |                                 [32m[KmatP[m[K
+[23.027s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1589:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[23.027s]  1589 |                             pow(matX.at<[01;31m[Kfloat[m[K>(3, 0) * 100, 2) +
+[23.027s]       |                                         [01;31m[K^~~~~[m[K
+[23.044s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1590:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[23.044s]  1590 |                             pow([01;31m[KmatX[m[K.at<float>(4, 0) * 100, 2) +
+[23.044s]       |                                 [01;31m[K^~~~[m[K
+[23.044s]       |                                 [32m[KmatP[m[K
+[23.044s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1590:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[23.044s]  1590 |                             pow(matX.at<[01;31m[Kfloat[m[K>(4, 0) * 100, 2) +
+[23.044s]       |                                         [01;31m[K^~~~~[m[K
+[23.059s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1591:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmatX[m[K’ was not declared in this scope; did you mean ‘[01m[KmatP[m[K’?
+[23.059s]  1591 |                             pow([01;31m[KmatX[m[K.at<float>(5, 0) * 100, 2));
+[23.059s]       |                                 [01;31m[K^~~~[m[K
+[23.059s]       |                                 [32m[KmatP[m[K
+[23.059s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1591:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[23.059s]  1591 |                             pow(matX.at<[01;31m[Kfloat[m[K>(5, 0) * 100, 2));
+[23.059s]       |                                         [01;31m[K^~~~~[m[K
+[23.156s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kvoid mapOptimization::laserCloudInfoHandler(lio_sam::msg::CloudInfo_<std::allocator<void> >::SharedPtr)[m[K’:
+[23.156s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:367:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan2MapOptimization[m[K’ was not declared in this scope; did you mean ‘[01m[KmapOptimization[m[K’?
+[23.156s]   367 |             [01;31m[Kscan2MapOptimization[m[K();
+[23.156s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[23.156s]       |             [32m[KmapOptimization[m[K
+[23.199s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:369:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsaveKeyFramesAndFactor[m[K’ was not declared in this scope
+[23.199s]   369 |             [01;31m[KsaveKeyFramesAndFactor[m[K();
+[23.199s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.228s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:371:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcorrectPoses[m[K’ was not declared in this scope
+[23.228s]   371 |             [01;31m[KcorrectPoses[m[K();
+[23.228s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[23.260s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:373:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishOdometry[m[K’ was not declared in this scope
+[23.260s]   373 |             [01;31m[KpublishOdometry[m[K();
+[23.260s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[23.284s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:375:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishFrames[m[K’ was not declared in this scope
+[23.284s]   375 |             [01;31m[KpublishFrames[m[K();
+[23.284s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[23.541s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kvoid mapOptimization::monitorDegeneracyByIQR(const cv::Mat&, const cv::Mat&)[m[K’:
+[23.541s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1278:30:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeQuantile[m[K’ was not declared in this scope
+[23.541s]  1278 |             const float q1 = [01;31m[KcomputeQuantile[m[K(sortedValues, 0.25f);
+[23.541s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[23.576s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid scan2MapOptimization()[m[K’:
+[23.576s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1601:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[23.576s]  1601 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[23.576s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[23.608s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:13:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudCornerLastDSNum[m[K’ was not declared in this scope
+[23.608s]  1604 |         if ([01;31m[KlaserCloudCornerLastDSNum[m[K > edgeFeatureMinValidNum && laserCloudSurfLastDSNum > surfFeatureMinValidNum)
+[23.608s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.640s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:41:[m[K [01;31m[Kerror: [m[K‘[01m[KedgeFeatureMinValidNum[m[K’ was not declared in this scope
+[23.640s]  1604 |         if (laserCloudCornerLastDSNum > [01;31m[KedgeFeatureMinValidNum[m[K && laserCloudSurfLastDSNum > surfFeatureMinValidNum)
+[23.640s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.670s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:67:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudSurfLastDSNum[m[K’ was not declared in this scope
+[23.670s]  1604 |         if (laserCloudCornerLastDSNum > edgeFeatureMinValidNum && [01;31m[KlaserCloudSurfLastDSNum[m[K > surfFeatureMinValidNum)
+[23.670s]       |                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.698s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:93:[m[K [01;31m[Kerror: [m[K‘[01m[KsurfFeatureMinValidNum[m[K’ was not declared in this scope
+[23.698s]  1604 |         if (laserCloudCornerLastDSNum > edgeFeatureMinValidNum && laserCloudSurfLastDSNum > [01;31m[KsurfFeatureMinValidNum[m[K)
+[23.698s]       |                                                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.725s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1606:13:[m[K [01;31m[Kerror: [m[K‘[01m[KkdtreeCornerFromMap[m[K’ was not declared in this scope
+[23.725s]  1606 |             [01;31m[KkdtreeCornerFromMap[m[K->setInputCloud(laserCloudCornerFromMapDS);
+[23.725s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[23.758s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1606:48:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudCornerFromMapDS[m[K’ was not declared in this scope
+[23.758s]  1606 |             kdtreeCornerFromMap->setInputCloud([01;31m[KlaserCloudCornerFromMapDS[m[K);
+[23.758s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.781s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1607:13:[m[K [01;31m[Kerror: [m[K‘[01m[KkdtreeSurfFromMap[m[K’ was not declared in this scope
+[23.781s]  1607 |             [01;31m[KkdtreeSurfFromMap[m[K->setInputCloud(laserCloudSurfFromMapDS);
+[23.781s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[23.811s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1607:46:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudSurfFromMapDS[m[K’ was not declared in this scope
+[23.811s]  1607 |             kdtreeSurfFromMap->setInputCloud([01;31m[KlaserCloudSurfFromMapDS[m[K);
+[23.812s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.832s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1611:17:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudOri[m[K’ was not declared in this scope
+[23.832s]  1611 |                 [01;31m[KlaserCloudOri[m[K->clear();
+[23.833s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[23.846s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1612:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcoeffSel[m[K’ was not declared in this scope
+[23.846s]  1612 |                 [01;31m[KcoeffSel[m[K->clear();
+[23.846s]       |                 [01;31m[K^~~~~~~~[m[K
+[23.868s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1614:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcornerOptimization[m[K’ was not declared in this scope; did you mean ‘[01m[KmapOptimization[m[K’?
+[23.868s]  1614 |                 [01;31m[KcornerOptimization[m[K();
+[23.868s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[23.868s]       |                 [32m[KmapOptimization[m[K
+[23.886s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1615:17:[m[K [01;31m[Kerror: [m[K‘[01m[KsurfOptimization[m[K’ was not declared in this scope; did you mean ‘[01m[KmapOptimization[m[K’?
+[23.886s]  1615 |                 [01;31m[KsurfOptimization[m[K();
+[23.886s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[23.886s]       |                 [32m[KmapOptimization[m[K
+[23.916s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1617:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcombineOptimizationCoeffs[m[K’ was not declared in this scope
+[23.916s]  1617 |                 [01;31m[KcombineOptimizationCoeffs[m[K();
+[23.916s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.932s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1619:21:[m[K [01;31m[Kerror: [m[K‘[01m[KLMOptimization[m[K’ was not declared in this scope; did you mean ‘[01m[KmapOptimization[m[K’?
+[23.932s]  1619 |                 if ([01;31m[KLMOptimization[m[K(iterCount) == true)
+[23.933s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[23.933s]       |                     [32m[KmapOptimization[m[K
+[23.953s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1623:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformUpdate[m[K’ was not declared in this scope; did you mean ‘[01m[KTransformData[m[K’?
+[23.953s]  1623 |             [01;31m[KtransformUpdate[m[K();
+[23.953s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[23.953s]       |             [32m[KTransformData[m[K
+[23.956s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[23.956s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[23.956s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[23.956s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[23.957s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[23.957s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[23.957s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[23.957s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[23.958s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[23.958s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[23.958s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6[m[K,
+[23.958s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[23.958s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[23.958s]  1625 |             RCLCPP_WARN([01;31m[Kget_logger[m[K(), "Not enough features! Only %d edge and %d planar features available.", laserCloudCornerLastDSNum, laserCloudSurfLastDSNum);
+[23.959s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[23.959s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[23.959s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6[m[K,
+[23.959s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[23.959s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[23.959s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[23.959s]       |                 [01;36m[K^~~~~~[m[K
+[23.959s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[23.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[23.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[23.960s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6[m[K,
+[23.960s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[23.960s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[23.960s]  1625 |             [01;31m[KRCLCPP_WARN[m[K(get_logger(), "Not enough features! Only %d edge and %d planar features available.", laserCloudCornerLastDSNum, laserCloudSurfLastDSNum);
+[23.960s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[23.970s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid transformUpdate()[m[K’:
+[23.970s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1631:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudInfo[m[K’ was not declared in this scope
+[23.970s]  1631 |         if ([01;31m[KcloudInfo[m[K.imu_available == true)
+[23.970s]       |             [01;31m[K^~~~~~~~~[m[K
+[23.982s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1635:36:[m[K [01;31m[Kerror: [m[K‘[01m[KimuRPYWeight[m[K’ was not declared in this scope; did you mean ‘[01m[KimuWeight[m[K’?
+[23.982s]  1635 |                 double imuWeight = [01;31m[KimuRPYWeight[m[K;
+[23.982s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[23.982s]       |                                    [32m[KimuWeight[m[K
+[24.004s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1641:44:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.004s]  1641 |                 transformQuaternion.setRPY([01;31m[KtransformTobeMapped[m[K[0], 0, 0);
+[24.004s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.028s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.028s]  1654 |         [01;31m[KtransformTobeMapped[m[K[0] = constraintTransformation(transformTobeMapped[0], rotation_tollerance);
+[24.028s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.054s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:83:[m[K [01;31m[Kerror: [m[K‘[01m[Krotation_tollerance[m[K’ was not declared in this scope
+[24.054s]  1654 |         transformTobeMapped[0] = constraintTransformation(transformTobeMapped[0], [01;31m[Krotation_tollerance[m[K);
+[24.054s]       |                                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.084s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:34:[m[K [01;31m[Kerror: [m[K‘[01m[KconstraintTransformation[m[K’ was not declared in this scope
+[24.084s]  1654 |         transformTobeMapped[0] = [01;31m[KconstraintTransformation[m[K(transformTobeMapped[0], rotation_tollerance);
+[24.085s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.101s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1656:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_tollerance[m[K’ was not declared in this scope
+[24.101s]  1656 |         transformTobeMapped[5] = constraintTransformation(transformTobeMapped[5], [01;31m[Kz_tollerance[m[K);
+[24.101s]       |                                                                                   [01;31m[K^~~~~~~~~~~~[m[K
+[24.136s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1658:9:[m[K [01;31m[Kerror: [m[K‘[01m[KincrementalOdometryAffineBack[m[K’ was not declared in this scope
+[24.136s]  1658 |         [01;31m[KincrementalOdometryAffineBack[m[K = trans2Affine3f(transformTobeMapped);
+[24.136s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.156s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1658:41:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2Affine3f[m[K’ was not declared in this scope
+[24.156s]  1658 |         incrementalOdometryAffineBack = [01;31m[Ktrans2Affine3f[m[K(transformTobeMapped);
+[24.156s]       |                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.177s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kbool saveFrame()[m[K’:
+[24.177s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1673:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[24.177s]  1673 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[24.177s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.187s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1676:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor[m[K’ was not declared in this scope
+[24.187s]  1676 |         if ([01;31m[Ksensor[m[K == SensorType::LIVOX)
+[24.187s]       |             [01;31m[K^~~~~~[m[K
+[24.207s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1678:17:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeLaserInfoCur[m[K’ was not declared in this scope
+[24.207s]  1678 |             if ([01;31m[KtimeLaserInfoCur[m[K - cloudKeyPoses6D->back().time > 1.0)
+[24.207s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[24.229s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1678:36:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses6D[m[K’ was not declared in this scope
+[24.229s]  1678 |             if (timeLaserInfoCur - [01;31m[KcloudKeyPoses6D[m[K->back().time > 1.0)
+[24.229s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.249s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1682:57:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses6D[m[K’ was not declared in this scope
+[24.249s]  1682 |         Eigen::Affine3f transStart = pclPointToAffine3f([01;31m[KcloudKeyPoses6D[m[K->back());
+[24.249s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.273s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1682:38:[m[K [01;31m[Kerror: [m[K‘[01m[KpclPointToAffine3f[m[K’ was not declared in this scope
+[24.273s]  1682 |         Eigen::Affine3f transStart = [01;31m[KpclPointToAffine3f[m[K(cloudKeyPoses6D->back());
+[24.273s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[24.297s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1683:61:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.297s]  1683 |         Eigen::Affine3f transFinal = pcl::getTransformation([01;31m[KtransformTobeMapped[m[K[3], transformTobeMapped[4], transformTobeMapped[5],
+[24.297s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.343s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1689:26:[m[K [01;31m[Kerror: [m[K‘[01m[KsurroundingkeyframeAddingAngleThreshold[m[K’ was not declared in this scope
+[24.343s]  1689 |         if (abs(roll)  < [01;31m[KsurroundingkeyframeAddingAngleThreshold[m[K &&
+[24.343s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.389s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1692:37:[m[K [01;31m[Kerror: [m[K‘[01m[KsurroundingkeyframeAddingDistThreshold[m[K’ was not declared in this scope
+[24.389s]  1692 |             sqrt(x*x + y*y + z*z) < [01;31m[KsurroundingkeyframeAddingDistThreshold[m[K)
+[24.389s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.413s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid addOdomFactor()[m[K’:
+[24.413s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1700:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[24.413s]  1700 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[24.413s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.430s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgtSAMgraph[m[K’ was not declared in this scope
+[24.430s]  1703 |             [01;31m[KgtSAMgraph[m[K.add(PriorFactor<Pose3>(0, trans2gtsamPose(transformTobeMapped), priorNoise));
+[24.431s]       |             [01;31m[K^~~~~~~~~~[m[K
+[24.464s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:66:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.464s]  1703 |             gtSAMgraph.add(PriorFactor<Pose3>(0, trans2gtsamPose([01;31m[KtransformTobeMapped[m[K), priorNoise));
+[24.464s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.484s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:50:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2gtsamPose[m[K’ was not declared in this scope
+[24.484s]  1703 |             gtSAMgraph.add(PriorFactor<Pose3>(0, [01;31m[Ktrans2gtsamPose[m[K(transformTobeMapped), priorNoise));
+[24.484s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.508s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1704:13:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialEstimate[m[K’ was not declared in this scope
+[24.508s]  1704 |             [01;31m[KinitialEstimate[m[K.insert(0, trans2gtsamPose(transformTobeMapped));
+[24.508s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.530s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1707:58:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses6D[m[K’ was not declared in this scope
+[24.530s]  1707 |             gtsam::Pose3 poseFrom = pclPointTogtsamPose3([01;31m[KcloudKeyPoses6D[m[K->points.back());
+[24.530s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.558s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1707:37:[m[K [01;31m[Kerror: [m[K‘[01m[KpclPointTogtsamPose3[m[K’ was not declared in this scope
+[24.558s]  1707 |             gtsam::Pose3 poseFrom = [01;31m[KpclPointTogtsamPose3[m[K(cloudKeyPoses6D->points.back());
+[24.558s]       |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[24.581s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1708:53:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.581s]  1708 |             gtsam::Pose3 poseTo   = trans2gtsamPose([01;31m[KtransformTobeMapped[m[K);
+[24.581s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.600s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1708:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2gtsamPose[m[K’ was not declared in this scope
+[24.600s]  1708 |             gtsam::Pose3 poseTo   = [01;31m[Ktrans2gtsamPose[m[K(transformTobeMapped);
+[24.600s]       |                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.612s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1709:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgtSAMgraph[m[K’ was not declared in this scope
+[24.613s]  1709 |             [01;31m[KgtSAMgraph[m[K.add(BetweenFactor<Pose3>(cloudKeyPoses3D->size()-1, cloudKeyPoses3D->size(), poseFrom.between(poseTo), odometryNoise));
+[24.613s]       |             [01;31m[K^~~~~~~~~~[m[K
+[24.638s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1710:13:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialEstimate[m[K’ was not declared in this scope
+[24.638s]  1710 |             [01;31m[KinitialEstimate[m[K.insert(cloudKeyPoses3D->size(), poseTo);
+[24.638s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.650s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid addGPSFactor()[m[K’:
+[24.650s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1716:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsQueue[m[K’ was not declared in this scope
+[24.650s]  1716 |         if ([01;31m[KgpsQueue[m[K.empty())
+[24.650s]       |             [01;31m[K^~~~~~~~[m[K
+[24.669s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1720:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[24.669s]  1720 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[24.670s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.687s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1729:13:[m[K [01;31m[Kerror: [m[K‘[01m[KposeCovariance[m[K’ was not declared in this scope
+[24.687s]  1729 |         if ([01;31m[KposeCovariance[m[K(3,3) < poseCovThreshold && poseCovariance(4,4) < poseCovThreshold)
+[24.688s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.708s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1729:35:[m[K [01;31m[Kerror: [m[K‘[01m[KposeCovThreshold[m[K’ was not declared in this scope
+[24.708s]  1729 |         if (poseCovariance(3,3) < [01;31m[KposeCovThreshold[m[K && poseCovariance(4,4) < poseCovThreshold)
+[24.708s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[24.720s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1735:17:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsQueue[m[K’ was not declared in this scope
+[24.720s]  1735 |         while (![01;31m[KgpsQueue[m[K.empty())
+[24.720s]       |                 [01;31m[K^~~~~~~~[m[K
+[24.741s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1737:60:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeLaserInfoCur[m[K’ was not declared in this scope
+[24.741s]  1737 |             if (stamp2Sec(gpsQueue.front().header.stamp) < [01;31m[KtimeLaserInfoCur[m[K - 0.2)
+[24.741s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[24.762s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1756:31:[m[K [01;31m[Kerror: [m[K‘[01m[KgpsCovThreshold[m[K’ was not declared in this scope
+[24.762s]  1756 |                 if (noise_x > [01;31m[KgpsCovThreshold[m[K || noise_y > gpsCovThreshold)
+[24.762s]       |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.782s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1761:22:[m[K [01;31m[Kerror: [m[K‘[01m[KuseGpsElevation[m[K’ was not declared in this scope
+[24.782s]  1761 |                 if (![01;31m[KuseGpsElevation[m[K)
+[24.782s]       |                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.804s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1763:29:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[24.804s]  1763 |                     gps_z = [01;31m[KtransformTobeMapped[m[K[5];
+[24.804s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.826s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1784:45:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[24.826s]  1784 |                 gtsam::GPSFactor gps_factor([01;31m[KcloudKeyPoses3D[m[K->size(), gtsam::Point3(gps_x, gps_y, gps_z), gps_noise);
+[24.826s]       |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[24.840s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1785:17:[m[K [01;31m[Kerror: [m[K‘[01m[KgtSAMgraph[m[K’ was not declared in this scope
+[24.840s]  1785 |                 [01;31m[KgtSAMgraph[m[K.add(gps_factor);
+[24.840s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[24.858s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1787:17:[m[K [01;31m[Kerror: [m[K‘[01m[KaLoopIsClosed[m[K’ was not declared in this scope
+[24.859s]  1787 |                 [01;31m[KaLoopIsClosed[m[K = true;
+[24.859s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[24.878s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid addLoopFactor()[m[K’:
+[24.878s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1795:13:[m[K [01;31m[Kerror: [m[K‘[01m[KloopIndexQueue[m[K’ was not declared in this scope
+[24.878s]  1795 |         if ([01;31m[KloopIndexQueue[m[K.empty())
+[24.878s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.896s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1798:34:[m[K [01;31m[Kerror: [m[K‘[01m[KloopIndexQueue[m[K’ was not declared in this scope
+[24.896s]  1798 |         for (int i = 0; i < (int)[01;31m[KloopIndexQueue[m[K.size(); ++i)
+[24.896s]       |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.914s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1802:40:[m[K [01;31m[Kerror: [m[K‘[01m[KloopPoseQueue[m[K’ was not declared in this scope
+[24.914s]  1802 |             gtsam::Pose3 poseBetween = [01;31m[KloopPoseQueue[m[K[i];
+[24.914s]       |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[24.934s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1803:68:[m[K [01;31m[Kerror: [m[K‘[01m[KloopNoiseQueue[m[K’ was not declared in this scope
+[24.934s]  1803 |             gtsam::noiseModel::Diagonal::shared_ptr noiseBetween = [01;31m[KloopNoiseQueue[m[K[i];
+[24.935s]       |                                                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.949s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1804:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgtSAMgraph[m[K’ was not declared in this scope
+[24.949s]  1804 |             [01;31m[KgtSAMgraph[m[K.add(BetweenFactor<Pose3>(indexFrom, indexTo, poseBetween, noiseBetween));
+[24.949s]       |             [01;31m[K^~~~~~~~~~[m[K
+[24.968s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1807:9:[m[K [01;31m[Kerror: [m[K‘[01m[KloopIndexQueue[m[K’ was not declared in this scope
+[24.968s]  1807 |         [01;31m[KloopIndexQueue[m[K.clear();
+[24.968s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.987s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1808:9:[m[K [01;31m[Kerror: [m[K‘[01m[KloopPoseQueue[m[K’ was not declared in this scope
+[24.987s]  1808 |         [01;31m[KloopPoseQueue[m[K.clear();
+[24.987s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[25.005s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1809:9:[m[K [01;31m[Kerror: [m[K‘[01m[KloopNoiseQueue[m[K’ was not declared in this scope
+[25.005s]  1809 |         [01;31m[KloopNoiseQueue[m[K.clear();
+[25.005s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.023s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1810:9:[m[K [01;31m[Kerror: [m[K‘[01m[KaLoopIsClosed[m[K’ was not declared in this scope
+[25.023s]  1810 |         [01;31m[KaLoopIsClosed[m[K = true;
+[25.023s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[25.035s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid saveKeyFramesAndFactor()[m[K’:
+[25.035s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kisam[m[K’ was not declared in this scope
+[25.035s]  1831 |         [01;31m[Kisam[m[K->update(gtSAMgraph, initialEstimate);
+[25.036s]       |         [01;31m[K^~~~[m[K
+[25.049s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:22:[m[K [01;31m[Kerror: [m[K‘[01m[KgtSAMgraph[m[K’ was not declared in this scope
+[25.049s]  1831 |         isam->update([01;31m[KgtSAMgraph[m[K, initialEstimate);
+[25.049s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[25.067s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:34:[m[K [01;31m[Kerror: [m[K‘[01m[KinitialEstimate[m[K’ was not declared in this scope
+[25.067s]  1831 |         isam->update(gtSAMgraph, [01;31m[KinitialEstimate[m[K);
+[25.068s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.084s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1834:13:[m[K [01;31m[Kerror: [m[K‘[01m[KaLoopIsClosed[m[K’ was not declared in this scope
+[25.084s]  1834 |         if ([01;31m[KaLoopIsClosed[m[K == true)
+[25.084s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[25.106s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1851:9:[m[K [01;31m[Kerror: [m[K‘[01m[KisamCurrentEstimate[m[K’ was not declared in this scope
+[25.106s]  1851 |         [01;31m[KisamCurrentEstimate[m[K = isam->calculateEstimate();
+[25.106s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.109s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1852:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.110s]  1852 |         latestEstimate = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(isamCurrentEstimate.size()-1);
+[25.110s]       |                                                      [01;31m[K^[m[K
+[25.131s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1859:32:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[25.131s]  1859 |         thisPose3D.intensity = [01;31m[KcloudKeyPoses3D[m[K->size(); // this can be used as index
+[25.132s]       |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.158s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1869:27:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeLaserInfoCur[m[K’ was not declared in this scope
+[25.158s]  1869 |         thisPose6D.time = [01;31m[KtimeLaserInfoCur[m[K;
+[25.159s]       |                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[25.178s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1870:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses6D[m[K’ was not declared in this scope
+[25.179s]  1870 |         [01;31m[KcloudKeyPoses6D[m[K->push_back(thisPose6D);
+[25.179s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.198s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1875:9:[m[K [01;31m[Kerror: [m[K‘[01m[KposeCovariance[m[K’ was not declared in this scope
+[25.198s]  1875 |         [01;31m[KposeCovariance[m[K = isam->marginalCovariance(isamCurrentEstimate.size()-1);
+[25.198s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.225s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1878:9:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[25.225s]  1878 |         [01;31m[KtransformTobeMapped[m[K[0] = latestEstimate.rotation().roll();
+[25.226s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.261s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1888:30:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudCornerLastDS[m[K’ was not declared in this scope
+[25.261s]  1888 |         pcl::copyPointCloud(*[01;31m[KlaserCloudCornerLastDS[m[K,  *thisCornerKeyFrame);
+[25.261s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.291s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1889:30:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudSurfLastDS[m[K’ was not declared in this scope
+[25.291s]  1889 |         pcl::copyPointCloud(*[01;31m[KlaserCloudSurfLastDS[m[K,    *thisSurfKeyFrame);
+[25.291s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[25.323s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1892:9:[m[K [01;31m[Kerror: [m[K‘[01m[KcornerCloudKeyFrames[m[K’ was not declared in this scope
+[25.323s]  1892 |         [01;31m[KcornerCloudKeyFrames[m[K.push_back(thisCornerKeyFrame);
+[25.323s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[25.349s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1893:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsurfCloudKeyFrames[m[K’ was not declared in this scope
+[25.349s]  1893 |         [01;31m[KsurfCloudKeyFrames[m[K.push_back(thisSurfKeyFrame);
+[25.349s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[25.364s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1896:9:[m[K [01;31m[Kerror: [m[K‘[01m[KupdatePath[m[K’ was not declared in this scope
+[25.364s]  1896 |         [01;31m[KupdatePath[m[K(thisPose6D);
+[25.364s]       |         [01;31m[K^~~~~~~~~~[m[K
+[25.383s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid correctPoses()[m[K’:
+[25.384s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1901:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[25.384s]  1901 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[25.384s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.401s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1904:13:[m[K [01;31m[Kerror: [m[K‘[01m[KaLoopIsClosed[m[K’ was not declared in this scope
+[25.401s]  1904 |         if ([01;31m[KaLoopIsClosed[m[K == true)
+[25.401s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[25.432s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1907:13:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudMapContainer[m[K’ was not declared in this scope
+[25.432s]  1907 |             [01;31m[KlaserCloudMapContainer[m[K.clear();
+[25.432s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.447s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1909:13:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[25.447s]  1909 |             [01;31m[KglobalPath[m[K.poses.clear();
+[25.447s]       |             [01;31m[K^~~~~~~~~~[m[K
+[25.474s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1911:28:[m[K [01;31m[Kerror: [m[K‘[01m[KisamCurrentEstimate[m[K’ was not declared in this scope
+[25.474s]  1911 |             int numPoses = [01;31m[KisamCurrentEstimate[m[K.size();
+[25.474s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.496s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[25.496s]  1914 |                 [01;31m[KcloudKeyPoses3D[m[K->points[i].x = isamCurrentEstimate.at<Pose3>(i).translation().x();
+[25.496s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.496s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:76:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.496s]  1914 |                 cloudKeyPoses3D->points[i].x = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).translation().x();
+[25.496s]       |                                                                            [01;31m[K^[m[K
+[25.496s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:81:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ktranslation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.497s]  1914 |                 cloudKeyPoses3D->points[i].x = isamCurrentEstimate.at<Pose3>(i).[01;31m[Ktranslation[m[K().x();
+[25.497s]       |                                                                                 [01;31m[K^~~~~~~~~~~[m[K
+[25.497s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1915:76:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.497s]  1915 |                 cloudKeyPoses3D->points[i].y = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).translation().y();
+[25.497s]       |                                                                            [01;31m[K^[m[K
+[25.497s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1915:81:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ktranslation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.497s]  1915 |                 cloudKeyPoses3D->points[i].y = isamCurrentEstimate.at<Pose3>(i).[01;31m[Ktranslation[m[K().y();
+[25.497s]       |                                                                                 [01;31m[K^~~~~~~~~~~[m[K
+[25.497s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1916:76:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.497s]  1916 |                 cloudKeyPoses3D->points[i].z = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).translation().z();
+[25.497s]       |                                                                            [01;31m[K^[m[K
+[25.497s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1916:81:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ktranslation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.497s]  1916 |                 cloudKeyPoses3D->points[i].z = isamCurrentEstimate.at<Pose3>(i).[01;31m[Ktranslation[m[K().z();
+[25.497s]       |                                                                                 [01;31m[K^~~~~~~~~~~[m[K
+[25.516s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1918:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses6D[m[K’ was not declared in this scope
+[25.516s]  1918 |                 [01;31m[KcloudKeyPoses6D[m[K->points[i].x = cloudKeyPoses3D->points[i].x;
+[25.516s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.516s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1921:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.517s]  1921 |                 cloudKeyPoses6D->points[i].roll  = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).rotation().roll();
+[25.517s]       |                                                                                [01;31m[K^[m[K
+[25.517s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1921:85:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krotation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.517s]  1921 |                 cloudKeyPoses6D->points[i].roll  = isamCurrentEstimate.at<Pose3>(i).[01;31m[Krotation[m[K().roll();
+[25.517s]       |                                                                                     [01;31m[K^~~~~~~~[m[K
+[25.518s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1922:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.518s]  1922 |                 cloudKeyPoses6D->points[i].pitch = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).rotation().pitch();
+[25.518s]       |                                                                                [01;31m[K^[m[K
+[25.518s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1922:85:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krotation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.518s]  1922 |                 cloudKeyPoses6D->points[i].pitch = isamCurrentEstimate.at<Pose3>(i).[01;31m[Krotation[m[K().pitch();
+[25.518s]       |                                                                                     [01;31m[K^~~~~~~~[m[K
+[25.520s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1923:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[25.520s]  1923 |                 cloudKeyPoses6D->points[i].yaw   = isamCurrentEstimate.at<Pose3[01;31m[K>[m[K(i).rotation().yaw();
+[25.520s]       |                                                                                [01;31m[K^[m[K
+[25.520s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1923:85:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krotation[m[K’ in ‘[01m[Ki[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[25.520s]  1923 |                 cloudKeyPoses6D->points[i].yaw   = isamCurrentEstimate.at<Pose3>(i).[01;31m[Krotation[m[K().yaw();
+[25.521s]       |                                                                                     [01;31m[K^~~~~~~~[m[K
+[25.531s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1925:17:[m[K [01;31m[Kerror: [m[K‘[01m[KupdatePath[m[K’ was not declared in this scope
+[25.531s]  1925 |                 [01;31m[KupdatePath[m[K(cloudKeyPoses6D->points[i]);
+[25.531s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[25.549s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid updatePath(const PointTypePose&)[m[K’:
+[25.549s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1936:40:[m[K [01;31m[Kerror: [m[K‘[01m[KodometryFrame[m[K’ was not declared in this scope
+[25.550s]  1936 |         pose_stamped.header.frame_id = [01;31m[KodometryFrame[m[K;
+[25.550s]       |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[25.563s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1947:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[25.563s]  1947 |         [01;31m[KglobalPath[m[K.poses.push_back(pose_stamped);
+[25.563s]       |         [01;31m[K^~~~~~~~~~[m[K
+[25.586s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid publishOdometry()[m[K’:
+[25.586s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1954:41:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeLaserInfoStamp[m[K’ was not declared in this scope
+[25.587s]  1954 |         laserOdometryROS.header.stamp = [01;31m[KtimeLaserInfoStamp[m[K;
+[25.587s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[25.603s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1955:44:[m[K [01;31m[Kerror: [m[K‘[01m[KodometryFrame[m[K’ was not declared in this scope
+[25.603s]  1955 |         laserOdometryROS.header.frame_id = [01;31m[KodometryFrame[m[K;
+[25.603s]       |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[25.625s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1957:49:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[25.625s]  1957 |         laserOdometryROS.pose.pose.position.x = [01;31m[KtransformTobeMapped[m[K[3];
+[25.625s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.653s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1965:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpubLaserOdometryGlobal[m[K’ was not declared in this scope
+[25.653s]  1965 |         [01;31m[KpubLaserOdometryGlobal[m[K->publish(laserOdometryROS);
+[25.653s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.664s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1975:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbr[m[K’ was not declared in this scope; did you mean ‘[01m[Kbrk[m[K’?
+[25.664s]  1975 |         [01;31m[Kbr[m[K->sendTransform(trans_odom_to_lidar);
+[25.664s]       |         [01;31m[K^~[m[K
+[25.664s]       |         [32m[Kbrk[m[K
+[25.683s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1985:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2Affine3f[m[K’ was not declared in this scope
+[25.683s]  1985 |             increOdomAffine = [01;31m[Ktrans2Affine3f[m[K(transformTobeMapped);
+[25.683s]       |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.717s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1987:43:[m[K [01;31m[Kerror: [m[K‘[01m[KincrementalOdometryAffineFront[m[K’ was not declared in this scope
+[25.718s]  1987 |             Eigen::Affine3f affineIncre = [01;31m[KincrementalOdometryAffineFront[m[K.inverse() * incrementalOdometryAffineBack;
+[25.718s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.752s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1987:86:[m[K [01;31m[Kerror: [m[K‘[01m[KincrementalOdometryAffineBack[m[K’ was not declared in this scope
+[25.752s]  1987 |             Eigen::Affine3f affineIncre = incrementalOdometryAffineFront.inverse() * [01;31m[KincrementalOdometryAffineBack[m[K;
+[25.752s]       |                                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.766s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1991:17:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudInfo[m[K’ was not declared in this scope
+[25.766s]  1991 |             if ([01;31m[KcloudInfo[m[K.imu_available == true)
+[25.766s]       |                 [01;31m[K^~~~~~~~~[m[K
+[25.782s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2024:17:[m[K [01;31m[Kerror: [m[K‘[01m[KisDegenerate[m[K’ was not declared in this scope
+[25.783s]  2024 |             if ([01;31m[KisDegenerate[m[K)
+[25.783s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[25.810s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2029:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpubLaserOdometryIncremental[m[K’ was not declared in this scope; did you mean ‘[01m[KlaserOdomIncremental[m[K’?
+[25.810s]  2029 |         [01;31m[KpubLaserOdometryIncremental[m[K->publish(laserOdomIncremental);
+[25.810s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.810s]       |         [32m[KlaserOdomIncremental[m[K
+[25.830s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In function ‘[01m[Kvoid publishFrames()[m[K’:
+[25.830s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2034:13:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[25.830s]  2034 |         if ([01;31m[KcloudKeyPoses3D[m[K->points.empty())
+[25.830s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.847s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:22:[m[K [01;31m[Kerror: [m[K‘[01m[KpubKeyPoses[m[K’ was not declared in this scope
+[25.847s]  2037 |         publishCloud([01;31m[KpubKeyPoses[m[K, cloudKeyPoses3D, timeLaserInfoStamp, odometryFrame);
+[25.847s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[25.867s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:35:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudKeyPoses3D[m[K’ was not declared in this scope
+[25.867s]  2037 |         publishCloud(pubKeyPoses, [01;31m[KcloudKeyPoses3D[m[K, timeLaserInfoStamp, odometryFrame);
+[25.867s]       |                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[25.890s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:52:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeLaserInfoStamp[m[K’ was not declared in this scope
+[25.890s]  2037 |         publishCloud(pubKeyPoses, cloudKeyPoses3D, [01;31m[KtimeLaserInfoStamp[m[K, odometryFrame);
+[25.890s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[25.906s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:72:[m[K [01;31m[Kerror: [m[K‘[01m[KodometryFrame[m[K’ was not declared in this scope
+[25.906s]  2037 |         publishCloud(pubKeyPoses, cloudKeyPoses3D, timeLaserInfoStamp, [01;31m[KodometryFrame[m[K);
+[25.906s]       |                                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[25.930s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2039:22:[m[K [01;31m[Kerror: [m[K‘[01m[KpubRecentKeyFrames[m[K’ was not declared in this scope
+[25.930s]  2039 |         publishCloud([01;31m[KpubRecentKeyFrames[m[K, laserCloudSurfFromMapDS, timeLaserInfoStamp, odometryFrame);
+[25.930s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[25.961s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2039:42:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudSurfFromMapDS[m[K’ was not declared in this scope
+[25.961s]  2039 |         publishCloud(pubRecentKeyFrames, [01;31m[KlaserCloudSurfFromMapDS[m[K, timeLaserInfoStamp, odometryFrame);
+[25.961s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.984s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2041:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpubRecentKeyFrame[m[K’ was not declared in this scope
+[25.984s]  2041 |         if ([01;31m[KpubRecentKeyFrame[m[K->get_subscription_count() != 0)
+[25.984s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[26.006s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2044:60:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[26.006s]  2044 |             PointTypePose thisPose6D = trans2PointTypePose([01;31m[KtransformTobeMapped[m[K);
+[26.006s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.029s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2044:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2PointTypePose[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypePose[m[K’?
+[26.029s]  2044 |             PointTypePose thisPose6D = [01;31m[Ktrans2PointTypePose[m[K(transformTobeMapped);
+[26.029s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.029s]       |                                        [32m[KPointTypePose[m[K
+[26.059s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2045:47:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudCornerLastDS[m[K’ was not declared in this scope
+[26.059s]  2045 |             *cloudOut += *transformPointCloud([01;31m[KlaserCloudCornerLastDS[m[K,  &thisPose6D);
+[26.059s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.063s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2045:27:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformPointCloud[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::transformPointCloud[m[K’?
+[26.063s]  2045 |             *cloudOut += *[01;31m[KtransformPointCloud[m[K(laserCloudCornerLastDS,  &thisPose6D);
+[26.063s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.063s]       |                           [32m[Kpcl::transformPointCloud[m[K
+[26.063s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.065s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.065s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::transformPointCloud[m[K’ declared here
+[26.065s]   404 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.065s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.091s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2046:47:[m[K [01;31m[Kerror: [m[K‘[01m[KlaserCloudSurfLastDS[m[K’ was not declared in this scope
+[26.091s]  2046 |             *cloudOut += *transformPointCloud([01;31m[KlaserCloudSurfLastDS[m[K,    &thisPose6D);
+[26.091s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[26.119s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2050:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpubCloudRegisteredRaw[m[K’ was not declared in this scope
+[26.119s]  2050 |         if ([01;31m[KpubCloudRegisteredRaw[m[K->get_subscription_count() != 0)
+[26.120s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[26.130s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2053:29:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudInfo[m[K’ was not declared in this scope
+[26.130s]  2053 |             pcl::fromROSMsg([01;31m[KcloudInfo[m[K.cloud_deskewed, *cloudOut);
+[26.130s]       |                             [01;31m[K^~~~~~~~~[m[K
+[26.155s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2054:60:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformTobeMapped[m[K’ was not declared in this scope
+[26.155s]  2054 |             PointTypePose thisPose6D = trans2PointTypePose([01;31m[KtransformTobeMapped[m[K);
+[26.155s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.177s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2054:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrans2PointTypePose[m[K’ was not declared in this scope; did you mean ‘[01m[KPointTypePose[m[K’?
+[26.177s]  2054 |             PointTypePose thisPose6D = [01;31m[Ktrans2PointTypePose[m[K(transformTobeMapped);
+[26.177s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.178s]       |                                        [32m[KPointTypePose[m[K
+[26.178s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtransformPointCloud(pcl::PointCloud<pcl::PointXYZI>::Ptr&, PointTypePose*)[m[K’
+[26.178s]  2055 |             *cloudOut = *[01;31m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.178s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.178s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.178s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.178s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:60:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)[m[K’
+[26.178s]    60 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.178s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.178s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:60:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.178s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.179s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.179s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.179s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.179s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.179s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:69:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Affine3f&, bool)[m[K’
+[26.179s]    69 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.179s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.179s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:69:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.179s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.179s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.179s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.179s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.179s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.179s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:87:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)[m[K’
+[26.179s]    87 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.179s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.179s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:87:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.179s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.179s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.179s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.179s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.179s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:97:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Affine3f&, bool)[m[K’
+[26.180s]    97 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.180s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:97:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.180s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.180s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.180s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.180s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.180s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:116:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)[m[K’
+[26.180s]   116 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.180s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:116:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.180s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.180s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.180s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.180s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.180s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:126:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Affine3f&, bool)[m[K’
+[26.180s]   126 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.180s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.180s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:126:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.180s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.180s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.181s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.181s] In file included from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:493[m[K,
+[26.181s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.181s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.181s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:221:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)[m[K’
+[26.181s]   221 | [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.181s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.182s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:221:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.183s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.183s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.183s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.183s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.184s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.184s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:237:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)[m[K’
+[26.184s]   237 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.184s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.184s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:237:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.185s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.185s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.185s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.185s] In file included from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:493[m[K,
+[26.185s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.186s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.186s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:263:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)[m[K’
+[26.186s]   263 | [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.186s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.186s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:263:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.187s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.187s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.187s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.187s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.187s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.188s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:262:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)[m[K’
+[26.188s]   262 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.188s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.188s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:262:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.188s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.188s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.188s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.188s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.188s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.188s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:281:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)[m[K’
+[26.188s]   281 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.188s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.188s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:281:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.188s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.188s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.188s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.188s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.188s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.188s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:291:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)[m[K’
+[26.188s]   291 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.188s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.189s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:291:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.189s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.189s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.189s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.190s] In file included from [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:493[m[K,
+[26.190s]                  from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.190s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.190s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:407:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 3, 1>&, const Eigen::Quaternion<Scalar>&, bool)[m[K’
+[26.190s]   407 | [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.191s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.191s] [01m[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:407:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.191s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.191s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.191s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.191s] In file included from [01m[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29[m[K,
+[26.191s]                  from [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1[m[K:
+[26.191s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Vector3f&, const Quaternionf&, bool)[m[K’
+[26.192s]   404 |   [01;36m[KtransformPointCloud[m[K (const pcl::PointCloud<PointT> &cloud_in,
+[26.192s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.192s] [01m[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[26.192s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kpcl::PointCloud<pcl::PointXYZI>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >[m[K’} is not derived from ‘[01m[Kconst pcl::PointCloud<PointT>[m[K’
+[26.192s]  2055 |             *cloudOut = *[01;36m[KtransformPointCloud(cloudOut,  &thisPose6D)[m[K;
+[26.192s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[26.192s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2059:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpubPath[m[K’ was not declared in this scope
+[26.192s]  2059 |         if ([01;31m[KpubPath[m[K->get_subscription_count() != 0)
+[26.192s]       |             [01;31m[K^~~~~~~[m[K
+[26.201s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2061:13:[m[K [01;31m[Kerror: [m[K‘[01m[KglobalPath[m[K’ was not declared in this scope
+[26.201s]  2061 |             [01;31m[KglobalPath[m[K.header.stamp = timeLaserInfoStamp;
+[26.201s]       |             [01;31m[K^~~~~~~~~~[m[K
+[26.201s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K At global scope:
+[26.202s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2066:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[26.202s]  2066 | [01;31m[K}[m[K;
+[26.202s]       | [01;31m[K^[m[K
+[61.029s] gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76：CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] 错误 1
+[61.032s] gmake[1]: *** [CMakeFiles/Makefile2:699：CMakeFiles/lio_sam_mapOptimization.dir/all] 错误 2
+[61.033s] gmake: *** [Makefile:146：all] 错误 2
+[61.034s] Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8

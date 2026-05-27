@@ -16,6 +16,18 @@
 
 #include <gtsam/nonlinear/ISAM2.h>
 
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <array>
+#include <cmath>
+#include <deque>
+#include <limits>
+#include <vector>
+#include <Eigen/Eigenvalues>
+
+#include <sstream>
+
 using namespace gtsam;
 
 using symbol_shorthand::X; // Pose3 (x,y,z,r,p,y)
@@ -130,6 +142,43 @@ public:
 
     bool isDegenerate = false;
     Eigen::Matrix<float, 6, 6> matP;
+
+    //----------------------------------------------------------------------------------------------------------------------------
+        // ============================================================
+    // IQR-based degeneracy monitor: detection and logging only
+    // It does NOT modify isDegenerate, matP, matX or the pose.
+    // ============================================================
+
+    // Parameters from the referenced paper
+    int iqrWindowSize = 36;
+    float iqrScaleFactor = 1.12f;
+
+    // Six ordered eigenvalue channels:
+    // index 0: smallest eigenvalue
+    // index 5: largest eigenvalue
+    std::array<std::deque<float>, 6> iqrEigenWindows;
+
+    // Current dynamic lower thresholds
+    std::array<float, 6> iqrDynamicLowerBound = {
+        std::numeric_limits<float>::quiet_NaN(),
+        std::numeric_limits<float>::quiet_NaN(),
+        std::numeric_limits<float>::quiet_NaN(),
+        std::numeric_limits<float>::quiet_NaN(),
+        std::numeric_limits<float>::quiet_NaN(),
+        std::numeric_limits<float>::quiet_NaN()
+    };
+
+    // Current IQR alarm flags
+    std::array<bool, 6> iqrAlarmFlag = {
+        false, false, false, false, false, false
+    };
+
+    std::array<bool, 6> iqrPreviousAlarmFlag = {
+        false, false, false, false, false, false
+    };
+
+    unsigned long long iqrFrameCounter = 0;
+    //-------------------------------------------------------------------------------------------------------------------------------
 
     int laserCloudCornerFromMapDSNum = 0;
     int laserCloudSurfFromMapDSNum = 0;
@@ -1157,6 +1206,191 @@ public:
         std::fill(laserCloudOriSurfFlag.begin(), laserCloudOriSurfFlag.end(), false);
     }
 
+    //-----------------------------------------IQR---------------------------------------------------------------------------
+    float computeQuantileFromSortedValues(const std::vector<float>& sortedValues,float ratio){
+        if (sortedValues.empty()){
+            return std::numeric_limits<float>::quiet_NaN();
+            }
+
+        if (sortedValues.size() == 1){
+            return sortedValues.front();
+            }
+
+        const float position = ratio * static_cast<float>(sortedValues.size() - 1);
+
+        const std::size_t lowerIndex = static_cast<std::size_t>(std::floor(position));
+
+        const std::size_t upperIndex = static_cast<std::size_t>(std::ceil(position));
+
+        const float weight = position - static_cast<float>(lowerIndex);
+
+        return sortedValues[lowerIndex] * (1.0f - weight) + sortedValues[upperIndex] * weight;
+    }
+
+    void monitorDegeneracyByIQR(const cv::Mat& matE,const cv::Mat& matV)
+    {
+        ++iqrFrameCounter;
+
+        const char* stateName[6] = {"roll", "pitch", "yaw", "x", "y", "z"};
+
+        for (int i = 0; i < 6; ++i)
+        {
+            /*
+            * 保持 cv::eigen() 的编号顺序：
+            * V0 对应最大特征值方向；
+            * V5 对应最小特征值方向。
+            */
+            const float lambda = matE.at<float>(0, i);
+
+            iqrAlarmFlag[i] = false;
+
+            iqrDynamicLowerBound[i] = std::numeric_limits<float>::quiet_NaN();
+
+            if (!std::isfinite(lambda))
+            {
+                continue;
+            }
+
+            std::deque<float>& window = iqrEigenWindows[i];
+
+            /*
+            * 每一帧仍然必须更新滑动窗口。
+            * 这里只减少输出，不减少 IQR 检测计算。
+            */
+            window.push_back(lambda);
+
+            while (window.size() >static_cast<std::size_t>(iqrWindowSize))
+            {
+                window.pop_front();
+            }
+
+            /*
+            * 窗口未填满前，不进行 IQR 判断，也不输出。
+            */
+            if (window.size() < static_cast<std::size_t>(iqrWindowSize))
+            {
+                continue;
+            }
+
+            std::vector<float> sortedValues(
+                window.begin(), window.end());
+
+            std::sort(
+                sortedValues.begin(),
+                sortedValues.end());
+
+            const float q1 = computeQuantileFromSortedValues(sortedValues, 0.25f);
+
+            const float q3 = computeQuantileFromSortedValues(sortedValues, 0.75f);
+
+            const float iqr = q3 - q1;
+
+            /*
+            * 数值保护：
+            * 窗口变化极小时，不认为发生 IQR 异常下降。
+            */
+            const float epsilon = 1e-6f * std::max(1.0f, std::fabs(q1));
+
+            if (iqr <= epsilon)
+            {
+                iqrDynamicLowerBound[i] = q1;
+
+                /*
+                * 若前一帧处于报警状态，而当前窗口已恢复稳定，
+                * 则仅打印一次恢复信息。
+                */
+                if (iqrPreviousAlarmFlag[i])
+                {
+                    std::cout << "\033[1;32m"
+                            << std::fixed << std::setprecision(6)
+                            << "[IQR_EXIT] time="
+                            << timeLaserInfoCur
+                            << " frame=" << iqrFrameCounter
+                            << " | V" << i
+                            << " lambda=" << lambda
+                            << " lower_bound="
+                            << iqrDynamicLowerBound[i]
+                            << "\033[0m\n";
+                }
+
+                iqrPreviousAlarmFlag[i] = false;
+
+                continue;
+            }
+
+            /*
+            * 论文动态阈值：
+            * tau_dynamic = Q1 - k * IQR
+            */
+            iqrDynamicLowerBound[i] =
+                q1 - iqrScaleFactor * iqr;
+
+            /*
+            * 当前帧动态退化判定：
+            * lambda_i <= tau_dynamic
+            */
+            iqrAlarmFlag[i] =
+                lambda <= iqrDynamicLowerBound[i];
+
+            /*
+            * 从正常状态进入退化状态时，仅打印一次。
+            */
+            if (iqrAlarmFlag[i] && !iqrPreviousAlarmFlag[i])
+            {
+                std::cout << "\033[1;33m"
+                        << std::fixed << std::setprecision(6)
+                        << "[IQR_ENTER] time="
+                        << timeLaserInfoCur
+                        << " frame=" << iqrFrameCounter
+                        << " | V" << i
+                        << " lambda=" << lambda
+                        << " Q1=" << q1
+                        << " Q3=" << q3
+                        << " IQR=" << iqr
+                        << " lower_bound="
+                        << iqrDynamicLowerBound[i]
+                        << " vector=[";
+
+                for (int j = 0; j < 6; ++j)
+                {
+                    std::cout << stateName[j]
+                            << ":"
+                            << matV.at<float>(i, j);
+
+                    if (j < 5)
+                    {
+                        std::cout << ", ";
+                    }
+                }
+
+                std::cout << "]"
+                        << " | original_isDegenerate="
+                        << static_cast<int>(isDegenerate)
+                        << "\033[0m\n";
+            }
+
+            /*
+            * 从退化状态恢复为正常状态时，仅打印一次。
+            */
+            if (!iqrAlarmFlag[i] && iqrPreviousAlarmFlag[i])
+            {
+                std::cout << "\033[1;32m"
+                        << std::fixed << std::setprecision(6)
+                        << "[IQR_EXIT] time="
+                        << timeLaserInfoCur
+                        << " frame=" << iqrFrameCounter
+                        << " | V" << i
+                        << " lambda=" << lambda
+                        << " lower_bound="
+                        << iqrDynamicLowerBound[i]
+                        << "\033[0m\n";
+            }
+
+            iqrPreviousAlarmFlag[i] = iqrAlarmFlag[i];
+    }
+}
+    //--------------------------------------------------------------------------------------------------------------------------
+
     bool LMOptimization(int iterCount)
     {
         // This optimization is from the original loam_velodyne by Ji Zhang, need to cope with coordinate transformation
@@ -1229,8 +1463,8 @@ public:
         matAtB = matAt * matB;
         cv::solve(matAtA, matAtB, matX, cv::DECOMP_QR);
 
-        if (iterCount == 0) {
-
+        if (iterCount == 0)
+        {
             cv::Mat matE(1, 6, CV_32F, cv::Scalar::all(0));
             cv::Mat matV(6, 6, CV_32F, cv::Scalar::all(0));
             cv::Mat matV2(6, 6, CV_32F, cv::Scalar::all(0));
@@ -1238,21 +1472,86 @@ public:
             cv::eigen(matAtA, matE, matV);
             matV.copyTo(matV2);
 
+            // ============================================================
+            // 一、原有静态阈值退化检测
+            // cv::eigen 输出顺序：
+            // V0 对应最大特征值，V5 对应最小特征值
+            // ============================================================
+
             isDegenerate = false;
+
             float eignThre[6] = {100, 100, 100, 100, 100, 100};
-            for (int i = 5; i >= 0; i--) {
-                if (matE.at<float>(0, i) < eignThre[i]) {
-                    for (int j = 0; j < 6; j++) {
-                        matV2.at<float>(i, j) = 0;
+
+            bool degenerateDirection[6] = {false, false, false, false, false, false};
+
+            for (int i = 5; i >= 0; --i)
+            {
+                if (matE.at<float>(0, i) < eignThre[i])
+                {
+                    degenerateDirection[i] = true;
+
+                    for (int j = 0; j < 6; ++j)
+                    {
+                        matV2.at<float>(i, j) = 0.0f;
                     }
+
                     isDegenerate = true;
-                } else {
+                }
+                else
+                {
                     break;
                 }
             }
-            matP = matV.inv() * matV2;
-        }
 
+            matP = matV.inv() * matV2;
+
+            const char* stateName[6] = {"roll", "pitch", "yaw", "x", "y", "z"};
+
+            if (isDegenerate)
+            {
+                std::cout << "\033[1;31m"
+                        << std::fixed << std::setprecision(6)
+                        << "[STATIC_DEGENERACY] time="
+                        << timeLaserInfoCur
+                        << " | weak eigen directions: ";
+
+                for (int i = 0; i < 6; ++i)
+                {
+                    if (!degenerateDirection[i])
+                    {
+                        continue;
+                    }
+
+                    std::cout << "V" << i
+                            << " lambda=" << matE.at<float>(0, i)
+                            << " vector=[";
+
+                    for (int j = 0; j < 6; ++j)
+                    {
+                        std::cout << stateName[j]
+                                << ":" << matV.at<float>(i, j);
+
+                        if (j < 5)
+                        {
+                            std::cout << ", ";
+                        }
+                    }
+
+                    std::cout << "] ";
+                }
+
+                std::cout << "\033[0m" << std::endl;
+            }
+
+            // ============================================================
+            // 二、新增 IQR 动态监测
+            // 仅读取 matE 和 matV，并打印报警信息
+            // 不修改 isDegenerate，不修改 matP，不参与位姿修正
+            // ============================================================
+
+            monitorDegeneracyByIQR(matE, matV);
+        }
+    
         if (isDegenerate)
         {
             cv::Mat matX2(6, 1, CV_32F, cv::Scalar::all(0));

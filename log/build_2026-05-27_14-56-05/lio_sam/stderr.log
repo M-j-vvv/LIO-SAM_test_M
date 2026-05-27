@@ -1,0 +1,7 @@
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kvoid mapOptimization::monitorDegeneracyByIQR(const cv::Mat&, const cv::Mat&)[m[K’:
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1282:30:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeQuantile[m[K’ was not declared in this scope
+ 1282 |             const float q1 = [01;31m[KcomputeQuantile[m[K(sortedValues, 0.25f);
+      |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76：CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:699：CMakeFiles/lio_sam_mapOptimization.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

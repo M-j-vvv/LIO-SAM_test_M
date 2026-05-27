@@ -277,7 +277,7 @@ lio_sam_imageProjection: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_
 lio_sam_imageProjection: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 lio_sam_imageProjection: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 lio_sam_imageProjection: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-lio_sam_imageProjection: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+lio_sam_imageProjection: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 lio_sam_imageProjection: /opt/ros/humble/lib/librmw.so
 lio_sam_imageProjection: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 lio_sam_imageProjection: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so

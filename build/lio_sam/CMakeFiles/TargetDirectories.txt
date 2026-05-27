@@ -34,3 +34,11 @@
 /home/m/project/LIO-SAM/build/lio_sam/lio_sam__py/CMakeFiles/install.dir
 /home/m/project/LIO-SAM/build/lio_sam/lio_sam__py/CMakeFiles/install/local.dir
 /home/m/project/LIO-SAM/build/lio_sam/lio_sam__py/CMakeFiles/install/strip.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/lio_sam__rs.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/test.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/edit_cache.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/rebuild_cache.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/list_install_components.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/install.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/install/local.dir
+/home/m/project/LIO-SAM/build/lio_sam/lio_sam__rs/CMakeFiles/install/strip.dir

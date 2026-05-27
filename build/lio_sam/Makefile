@@ -457,6 +457,19 @@ lio_sam__py/fast:
 	$(MAKE) $(MAKESILENT) -f lio_sam__py/CMakeFiles/lio_sam__py.dir/build.make lio_sam__py/CMakeFiles/lio_sam__py.dir/build
 .PHONY : lio_sam__py/fast
 
+#=============================================================================
+# Target rules for targets named lio_sam__rs
+
+# Build rule for target.
+lio_sam__rs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lio_sam__rs
+.PHONY : lio_sam__rs
+
+# fast build rule for target.
+lio_sam__rs/fast:
+	$(MAKE) $(MAKESILENT) -f lio_sam__rs/CMakeFiles/lio_sam__rs.dir/build.make lio_sam__rs/CMakeFiles/lio_sam__rs.dir/build
+.PHONY : lio_sam__rs/fast
+
 rosidl_generator_c/lio_sam/msg/detail/cloud_info__functions.o: rosidl_generator_c/lio_sam/msg/detail/cloud_info__functions.c.o
 .PHONY : rosidl_generator_c/lio_sam/msg/detail/cloud_info__functions.o
 
@@ -1027,6 +1040,7 @@ help:
 	@echo "... lio_sam"
 	@echo "... lio_sam__cpp"
 	@echo "... lio_sam__py"
+	@echo "... lio_sam__rs"
 	@echo "... lio_sam_uninstall"
 	@echo "... uninstall"
 	@echo "... lio_sam__rosidl_generator_c"

@@ -1,0 +1,1349 @@
+[0.000000] (-) TimerEvent: {}
+[0.000790] (lio_sam) JobQueued: {'identifier': 'lio_sam', 'dependencies': OrderedDict()}
+[0.000899] (lio_sam) JobStarted: {'identifier': 'lio_sam'}
+[0.026483] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'cmake'}
+[0.028812] (lio_sam) JobProgress: {'identifier': 'lio_sam', 'progress': 'build'}
+[0.029841] (lio_sam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/m/project/LIO-SAM/build/lio_sam', '--', '-j8', '-l8'], 'cwd': '/home/m/project/LIO-SAM/build/lio_sam', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'm'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/m'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.119.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1756'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1939'), ('BUNDLED_DEBUGPY_PATH', '/home/m/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2563'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'm'), ('JOURNAL_STREAM', '8:29956'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/m/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/m/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/m/.local/bin:/opt/ros/humble/bin:/home/m/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/m/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/m-virtual-machine:@/tmp/.ICE-unix/1908,unix/m-virtual-machine:/tmp/.ICE-unix/1908'), ('INVOCATION_ID', '814a96ab45e84e6f9648a550318a0a76'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/m/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ac5fb23032a603b4.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/m/.config/Code/User/workspaceStorage/dc14a4e016b66f4bea13f0dbbda81c38/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1PS9P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b926b921af.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DOMAIN_ID', '230'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/m/project/LIO-SAM/build/lio_sam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099585] (-) TimerEvent: {}
+[0.186732] (lio_sam) StdoutLine: {'line': b'[  2%] Built target lio_sam__cpp\n'}
+[0.187925] (lio_sam) StdoutLine: {'line': b'[  4%] Built target lio_sam__rs\n'}
+[0.200602] (lio_sam) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_lio_sam\n'}
+[0.201182] (-) TimerEvent: {}
+[0.202149] (lio_sam) StdoutLine: {'line': b'[ 12%] Built target lio_sam__rosidl_generator_c\n'}
+[0.218655] (lio_sam) StdoutLine: {'line': b'[ 20%] Built target lio_sam__rosidl_typesupport_introspection_cpp\n'}
+[0.218938] (lio_sam) StdoutLine: {'line': b'[ 29%] Built target lio_sam__rosidl_typesupport_cpp\n'}
+[0.237125] (lio_sam) StdoutLine: {'line': b'[ 37%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp\n'}
+[0.238754] (lio_sam) StdoutLine: {'line': b'[ 54%] Built target lio_sam__rosidl_typesupport_c\n'}
+[0.240135] (lio_sam) StdoutLine: {'line': b'[ 54%] Built target lio_sam__rosidl_typesupport_introspection_c\n'}
+[0.246190] (lio_sam) StdoutLine: {'line': b'[ 62%] Built target lio_sam__rosidl_typesupport_fastrtps_c\n'}
+[0.273418] (lio_sam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization\x1b[0m\n'}
+[0.278743] (lio_sam) StdoutLine: {'line': b'[ 62%] Built target lio_sam\n'}
+[0.302905] (-) TimerEvent: {}
+[0.309273] (lio_sam) StdoutLine: {'line': b'[ 64%] Built target lio_sam__py\n'}
+[0.349334] (lio_sam) StdoutLine: {'line': b'[ 70%] Built target lio_sam__rosidl_generator_py\n'}
+[0.351792] (lio_sam) StdoutLine: {'line': b'[ 75%] Built target lio_sam_imageProjection\n'}
+[0.352989] (lio_sam) StdoutLine: {'line': b'[ 79%] Built target lio_sam_featureExtraction\n'}
+[0.354858] (lio_sam) StdoutLine: {'line': b'[ 83%] Built target lio_sam_imuPreintegration\n'}
+[0.357287] (lio_sam) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o\x1b[0m\n'}
+[0.381799] (lio_sam) StdoutLine: {'line': b'[ 93%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.382020] (lio_sam) StdoutLine: {'line': b'[ 93%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext\n'}
+[0.382580] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target lio_sam__rosidl_typesupport_c__pyext\n'}
+[0.403136] (-) TimerEvent: {}
+[0.506116] (-) TimerEvent: {}
+[0.512641] (lio_sam) StdoutLine: {'line': b'running egg_info\n'}
+[0.513667] (lio_sam) StdoutLine: {'line': b'writing lio_sam.egg-info/PKG-INFO\n'}
+[0.514643] (lio_sam) StdoutLine: {'line': b'writing dependency_links to lio_sam.egg-info/dependency_links.txt\n'}
+[0.514866] (lio_sam) StdoutLine: {'line': b'writing top-level names to lio_sam.egg-info/top_level.txt\n'}
+[0.518824] (lio_sam) StdoutLine: {'line': b"reading manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.520550] (lio_sam) StdoutLine: {'line': b"writing manifest file 'lio_sam.egg-info/SOURCES.txt'\n"}
+[0.555168] (lio_sam) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_lio_sam_egg\n'}
+[0.606576] (-) TimerEvent: {}
+[0.707584] (-) TimerEvent: {}
+[0.808677] (-) TimerEvent: {}
+[0.909737] (-) TimerEvent: {}
+[1.010656] (-) TimerEvent: {}
+[1.111352] (-) TimerEvent: {}
+[1.212136] (-) TimerEvent: {}
+[1.312811] (-) TimerEvent: {}
+[1.413295] (-) TimerEvent: {}
+[1.513984] (-) TimerEvent: {}
+[1.614610] (-) TimerEvent: {}
+[1.715387] (-) TimerEvent: {}
+[1.817000] (-) TimerEvent: {}
+[1.921137] (-) TimerEvent: {}
+[2.021578] (-) TimerEvent: {}
+[2.122380] (-) TimerEvent: {}
+[2.223221] (-) TimerEvent: {}
+[2.323785] (-) TimerEvent: {}
+[2.424229] (-) TimerEvent: {}
+[2.524725] (-) TimerEvent: {}
+[2.626681] (-) TimerEvent: {}
+[2.727052] (-) TimerEvent: {}
+[2.830675] (-) TimerEvent: {}
+[2.931731] (-) TimerEvent: {}
+[3.032366] (-) TimerEvent: {}
+[3.134891] (-) TimerEvent: {}
+[3.235295] (-) TimerEvent: {}
+[3.336479] (-) TimerEvent: {}
+[3.436908] (-) TimerEvent: {}
+[3.538347] (-) TimerEvent: {}
+[3.639151] (-) TimerEvent: {}
+[3.742449] (-) TimerEvent: {}
+[3.844163] (-) TimerEvent: {}
+[3.945162] (-) TimerEvent: {}
+[4.047393] (-) TimerEvent: {}
+[4.147969] (-) TimerEvent: {}
+[4.250202] (-) TimerEvent: {}
+[4.350575] (-) TimerEvent: {}
+[4.450953] (-) TimerEvent: {}
+[4.551232] (-) TimerEvent: {}
+[4.652387] (-) TimerEvent: {}
+[4.752916] (-) TimerEvent: {}
+[4.853247] (-) TimerEvent: {}
+[4.956106] (-) TimerEvent: {}
+[5.057454] (-) TimerEvent: {}
+[5.157779] (-) TimerEvent: {}
+[5.258156] (-) TimerEvent: {}
+[5.359944] (-) TimerEvent: {}
+[5.461073] (-) TimerEvent: {}
+[5.562265] (-) TimerEvent: {}
+[5.664287] (-) TimerEvent: {}
+[5.764890] (-) TimerEvent: {}
+[5.865923] (-) TimerEvent: {}
+[5.967203] (-) TimerEvent: {}
+[6.068269] (-) TimerEvent: {}
+[6.169165] (-) TimerEvent: {}
+[6.270100] (-) TimerEvent: {}
+[6.370739] (-) TimerEvent: {}
+[6.471833] (-) TimerEvent: {}
+[6.572595] (-) TimerEvent: {}
+[6.673102] (-) TimerEvent: {}
+[6.773698] (-) TimerEvent: {}
+[6.874686] (-) TimerEvent: {}
+[6.975567] (-) TimerEvent: {}
+[7.075984] (-) TimerEvent: {}
+[7.176880] (-) TimerEvent: {}
+[7.277474] (-) TimerEvent: {}
+[7.378349] (-) TimerEvent: {}
+[7.479030] (-) TimerEvent: {}
+[7.579947] (-) TimerEvent: {}
+[7.681088] (-) TimerEvent: {}
+[7.781678] (-) TimerEvent: {}
+[7.882460] (-) TimerEvent: {}
+[7.983056] (-) TimerEvent: {}
+[8.083887] (-) TimerEvent: {}
+[8.184504] (-) TimerEvent: {}
+[8.285229] (-) TimerEvent: {}
+[8.385739] (-) TimerEvent: {}
+[8.487080] (-) TimerEvent: {}
+[8.588312] (-) TimerEvent: {}
+[8.688842] (-) TimerEvent: {}
+[8.789326] (-) TimerEvent: {}
+[8.889798] (-) TimerEvent: {}
+[8.990678] (-) TimerEvent: {}
+[9.091620] (-) TimerEvent: {}
+[9.192818] (-) TimerEvent: {}
+[9.293700] (-) TimerEvent: {}
+[9.394604] (-) TimerEvent: {}
+[9.495530] (-) TimerEvent: {}
+[9.596249] (-) TimerEvent: {}
+[9.696696] (-) TimerEvent: {}
+[9.797826] (-) TimerEvent: {}
+[9.898487] (-) TimerEvent: {}
+[9.999801] (-) TimerEvent: {}
+[10.100646] (-) TimerEvent: {}
+[10.201485] (-) TimerEvent: {}
+[10.302775] (-) TimerEvent: {}
+[10.403318] (-) TimerEvent: {}
+[10.503875] (-) TimerEvent: {}
+[10.604764] (-) TimerEvent: {}
+[10.705560] (-) TimerEvent: {}
+[10.806502] (-) TimerEvent: {}
+[10.907065] (-) TimerEvent: {}
+[11.007952] (-) TimerEvent: {}
+[11.108788] (-) TimerEvent: {}
+[11.209355] (-) TimerEvent: {}
+[11.310256] (-) TimerEvent: {}
+[11.411155] (-) TimerEvent: {}
+[11.511719] (-) TimerEvent: {}
+[11.612457] (-) TimerEvent: {}
+[11.713343] (-) TimerEvent: {}
+[11.813958] (-) TimerEvent: {}
+[11.914578] (-) TimerEvent: {}
+[12.015329] (-) TimerEvent: {}
+[12.116203] (-) TimerEvent: {}
+[12.217082] (-) TimerEvent: {}
+[12.317963] (-) TimerEvent: {}
+[12.418665] (-) TimerEvent: {}
+[12.519386] (-) TimerEvent: {}
+[12.620121] (-) TimerEvent: {}
+[12.720909] (-) TimerEvent: {}
+[12.821684] (-) TimerEvent: {}
+[12.922902] (-) TimerEvent: {}
+[13.023435] (-) TimerEvent: {}
+[13.123859] (-) TimerEvent: {}
+[13.224523] (-) TimerEvent: {}
+[13.325841] (-) TimerEvent: {}
+[13.426658] (-) TimerEvent: {}
+[13.527340] (-) TimerEvent: {}
+[13.628156] (-) TimerEvent: {}
+[13.728661] (-) TimerEvent: {}
+[13.829537] (-) TimerEvent: {}
+[13.930395] (-) TimerEvent: {}
+[14.031256] (-) TimerEvent: {}
+[14.131868] (-) TimerEvent: {}
+[14.232366] (-) TimerEvent: {}
+[14.332839] (-) TimerEvent: {}
+[14.433732] (-) TimerEvent: {}
+[14.534861] (-) TimerEvent: {}
+[14.635781] (-) TimerEvent: {}
+[14.736725] (-) TimerEvent: {}
+[14.837185] (-) TimerEvent: {}
+[14.937609] (-) TimerEvent: {}
+[15.038443] (-) TimerEvent: {}
+[15.138950] (-) TimerEvent: {}
+[15.239506] (-) TimerEvent: {}
+[15.340077] (-) TimerEvent: {}
+[15.440907] (-) TimerEvent: {}
+[15.541752] (-) TimerEvent: {}
+[15.642557] (-) TimerEvent: {}
+[15.743403] (-) TimerEvent: {}
+[15.844222] (-) TimerEvent: {}
+[15.945092] (-) TimerEvent: {}
+[16.045561] (-) TimerEvent: {}
+[16.146023] (-) TimerEvent: {}
+[16.247157] (-) TimerEvent: {}
+[16.348504] (-) TimerEvent: {}
+[16.449170] (-) TimerEvent: {}
+[16.549974] (-) TimerEvent: {}
+[16.650549] (-) TimerEvent: {}
+[16.751359] (-) TimerEvent: {}
+[16.852322] (-) TimerEvent: {}
+[16.953683] (-) TimerEvent: {}
+[17.054146] (-) TimerEvent: {}
+[17.154720] (-) TimerEvent: {}
+[17.255373] (-) TimerEvent: {}
+[17.356202] (-) TimerEvent: {}
+[17.457102] (-) TimerEvent: {}
+[17.557986] (-) TimerEvent: {}
+[17.658857] (-) TimerEvent: {}
+[17.759590] (-) TimerEvent: {}
+[17.859973] (-) TimerEvent: {}
+[17.960930] (-) TimerEvent: {}
+[18.062343] (-) TimerEvent: {}
+[18.163286] (-) TimerEvent: {}
+[18.264100] (-) TimerEvent: {}
+[18.364579] (-) TimerEvent: {}
+[18.465103] (-) TimerEvent: {}
+[18.565694] (-) TimerEvent: {}
+[18.666050] (-) TimerEvent: {}
+[18.766848] (-) TimerEvent: {}
+[18.868158] (-) TimerEvent: {}
+[18.968674] (-) TimerEvent: {}
+[19.069228] (-) TimerEvent: {}
+[19.169947] (-) TimerEvent: {}
+[19.270838] (-) TimerEvent: {}
+[19.371547] (-) TimerEvent: {}
+[19.472112] (-) TimerEvent: {}
+[19.572669] (-) TimerEvent: {}
+[19.674124] (-) TimerEvent: {}
+[19.774925] (-) TimerEvent: {}
+[19.875589] (-) TimerEvent: {}
+[19.976147] (-) TimerEvent: {}
+[20.077316] (-) TimerEvent: {}
+[20.178454] (-) TimerEvent: {}
+[20.279128] (-) TimerEvent: {}
+[20.379670] (-) TimerEvent: {}
+[20.480489] (-) TimerEvent: {}
+[20.581242] (-) TimerEvent: {}
+[20.682755] (-) TimerEvent: {}
+[20.783971] (-) TimerEvent: {}
+[20.884561] (-) TimerEvent: {}
+[20.985475] (-) TimerEvent: {}
+[21.086272] (-) TimerEvent: {}
+[21.186843] (-) TimerEvent: {}
+[21.287577] (-) TimerEvent: {}
+[21.388345] (-) TimerEvent: {}
+[21.489764] (-) TimerEvent: {}
+[21.590610] (-) TimerEvent: {}
+[21.691144] (-) TimerEvent: {}
+[21.792055] (-) TimerEvent: {}
+[21.893131] (-) TimerEvent: {}
+[21.993841] (-) TimerEvent: {}
+[22.094381] (-) TimerEvent: {}
+[22.194841] (-) TimerEvent: {}
+[22.295448] (-) TimerEvent: {}
+[22.396283] (-) TimerEvent: {}
+[22.497249] (-) TimerEvent: {}
+[22.597988] (-) TimerEvent: {}
+[22.698568] (-) TimerEvent: {}
+[22.799145] (-) TimerEvent: {}
+[22.867275] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1570:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.867512] (lio_sam) StderrLine: {'line': b' 1570 |         \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (isDegenerate)\n'}
+[22.867591] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[22.881666] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1577:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.881856] (lio_sam) StderrLine: {'line': b' 1577 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[0] += matX.at<float>(0, 0);\n'}
+[22.881935] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.894700] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1578:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.894910] (lio_sam) StderrLine: {'line': b' 1578 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[1] += matX.at<float>(1, 0);\n'}
+[22.895008] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.899300] (-) TimerEvent: {}
+[22.908146] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1579:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.911649] (lio_sam) StderrLine: {'line': b' 1579 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[2] += matX.at<float>(2, 0);\n'}
+[22.911794] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.923869] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1580:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.924136] (lio_sam) StderrLine: {'line': b' 1580 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[3] += matX.at<float>(3, 0);\n'}
+[22.924201] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.937707] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1581:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.937907] (lio_sam) StderrLine: {'line': b' 1581 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[4] += matX.at<float>(4, 0);\n'}
+[22.937977] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.955828] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1582:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[22.956033] (lio_sam) StderrLine: {'line': b' 1582 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[5] += matX.at<float>(5, 0);\n'}
+[22.956105] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.956177] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1593:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.956259] (lio_sam) StderrLine: {'line': b' 1593 |         \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (deltaR < 0.05 && deltaT < 0.05) {\n'}
+[22.956324] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[22.956381] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1596:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.956436] (lio_sam) StderrLine: {'line': b' 1596 |         \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K false; // keep optimizing\n'}
+[22.956498] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[22.958342] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1597:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[22.958656] (lio_sam) StderrLine: {'line': b' 1597 |     }\n'}
+[22.958734] (lio_sam) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[22.958803] (lio_sam) StderrLine: {'line': b'      |      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[22.975312] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1585:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[22.975498] (lio_sam) StderrLine: {'line': b' 1585 |                             pow(pcl::rad2deg(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(0, 0)), 2) +\n'}
+[22.975568] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[22.975628] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[22.975678] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1585:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.975740] (lio_sam) StderrLine: {'line': b' 1585 |                             pow(pcl::rad2deg(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(0, 0)), 2) +\n'}
+[22.975796] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[22.993071] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1586:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[22.993261] (lio_sam) StderrLine: {'line': b' 1586 |                             pow(pcl::rad2deg(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(1, 0)), 2) +\n'}
+[22.993327] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[22.993388] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[22.993438] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1586:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.993495] (lio_sam) StderrLine: {'line': b' 1586 |                             pow(pcl::rad2deg(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(1, 0)), 2) +\n'}
+[22.993574] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[22.999446] (-) TimerEvent: {}
+[23.007934] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1587:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.008203] (lio_sam) StderrLine: {'line': b' 1587 |                             pow(pcl::rad2deg(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(2, 0)), 2));\n'}
+[23.008348] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.008464] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[23.008550] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1587:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.008636] (lio_sam) StderrLine: {'line': b' 1587 |                             pow(pcl::rad2deg(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(2, 0)), 2));\n'}
+[23.011395] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.027742] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1589:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.027965] (lio_sam) StderrLine: {'line': b' 1589 |                             pow(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(3, 0) * 100, 2) +\n'}
+[23.028038] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.028091] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[23.028142] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1589:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.028192] (lio_sam) StderrLine: {'line': b' 1589 |                             pow(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(3, 0) * 100, 2) +\n'}
+[23.028239] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.044364] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1590:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.044574] (lio_sam) StderrLine: {'line': b' 1590 |                             pow(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(4, 0) * 100, 2) +\n'}
+[23.044642] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.044699] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[23.044760] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1590:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.044812] (lio_sam) StderrLine: {'line': b' 1590 |                             pow(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(4, 0) * 100, 2) +\n'}
+[23.044866] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.059211] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1591:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KmatX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmatP\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.059548] (lio_sam) StderrLine: {'line': b' 1591 |                             pow(\x1b[01;31m\x1b[KmatX\x1b[m\x1b[K.at<float>(5, 0) * 100, 2));\n'}
+[23.059633] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.059697] (lio_sam) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KmatP\x1b[m\x1b[K\n'}
+[23.059756] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1591:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.059815] (lio_sam) StderrLine: {'line': b' 1591 |                             pow(matX.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(5, 0) * 100, 2));\n'}
+[23.059871] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.099984] (-) TimerEvent: {}
+[23.156837] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mapOptimization::laserCloudInfoHandler(lio_sam::msg::CloudInfo_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.157049] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:367:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan2MapOptimization\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmapOptimization\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.157125] (lio_sam) StderrLine: {'line': b'  367 |             \x1b[01;31m\x1b[Kscan2MapOptimization\x1b[m\x1b[K();\n'}
+[23.157189] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.157248] (lio_sam) StderrLine: {'line': b'      |             \x1b[32m\x1b[KmapOptimization\x1b[m\x1b[K\n'}
+[23.199637] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:369:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsaveKeyFramesAndFactor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.199847] (lio_sam) StderrLine: {'line': b'  369 |             \x1b[01;31m\x1b[KsaveKeyFramesAndFactor\x1b[m\x1b[K();\n'}
+[23.199922] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.199985] (-) TimerEvent: {}
+[23.228260] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:371:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcorrectPoses\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.228523] (lio_sam) StderrLine: {'line': b'  371 |             \x1b[01;31m\x1b[KcorrectPoses\x1b[m\x1b[K();\n'}
+[23.228598] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.260977] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:373:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpublishOdometry\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.261179] (lio_sam) StderrLine: {'line': b'  373 |             \x1b[01;31m\x1b[KpublishOdometry\x1b[m\x1b[K();\n'}
+[23.261257] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.284989] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:375:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpublishFrames\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.285205] (lio_sam) StderrLine: {'line': b'  375 |             \x1b[01;31m\x1b[KpublishFrames\x1b[m\x1b[K();\n'}
+[23.285303] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.300403] (-) TimerEvent: {}
+[23.401043] (-) TimerEvent: {}
+[23.502030] (-) TimerEvent: {}
+[23.541888] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mapOptimization::monitorDegeneracyByIQR(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.542146] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1278:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcomputeQuantile\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.542241] (lio_sam) StderrLine: {'line': b' 1278 |             const float q1 = \x1b[01;31m\x1b[KcomputeQuantile\x1b[m\x1b[K(sortedValues, 0.25f);\n'}
+[23.542321] (lio_sam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.576760] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid scan2MapOptimization()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.577027] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1601:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.577104] (lio_sam) StderrLine: {'line': b' 1601 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[23.577170] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.602626] (-) TimerEvent: {}
+[23.609134] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudCornerLastDSNum\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.609305] (lio_sam) StderrLine: {'line': b' 1604 |         if (\x1b[01;31m\x1b[KlaserCloudCornerLastDSNum\x1b[m\x1b[K > edgeFeatureMinValidNum && laserCloudSurfLastDSNum > surfFeatureMinValidNum)\n'}
+[23.609366] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.640476] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KedgeFeatureMinValidNum\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.640677] (lio_sam) StderrLine: {'line': b' 1604 |         if (laserCloudCornerLastDSNum > \x1b[01;31m\x1b[KedgeFeatureMinValidNum\x1b[m\x1b[K && laserCloudSurfLastDSNum > surfFeatureMinValidNum)\n'}
+[23.640747] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.670504] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudSurfLastDSNum\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.670699] (lio_sam) StderrLine: {'line': b' 1604 |         if (laserCloudCornerLastDSNum > edgeFeatureMinValidNum && \x1b[01;31m\x1b[KlaserCloudSurfLastDSNum\x1b[m\x1b[K > surfFeatureMinValidNum)\n'}
+[23.670808] (lio_sam) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.698718] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1604:93:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsurfFeatureMinValidNum\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.698910] (lio_sam) StderrLine: {'line': b' 1604 |         if (laserCloudCornerLastDSNum > edgeFeatureMinValidNum && laserCloudSurfLastDSNum > \x1b[01;31m\x1b[KsurfFeatureMinValidNum\x1b[m\x1b[K)\n'}
+[23.698989] (lio_sam) StderrLine: {'line': b'      |                                                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.703128] (-) TimerEvent: {}
+[23.725904] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1606:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KkdtreeCornerFromMap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.726094] (lio_sam) StderrLine: {'line': b' 1606 |             \x1b[01;31m\x1b[KkdtreeCornerFromMap\x1b[m\x1b[K->setInputCloud(laserCloudCornerFromMapDS);\n'}
+[23.726169] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.759031] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1606:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudCornerFromMapDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.759234] (lio_sam) StderrLine: {'line': b' 1606 |             kdtreeCornerFromMap->setInputCloud(\x1b[01;31m\x1b[KlaserCloudCornerFromMapDS\x1b[m\x1b[K);\n'}
+[23.759309] (lio_sam) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.781890] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1607:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KkdtreeSurfFromMap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.782145] (lio_sam) StderrLine: {'line': b' 1607 |             \x1b[01;31m\x1b[KkdtreeSurfFromMap\x1b[m\x1b[K->setInputCloud(laserCloudSurfFromMapDS);\n'}
+[23.782249] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.803313] (-) TimerEvent: {}
+[23.811998] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1607:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudSurfFromMapDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.812295] (lio_sam) StderrLine: {'line': b' 1607 |             kdtreeSurfFromMap->setInputCloud(\x1b[01;31m\x1b[KlaserCloudSurfFromMapDS\x1b[m\x1b[K);\n'}
+[23.812398] (lio_sam) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.833116] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1611:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudOri\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.833320] (lio_sam) StderrLine: {'line': b' 1611 |                 \x1b[01;31m\x1b[KlaserCloudOri\x1b[m\x1b[K->clear();\n'}
+[23.833402] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.846305] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1612:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcoeffSel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.846493] (lio_sam) StderrLine: {'line': b' 1612 |                 \x1b[01;31m\x1b[KcoeffSel\x1b[m\x1b[K->clear();\n'}
+[23.846577] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[23.868415] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1614:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcornerOptimization\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmapOptimization\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.868615] (lio_sam) StderrLine: {'line': b' 1614 |                 \x1b[01;31m\x1b[KcornerOptimization\x1b[m\x1b[K();\n'}
+[23.868687] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.868750] (lio_sam) StderrLine: {'line': b'      |                 \x1b[32m\x1b[KmapOptimization\x1b[m\x1b[K\n'}
+[23.886342] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1615:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsurfOptimization\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmapOptimization\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.886506] (lio_sam) StderrLine: {'line': b' 1615 |                 \x1b[01;31m\x1b[KsurfOptimization\x1b[m\x1b[K();\n'}
+[23.886572] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.886632] (lio_sam) StderrLine: {'line': b'      |                 \x1b[32m\x1b[KmapOptimization\x1b[m\x1b[K\n'}
+[23.903774] (-) TimerEvent: {}
+[23.917042] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1617:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcombineOptimizationCoeffs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.917237] (lio_sam) StderrLine: {'line': b' 1617 |                 \x1b[01;31m\x1b[KcombineOptimizationCoeffs\x1b[m\x1b[K();\n'}
+[23.917295] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.933064] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1619:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLMOptimization\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KmapOptimization\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.933289] (lio_sam) StderrLine: {'line': b' 1619 |                 if (\x1b[01;31m\x1b[KLMOptimization\x1b[m\x1b[K(iterCount) == true)\n'}
+[23.933362] (lio_sam) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.933809] (lio_sam) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KmapOptimization\x1b[m\x1b[K\n'}
+[23.953930] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1623:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformUpdate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KTransformData\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.954138] (lio_sam) StderrLine: {'line': b' 1623 |             \x1b[01;31m\x1b[KtransformUpdate\x1b[m\x1b[K();\n'}
+[23.954214] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.954277] (lio_sam) StderrLine: {'line': b'      |             \x1b[32m\x1b[KTransformData\x1b[m\x1b[K\n'}
+[23.957018] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[23.957131] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[23.957199] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[23.957356] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[23.957449] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[23.957865] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[23.958046] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[23.958224] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[23.958406] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[23.958578] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[23.958749] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[23.958918] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[23.959079] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.959255] (lio_sam) StderrLine: {'line': b' 1625 |             RCLCPP_WARN(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Not enough features! Only %d edge and %d planar features available.", laserCloudCornerLastDSNum, laserCloudSurfLastDSNum);\n'}
+[23.959418] (lio_sam) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.959567] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[23.959620] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[23.959681] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[23.959726] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[23.959769] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[23.959812] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[23.959854] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[23.959897] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[23.959939] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[23.959981] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[23.960024] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[23.960076] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[23.960122] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[23.960169] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.960215] (lio_sam) StderrLine: {'line': b'  106 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[23.960258] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.960300] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[23.960341] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[23.960382] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[23.960423] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[23.960467] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[23.960511] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[23.960553] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[23.960595] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[23.960643] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[23.960685] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[23.960727] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:6\x1b[m\x1b[K,\n'}
+[23.960773] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[23.960816] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[23.960861] (lio_sam) StderrLine: {'line': b' 1625 |             \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(get_logger(), "Not enough features! Only %d edge and %d planar features available.", laserCloudCornerLastDSNum, laserCloudSurfLastDSNum);\n'}
+[23.960904] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.970639] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid transformUpdate()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.970760] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1631:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudInfo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.970827] (lio_sam) StderrLine: {'line': b' 1631 |         if (\x1b[01;31m\x1b[KcloudInfo\x1b[m\x1b[K.imu_available == true)\n'}
+[23.970883] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.982368] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1635:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KimuRPYWeight\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KimuWeight\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.982534] (lio_sam) StderrLine: {'line': b' 1635 |                 double imuWeight = \x1b[01;31m\x1b[KimuRPYWeight\x1b[m\x1b[K;\n'}
+[23.982607] (lio_sam) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.982680] (lio_sam) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[KimuWeight\x1b[m\x1b[K\n'}
+[24.004068] (-) TimerEvent: {}
+[24.004599] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1641:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.004970] (lio_sam) StderrLine: {'line': b' 1641 |                 transformQuaternion.setRPY(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[0], 0, 0);\n'}
+[24.005039] (lio_sam) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.028580] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.028995] (lio_sam) StderrLine: {'line': b' 1654 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[0] = constraintTransformation(transformTobeMapped[0], rotation_tollerance);\n'}
+[24.029186] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.054958] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krotation_tollerance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.055158] (lio_sam) StderrLine: {'line': b' 1654 |         transformTobeMapped[0] = constraintTransformation(transformTobeMapped[0], \x1b[01;31m\x1b[Krotation_tollerance\x1b[m\x1b[K);\n'}
+[24.055228] (lio_sam) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.085141] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1654:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KconstraintTransformation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.085349] (lio_sam) StderrLine: {'line': b' 1654 |         transformTobeMapped[0] = \x1b[01;31m\x1b[KconstraintTransformation\x1b[m\x1b[K(transformTobeMapped[0], rotation_tollerance);\n'}
+[24.085435] (lio_sam) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.102008] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1656:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kz_tollerance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.102170] (lio_sam) StderrLine: {'line': b' 1656 |         transformTobeMapped[5] = constraintTransformation(transformTobeMapped[5], \x1b[01;31m\x1b[Kz_tollerance\x1b[m\x1b[K);\n'}
+[24.102238] (lio_sam) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.104409] (-) TimerEvent: {}
+[24.136828] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1658:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KincrementalOdometryAffineBack\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.137097] (lio_sam) StderrLine: {'line': b' 1658 |         \x1b[01;31m\x1b[KincrementalOdometryAffineBack\x1b[m\x1b[K = trans2Affine3f(transformTobeMapped);\n'}
+[24.137167] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.156764] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1658:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2Affine3f\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.156959] (lio_sam) StderrLine: {'line': b' 1658 |         incrementalOdometryAffineBack = \x1b[01;31m\x1b[Ktrans2Affine3f\x1b[m\x1b[K(transformTobeMapped);\n'}
+[24.157040] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.177300] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool saveFrame()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.177489] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1673:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.177561] (lio_sam) StderrLine: {'line': b' 1673 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[24.177621] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.187590] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1676:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.187729] (lio_sam) StderrLine: {'line': b' 1676 |         if (\x1b[01;31m\x1b[Ksensor\x1b[m\x1b[K == SensorType::LIVOX)\n'}
+[24.187795] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[24.205235] (-) TimerEvent: {}
+[24.207974] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1678:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.208108] (lio_sam) StderrLine: {'line': b' 1678 |             if (\x1b[01;31m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K - cloudKeyPoses6D->back().time > 1.0)\n'}
+[24.208177] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.229544] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1678:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.229735] (lio_sam) StderrLine: {'line': b' 1678 |             if (timeLaserInfoCur - \x1b[01;31m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K->back().time > 1.0)\n'}
+[24.229792] (lio_sam) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.249446] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1682:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.249657] (lio_sam) StderrLine: {'line': b' 1682 |         Eigen::Affine3f transStart = pclPointToAffine3f(\x1b[01;31m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K->back());\n'}
+[24.249725] (lio_sam) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.273860] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1682:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpclPointToAffine3f\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.274058] (lio_sam) StderrLine: {'line': b' 1682 |         Eigen::Affine3f transStart = \x1b[01;31m\x1b[KpclPointToAffine3f\x1b[m\x1b[K(cloudKeyPoses6D->back());\n'}
+[24.274123] (lio_sam) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.297591] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1683:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.297791] (lio_sam) StderrLine: {'line': b' 1683 |         Eigen::Affine3f transFinal = pcl::getTransformation(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[3], transformTobeMapped[4], transformTobeMapped[5],\n'}
+[24.297863] (lio_sam) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.305481] (-) TimerEvent: {}
+[24.344012] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1689:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsurroundingkeyframeAddingAngleThreshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.344221] (lio_sam) StderrLine: {'line': b' 1689 |         if (abs(roll)  < \x1b[01;31m\x1b[KsurroundingkeyframeAddingAngleThreshold\x1b[m\x1b[K &&\n'}
+[24.344300] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.389585] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1692:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsurroundingkeyframeAddingDistThreshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.389789] (lio_sam) StderrLine: {'line': b' 1692 |             sqrt(x*x + y*y + z*z) < \x1b[01;31m\x1b[KsurroundingkeyframeAddingDistThreshold\x1b[m\x1b[K)\n'}
+[24.389863] (lio_sam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.405767] (-) TimerEvent: {}
+[24.413459] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid addOdomFactor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.413670] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1700:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.413769] (lio_sam) StderrLine: {'line': b' 1700 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[24.413889] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.430846] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgtSAMgraph\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.431180] (lio_sam) StderrLine: {'line': b' 1703 |             \x1b[01;31m\x1b[KgtSAMgraph\x1b[m\x1b[K.add(PriorFactor<Pose3>(0, trans2gtsamPose(transformTobeMapped), priorNoise));\n'}
+[24.431355] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.464263] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.464494] (lio_sam) StderrLine: {'line': b' 1703 |             gtSAMgraph.add(PriorFactor<Pose3>(0, trans2gtsamPose(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K), priorNoise));\n'}
+[24.464569] (lio_sam) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.484776] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1703:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2gtsamPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.485006] (lio_sam) StderrLine: {'line': b' 1703 |             gtSAMgraph.add(PriorFactor<Pose3>(0, \x1b[01;31m\x1b[Ktrans2gtsamPose\x1b[m\x1b[K(transformTobeMapped), priorNoise));\n'}
+[24.485104] (lio_sam) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.506304] (-) TimerEvent: {}
+[24.508307] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1704:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KinitialEstimate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.508492] (lio_sam) StderrLine: {'line': b' 1704 |             \x1b[01;31m\x1b[KinitialEstimate\x1b[m\x1b[K.insert(0, trans2gtsamPose(transformTobeMapped));\n'}
+[24.508577] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.530650] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1707:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.530944] (lio_sam) StderrLine: {'line': b' 1707 |             gtsam::Pose3 poseFrom = pclPointTogtsamPose3(\x1b[01;31m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K->points.back());\n'}
+[24.531070] (lio_sam) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.558999] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1707:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpclPointTogtsamPose3\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.559222] (lio_sam) StderrLine: {'line': b' 1707 |             gtsam::Pose3 poseFrom = \x1b[01;31m\x1b[KpclPointTogtsamPose3\x1b[m\x1b[K(cloudKeyPoses6D->points.back());\n'}
+[24.559312] (lio_sam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.581755] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1708:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.581953] (lio_sam) StderrLine: {'line': b' 1708 |             gtsam::Pose3 poseTo   = trans2gtsamPose(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K);\n'}
+[24.582050] (lio_sam) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.600984] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1708:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2gtsamPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.601148] (lio_sam) StderrLine: {'line': b' 1708 |             gtsam::Pose3 poseTo   = \x1b[01;31m\x1b[Ktrans2gtsamPose\x1b[m\x1b[K(transformTobeMapped);\n'}
+[24.601217] (lio_sam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.606609] (-) TimerEvent: {}
+[24.613276] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1709:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgtSAMgraph\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.613456] (lio_sam) StderrLine: {'line': b' 1709 |             \x1b[01;31m\x1b[KgtSAMgraph\x1b[m\x1b[K.add(BetweenFactor<Pose3>(cloudKeyPoses3D->size()-1, cloudKeyPoses3D->size(), poseFrom.between(poseTo), odometryNoise));\n'}
+[24.613520] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.639071] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1710:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KinitialEstimate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.639271] (lio_sam) StderrLine: {'line': b' 1710 |             \x1b[01;31m\x1b[KinitialEstimate\x1b[m\x1b[K.insert(cloudKeyPoses3D->size(), poseTo);\n'}
+[24.639342] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.650683] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid addGPSFactor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.650877] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1716:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgpsQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.650946] (lio_sam) StderrLine: {'line': b' 1716 |         if (\x1b[01;31m\x1b[KgpsQueue\x1b[m\x1b[K.empty())\n'}
+[24.651009] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.670121] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1720:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.670313] (lio_sam) StderrLine: {'line': b' 1720 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[24.670383] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.688156] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1729:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KposeCovariance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.688337] (lio_sam) StderrLine: {'line': b' 1729 |         if (\x1b[01;31m\x1b[KposeCovariance\x1b[m\x1b[K(3,3) < poseCovThreshold && poseCovariance(4,4) < poseCovThreshold)\n'}
+[24.688408] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.707102] (-) TimerEvent: {}
+[24.708569] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1729:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KposeCovThreshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.708729] (lio_sam) StderrLine: {'line': b' 1729 |         if (poseCovariance(3,3) < \x1b[01;31m\x1b[KposeCovThreshold\x1b[m\x1b[K && poseCovariance(4,4) < poseCovThreshold)\n'}
+[24.708811] (lio_sam) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.721037] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1735:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgpsQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.721211] (lio_sam) StderrLine: {'line': b' 1735 |         while (!\x1b[01;31m\x1b[KgpsQueue\x1b[m\x1b[K.empty())\n'}
+[24.721274] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[24.741406] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1737:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.741776] (lio_sam) StderrLine: {'line': b' 1737 |             if (stamp2Sec(gpsQueue.front().header.stamp) < \x1b[01;31m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K - 0.2)\n'}
+[24.741857] (lio_sam) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.762521] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1756:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgpsCovThreshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.762732] (lio_sam) StderrLine: {'line': b' 1756 |                 if (noise_x > \x1b[01;31m\x1b[KgpsCovThreshold\x1b[m\x1b[K || noise_y > gpsCovThreshold)\n'}
+[24.762809] (lio_sam) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.782687] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1761:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KuseGpsElevation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.782907] (lio_sam) StderrLine: {'line': b' 1761 |                 if (!\x1b[01;31m\x1b[KuseGpsElevation\x1b[m\x1b[K)\n'}
+[24.782983] (lio_sam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.805048] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1763:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.805243] (lio_sam) StderrLine: {'line': b' 1763 |                     gps_z = \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[5];\n'}
+[24.805319] (lio_sam) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.807249] (-) TimerEvent: {}
+[24.826335] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1784:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.826573] (lio_sam) StderrLine: {'line': b' 1784 |                 gtsam::GPSFactor gps_factor(\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->size(), gtsam::Point3(gps_x, gps_y, gps_z), gps_noise);\n'}
+[24.826650] (lio_sam) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.841032] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1785:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgtSAMgraph\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.841234] (lio_sam) StderrLine: {'line': b' 1785 |                 \x1b[01;31m\x1b[KgtSAMgraph\x1b[m\x1b[K.add(gps_factor);\n'}
+[24.841308] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.859108] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1787:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KaLoopIsClosed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.859440] (lio_sam) StderrLine: {'line': b' 1787 |                 \x1b[01;31m\x1b[KaLoopIsClosed\x1b[m\x1b[K = true;\n'}
+[24.859502] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.878620] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid addLoopFactor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.878811] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1795:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopIndexQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.878884] (lio_sam) StderrLine: {'line': b' 1795 |         if (\x1b[01;31m\x1b[KloopIndexQueue\x1b[m\x1b[K.empty())\n'}
+[24.878945] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.896893] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1798:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopIndexQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.897036] (lio_sam) StderrLine: {'line': b' 1798 |         for (int i = 0; i < (int)\x1b[01;31m\x1b[KloopIndexQueue\x1b[m\x1b[K.size(); ++i)\n'}
+[24.897108] (lio_sam) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.908089] (-) TimerEvent: {}
+[24.914280] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1802:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopPoseQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.914747] (lio_sam) StderrLine: {'line': b' 1802 |             gtsam::Pose3 poseBetween = \x1b[01;31m\x1b[KloopPoseQueue\x1b[m\x1b[K[i];\n'}
+[24.914825] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.935160] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1803:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopNoiseQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.935360] (lio_sam) StderrLine: {'line': b' 1803 |             gtsam::noiseModel::Diagonal::shared_ptr noiseBetween = \x1b[01;31m\x1b[KloopNoiseQueue\x1b[m\x1b[K[i];\n'}
+[24.935446] (lio_sam) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.949482] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1804:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgtSAMgraph\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.949742] (lio_sam) StderrLine: {'line': b' 1804 |             \x1b[01;31m\x1b[KgtSAMgraph\x1b[m\x1b[K.add(BetweenFactor<Pose3>(indexFrom, indexTo, poseBetween, noiseBetween));\n'}
+[24.949824] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.968951] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1807:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopIndexQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.969145] (lio_sam) StderrLine: {'line': b' 1807 |         \x1b[01;31m\x1b[KloopIndexQueue\x1b[m\x1b[K.clear();\n'}
+[24.969214] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.987381] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1808:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopPoseQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.987574] (lio_sam) StderrLine: {'line': b' 1808 |         \x1b[01;31m\x1b[KloopPoseQueue\x1b[m\x1b[K.clear();\n'}
+[24.987642] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.005635] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1809:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KloopNoiseQueue\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.005800] (lio_sam) StderrLine: {'line': b' 1809 |         \x1b[01;31m\x1b[KloopNoiseQueue\x1b[m\x1b[K.clear();\n'}
+[25.005869] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.008204] (-) TimerEvent: {}
+[25.023639] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1810:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KaLoopIsClosed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.024079] (lio_sam) StderrLine: {'line': b' 1810 |         \x1b[01;31m\x1b[KaLoopIsClosed\x1b[m\x1b[K = true;\n'}
+[25.024260] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.035962] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid saveKeyFramesAndFactor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.036264] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kisam\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.036333] (lio_sam) StderrLine: {'line': b' 1831 |         \x1b[01;31m\x1b[Kisam\x1b[m\x1b[K->update(gtSAMgraph, initialEstimate);\n'}
+[25.036391] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[25.049825] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgtSAMgraph\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.050029] (lio_sam) StderrLine: {'line': b' 1831 |         isam->update(\x1b[01;31m\x1b[KgtSAMgraph\x1b[m\x1b[K, initialEstimate);\n'}
+[25.050099] (lio_sam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.068151] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1831:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KinitialEstimate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.068352] (lio_sam) StderrLine: {'line': b' 1831 |         isam->update(gtSAMgraph, \x1b[01;31m\x1b[KinitialEstimate\x1b[m\x1b[K);\n'}
+[25.068418] (lio_sam) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.085065] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1834:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KaLoopIsClosed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.085209] (lio_sam) StderrLine: {'line': b' 1834 |         if (\x1b[01;31m\x1b[KaLoopIsClosed\x1b[m\x1b[K == true)\n'}
+[25.085288] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.106553] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1851:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisamCurrentEstimate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.106708] (lio_sam) StderrLine: {'line': b' 1851 |         \x1b[01;31m\x1b[KisamCurrentEstimate\x1b[m\x1b[K = isam->calculateEstimate();\n'}
+[25.106762] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.108528] (-) TimerEvent: {}
+[25.110301] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1852:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.110398] (lio_sam) StderrLine: {'line': b' 1852 |         latestEstimate = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(isamCurrentEstimate.size()-1);\n'}
+[25.110449] (lio_sam) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.132060] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1859:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.132360] (lio_sam) StderrLine: {'line': b' 1859 |         thisPose3D.intensity = \x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->size(); // this can be used as index\n'}
+[25.132430] (lio_sam) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.159035] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1869:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.159353] (lio_sam) StderrLine: {'line': b' 1869 |         thisPose6D.time = \x1b[01;31m\x1b[KtimeLaserInfoCur\x1b[m\x1b[K;\n'}
+[25.159426] (lio_sam) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.179046] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1870:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.179392] (lio_sam) StderrLine: {'line': b' 1870 |         \x1b[01;31m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K->push_back(thisPose6D);\n'}
+[25.179466] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.198957] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1875:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KposeCovariance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.199229] (lio_sam) StderrLine: {'line': b' 1875 |         \x1b[01;31m\x1b[KposeCovariance\x1b[m\x1b[K = isam->marginalCovariance(isamCurrentEstimate.size()-1);\n'}
+[25.199303] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.208721] (-) TimerEvent: {}
+[25.226009] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1878:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.226223] (lio_sam) StderrLine: {'line': b' 1878 |         \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[0] = latestEstimate.rotation().roll();\n'}
+[25.226398] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.261925] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1888:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudCornerLastDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.262171] (lio_sam) StderrLine: {'line': b' 1888 |         pcl::copyPointCloud(*\x1b[01;31m\x1b[KlaserCloudCornerLastDS\x1b[m\x1b[K,  *thisCornerKeyFrame);\n'}
+[25.262238] (lio_sam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.291476] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1889:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudSurfLastDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.291750] (lio_sam) StderrLine: {'line': b' 1889 |         pcl::copyPointCloud(*\x1b[01;31m\x1b[KlaserCloudSurfLastDS\x1b[m\x1b[K,    *thisSurfKeyFrame);\n'}
+[25.291815] (lio_sam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.309665] (-) TimerEvent: {}
+[25.323666] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1892:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcornerCloudKeyFrames\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.323858] (lio_sam) StderrLine: {'line': b' 1892 |         \x1b[01;31m\x1b[KcornerCloudKeyFrames\x1b[m\x1b[K.push_back(thisCornerKeyFrame);\n'}
+[25.323916] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.350039] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1893:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsurfCloudKeyFrames\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.350227] (lio_sam) StderrLine: {'line': b' 1893 |         \x1b[01;31m\x1b[KsurfCloudKeyFrames\x1b[m\x1b[K.push_back(thisSurfKeyFrame);\n'}
+[25.350298] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.364478] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1896:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KupdatePath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.364667] (lio_sam) StderrLine: {'line': b' 1896 |         \x1b[01;31m\x1b[KupdatePath\x1b[m\x1b[K(thisPose6D);\n'}
+[25.364736] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.384217] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid correctPoses()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.384399] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1901:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.384480] (lio_sam) StderrLine: {'line': b' 1901 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[25.384551] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.402126] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1904:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KaLoopIsClosed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.402303] (lio_sam) StderrLine: {'line': b' 1904 |         if (\x1b[01;31m\x1b[KaLoopIsClosed\x1b[m\x1b[K == true)\n'}
+[25.402361] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.409763] (-) TimerEvent: {}
+[25.432745] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1907:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudMapContainer\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.432954] (lio_sam) StderrLine: {'line': b' 1907 |             \x1b[01;31m\x1b[KlaserCloudMapContainer\x1b[m\x1b[K.clear();\n'}
+[25.433024] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.447789] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1909:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KglobalPath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.447983] (lio_sam) StderrLine: {'line': b' 1909 |             \x1b[01;31m\x1b[KglobalPath\x1b[m\x1b[K.poses.clear();\n'}
+[25.448051] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.475015] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1911:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisamCurrentEstimate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.475217] (lio_sam) StderrLine: {'line': b' 1911 |             int numPoses = \x1b[01;31m\x1b[KisamCurrentEstimate\x1b[m\x1b[K.size();\n'}
+[25.475289] (lio_sam) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.496646] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.496995] (lio_sam) StderrLine: {'line': b' 1914 |                 \x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points[i].x = isamCurrentEstimate.at<Pose3>(i).translation().x();\n'}
+[25.497102] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.497177] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.497236] (lio_sam) StderrLine: {'line': b' 1914 |                 cloudKeyPoses3D->points[i].x = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).translation().x();\n'}
+[25.497293] (lio_sam) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.497354] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1914:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ktranslation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.497413] (lio_sam) StderrLine: {'line': b' 1914 |                 cloudKeyPoses3D->points[i].x = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Ktranslation\x1b[m\x1b[K().x();\n'}
+[25.497467] (lio_sam) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.497520] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1915:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.497571] (lio_sam) StderrLine: {'line': b' 1915 |                 cloudKeyPoses3D->points[i].y = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).translation().y();\n'}
+[25.497613] (lio_sam) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.497664] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1915:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ktranslation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.497710] (lio_sam) StderrLine: {'line': b' 1915 |                 cloudKeyPoses3D->points[i].y = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Ktranslation\x1b[m\x1b[K().y();\n'}
+[25.497754] (lio_sam) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.497796] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1916:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.497844] (lio_sam) StderrLine: {'line': b' 1916 |                 cloudKeyPoses3D->points[i].z = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).translation().z();\n'}
+[25.497886] (lio_sam) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.497927] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1916:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ktranslation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.497971] (lio_sam) StderrLine: {'line': b' 1916 |                 cloudKeyPoses3D->points[i].z = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Ktranslation\x1b[m\x1b[K().z();\n'}
+[25.498012] (lio_sam) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.510329] (-) TimerEvent: {}
+[25.516124] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1918:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.516609] (lio_sam) StderrLine: {'line': b' 1918 |                 \x1b[01;31m\x1b[KcloudKeyPoses6D\x1b[m\x1b[K->points[i].x = cloudKeyPoses3D->points[i].x;\n'}
+[25.516720] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.516804] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1921:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.517553] (lio_sam) StderrLine: {'line': b' 1921 |                 cloudKeyPoses6D->points[i].roll  = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).rotation().roll();\n'}
+[25.517923] (lio_sam) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.517996] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1921:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Krotation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.518063] (lio_sam) StderrLine: {'line': b' 1921 |                 cloudKeyPoses6D->points[i].roll  = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Krotation\x1b[m\x1b[K().roll();\n'}
+[25.518115] (lio_sam) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[25.518170] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1922:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.518653] (lio_sam) StderrLine: {'line': b' 1922 |                 cloudKeyPoses6D->points[i].pitch = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).rotation().pitch();\n'}
+[25.518905] (lio_sam) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.519141] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1922:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Krotation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.519259] (lio_sam) StderrLine: {'line': b' 1922 |                 cloudKeyPoses6D->points[i].pitch = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Krotation\x1b[m\x1b[K().pitch();\n'}
+[25.519316] (lio_sam) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[25.521113] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1923:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[25.521203] (lio_sam) StderrLine: {'line': b' 1923 |                 cloudKeyPoses6D->points[i].yaw   = isamCurrentEstimate.at<Pose3\x1b[01;31m\x1b[K>\x1b[m\x1b[K(i).rotation().yaw();\n'}
+[25.521261] (lio_sam) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.521319] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1923:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Krotation\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.521379] (lio_sam) StderrLine: {'line': b' 1923 |                 cloudKeyPoses6D->points[i].yaw   = isamCurrentEstimate.at<Pose3>(i).\x1b[01;31m\x1b[Krotation\x1b[m\x1b[K().yaw();\n'}
+[25.521436] (lio_sam) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[25.531282] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1925:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KupdatePath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.531516] (lio_sam) StderrLine: {'line': b' 1925 |                 \x1b[01;31m\x1b[KupdatePath\x1b[m\x1b[K(cloudKeyPoses6D->points[i]);\n'}
+[25.531613] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.550083] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid updatePath(const PointTypePose&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.550298] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1936:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KodometryFrame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.550381] (lio_sam) StderrLine: {'line': b' 1936 |         pose_stamped.header.frame_id = \x1b[01;31m\x1b[KodometryFrame\x1b[m\x1b[K;\n'}
+[25.550448] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.563487] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1947:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KglobalPath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.563685] (lio_sam) StderrLine: {'line': b' 1947 |         \x1b[01;31m\x1b[KglobalPath\x1b[m\x1b[K.poses.push_back(pose_stamped);\n'}
+[25.563867] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.586995] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publishOdometry()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.587313] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1954:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtimeLaserInfoStamp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.587395] (lio_sam) StderrLine: {'line': b' 1954 |         laserOdometryROS.header.stamp = \x1b[01;31m\x1b[KtimeLaserInfoStamp\x1b[m\x1b[K;\n'}
+[25.587474] (lio_sam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.603698] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1955:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KodometryFrame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.603859] (lio_sam) StderrLine: {'line': b' 1955 |         laserOdometryROS.header.frame_id = \x1b[01;31m\x1b[KodometryFrame\x1b[m\x1b[K;\n'}
+[25.603931] (lio_sam) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.611351] (-) TimerEvent: {}
+[25.626071] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1957:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.626281] (lio_sam) StderrLine: {'line': b' 1957 |         laserOdometryROS.pose.pose.position.x = \x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K[3];\n'}
+[25.626379] (lio_sam) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.654112] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1965:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubLaserOdometryGlobal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.654310] (lio_sam) StderrLine: {'line': b' 1965 |         \x1b[01;31m\x1b[KpubLaserOdometryGlobal\x1b[m\x1b[K->publish(laserOdometryROS);\n'}
+[25.654382] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.664658] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1975:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kbrk\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[25.665038] (lio_sam) StderrLine: {'line': b' 1975 |         \x1b[01;31m\x1b[Kbr\x1b[m\x1b[K->sendTransform(trans_odom_to_lidar);\n'}
+[25.665124] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[25.665190] (lio_sam) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kbrk\x1b[m\x1b[K\n'}
+[25.683417] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1985:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2Affine3f\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.683606] (lio_sam) StderrLine: {'line': b' 1985 |             increOdomAffine = \x1b[01;31m\x1b[Ktrans2Affine3f\x1b[m\x1b[K(transformTobeMapped);\n'}
+[25.683677] (lio_sam) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.711567] (-) TimerEvent: {}
+[25.718232] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1987:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KincrementalOdometryAffineFront\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.718491] (lio_sam) StderrLine: {'line': b' 1987 |             Eigen::Affine3f affineIncre = \x1b[01;31m\x1b[KincrementalOdometryAffineFront\x1b[m\x1b[K.inverse() * incrementalOdometryAffineBack;\n'}
+[25.718564] (lio_sam) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.752782] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1987:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KincrementalOdometryAffineBack\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.752987] (lio_sam) StderrLine: {'line': b' 1987 |             Eigen::Affine3f affineIncre = incrementalOdometryAffineFront.inverse() * \x1b[01;31m\x1b[KincrementalOdometryAffineBack\x1b[m\x1b[K;\n'}
+[25.753074] (lio_sam) StderrLine: {'line': b'      |                                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.766293] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1991:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudInfo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.766506] (lio_sam) StderrLine: {'line': b' 1991 |             if (\x1b[01;31m\x1b[KcloudInfo\x1b[m\x1b[K.imu_available == true)\n'}
+[25.766586] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[25.783181] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2024:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KisDegenerate\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.783378] (lio_sam) StderrLine: {'line': b' 2024 |             if (\x1b[01;31m\x1b[KisDegenerate\x1b[m\x1b[K)\n'}
+[25.783447] (lio_sam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.810407] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2029:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubLaserOdometryIncremental\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KlaserOdomIncremental\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[25.810602] (lio_sam) StderrLine: {'line': b' 2029 |         \x1b[01;31m\x1b[KpubLaserOdometryIncremental\x1b[m\x1b[K->publish(laserOdomIncremental);\n'}
+[25.810672] (lio_sam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.810735] (lio_sam) StderrLine: {'line': b'      |         \x1b[32m\x1b[KlaserOdomIncremental\x1b[m\x1b[K\n'}
+[25.812036] (-) TimerEvent: {}
+[25.830791] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publishFrames()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.830992] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2034:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.831076] (lio_sam) StderrLine: {'line': b' 2034 |         if (\x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K->points.empty())\n'}
+[25.831139] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.847670] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubKeyPoses\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.847871] (lio_sam) StderrLine: {'line': b' 2037 |         publishCloud(\x1b[01;31m\x1b[KpubKeyPoses\x1b[m\x1b[K, cloudKeyPoses3D, timeLaserInfoStamp, odometryFrame);\n'}
+[25.847942] (lio_sam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.867458] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.867640] (lio_sam) StderrLine: {'line': b' 2037 |         publishCloud(pubKeyPoses, \x1b[01;31m\x1b[KcloudKeyPoses3D\x1b[m\x1b[K, timeLaserInfoStamp, odometryFrame);\n'}
+[25.867709] (lio_sam) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.890795] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtimeLaserInfoStamp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.890990] (lio_sam) StderrLine: {'line': b' 2037 |         publishCloud(pubKeyPoses, cloudKeyPoses3D, \x1b[01;31m\x1b[KtimeLaserInfoStamp\x1b[m\x1b[K, odometryFrame);\n'}
+[25.891059] (lio_sam) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.906989] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2037:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KodometryFrame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.907146] (lio_sam) StderrLine: {'line': b' 2037 |         publishCloud(pubKeyPoses, cloudKeyPoses3D, timeLaserInfoStamp, \x1b[01;31m\x1b[KodometryFrame\x1b[m\x1b[K);\n'}
+[25.907229] (lio_sam) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.912422] (-) TimerEvent: {}
+[25.930923] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2039:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubRecentKeyFrames\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.931133] (lio_sam) StderrLine: {'line': b' 2039 |         publishCloud(\x1b[01;31m\x1b[KpubRecentKeyFrames\x1b[m\x1b[K, laserCloudSurfFromMapDS, timeLaserInfoStamp, odometryFrame);\n'}
+[25.931205] (lio_sam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.961644] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2039:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudSurfFromMapDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.961843] (lio_sam) StderrLine: {'line': b' 2039 |         publishCloud(pubRecentKeyFrames, \x1b[01;31m\x1b[KlaserCloudSurfFromMapDS\x1b[m\x1b[K, timeLaserInfoStamp, odometryFrame);\n'}
+[25.961914] (lio_sam) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.984425] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2041:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubRecentKeyFrame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[25.984639] (lio_sam) StderrLine: {'line': b' 2041 |         if (\x1b[01;31m\x1b[KpubRecentKeyFrame\x1b[m\x1b[K->get_subscription_count() != 0)\n'}
+[25.984708] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.006999] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2044:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.007173] (lio_sam) StderrLine: {'line': b' 2044 |             PointTypePose thisPose6D = trans2PointTypePose(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K);\n'}
+[26.007259] (lio_sam) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.013009] (-) TimerEvent: {}
+[26.029545] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2044:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2PointTypePose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPointTypePose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[26.029852] (lio_sam) StderrLine: {'line': b' 2044 |             PointTypePose thisPose6D = \x1b[01;31m\x1b[Ktrans2PointTypePose\x1b[m\x1b[K(transformTobeMapped);\n'}
+[26.029912] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.029962] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KPointTypePose\x1b[m\x1b[K\n'}
+[26.060057] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2045:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudCornerLastDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.060257] (lio_sam) StderrLine: {'line': b' 2045 |             *cloudOut += *transformPointCloud(\x1b[01;31m\x1b[KlaserCloudCornerLastDS\x1b[m\x1b[K,  &thisPose6D);\n'}
+[26.060325] (lio_sam) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.063285] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2045:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformPointCloud\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpcl::transformPointCloud\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[26.063601] (lio_sam) StderrLine: {'line': b' 2045 |             *cloudOut += *\x1b[01;31m\x1b[KtransformPointCloud\x1b[m\x1b[K(laserCloudCornerLastDS,  &thisPose6D);\n'}
+[26.063787] (lio_sam) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.063844] (lio_sam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kpcl::transformPointCloud\x1b[m\x1b[K\n'}
+[26.063892] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.065587] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.065693] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::transformPointCloud\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[26.065759] (lio_sam) StderrLine: {'line': b'  404 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.065818] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.092044] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2046:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KlaserCloudSurfLastDS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.092235] (lio_sam) StderrLine: {'line': b' 2046 |             *cloudOut += *transformPointCloud(\x1b[01;31m\x1b[KlaserCloudSurfLastDS\x1b[m\x1b[K,    &thisPose6D);\n'}
+[26.092303] (lio_sam) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.113232] (-) TimerEvent: {}
+[26.119792] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2050:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubCloudRegisteredRaw\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.119981] (lio_sam) StderrLine: {'line': b' 2050 |         if (\x1b[01;31m\x1b[KpubCloudRegisteredRaw\x1b[m\x1b[K->get_subscription_count() != 0)\n'}
+[26.120473] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.131092] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2053:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcloudInfo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.131305] (lio_sam) StderrLine: {'line': b' 2053 |             pcl::fromROSMsg(\x1b[01;31m\x1b[KcloudInfo\x1b[m\x1b[K.cloud_deskewed, *cloudOut);\n'}
+[26.131373] (lio_sam) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[26.155458] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2054:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtransformTobeMapped\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.155666] (lio_sam) StderrLine: {'line': b' 2054 |             PointTypePose thisPose6D = trans2PointTypePose(\x1b[01;31m\x1b[KtransformTobeMapped\x1b[m\x1b[K);\n'}
+[26.155734] (lio_sam) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.177036] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2054:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrans2PointTypePose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPointTypePose\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[26.177559] (lio_sam) StderrLine: {'line': b' 2054 |             PointTypePose thisPose6D = \x1b[01;31m\x1b[Ktrans2PointTypePose\x1b[m\x1b[K(transformTobeMapped);\n'}
+[26.177709] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.178070] (lio_sam) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KPointTypePose\x1b[m\x1b[K\n'}
+[26.178657] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KtransformPointCloud(pcl::PointCloud<pcl::PointXYZI>::Ptr&, PointTypePose*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.178880] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;31m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.179005] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.179068] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.179113] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.179159] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:60:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.179206] (lio_sam) StderrLine: {'line': b'   60 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.179256] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.179302] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:60:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.179346] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.179396] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.179443] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.179485] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.179527] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.179576] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:69:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Affine3f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.179620] (lio_sam) StderrLine: {'line': b'   69 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.179661] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.179701] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:69:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.179742] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.179785] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.179826] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.179867] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.179909] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.179956] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:87:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180000] (lio_sam) StderrLine: {'line': b'   87 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.180041] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.180082] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:87:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.180123] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180173] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.180215] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.180255] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.180311] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.180392] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:97:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Affine3f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180448] (lio_sam) StderrLine: {'line': b'   97 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.180492] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.180533] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:97:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.180579] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180623] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.180664] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.180703] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.180743] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.180782] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:116:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Eigen::Transform<Scalar, 3, 2>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180824] (lio_sam) StderrLine: {'line': b'  116 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.180863] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.180902] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:116:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.180942] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.180982] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.181026] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.181067] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.181107] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.181147] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:126:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Affine3f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.181193] (lio_sam) StderrLine: {'line': b'  126 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.181238] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.181279] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:126:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.181319] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.181361] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.181407] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.181450] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:493\x1b[m\x1b[K,\n'}
+[26.181490] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.181529] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.181568] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:221:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.181610] (lio_sam) StderrLine: {'line': b'  221 | \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.181650] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.181691] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:221:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.183495] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.183714] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.183950] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.184144] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.184338] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.184595] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:237:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.184789] (lio_sam) StderrLine: {'line': b'  237 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.185001] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.185191] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:237:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.185381] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.185585] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.185777] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.185968] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:493\x1b[m\x1b[K,\n'}
+[26.186158] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.186386] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.186598] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:263:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.186790] (lio_sam) StderrLine: {'line': b'  263 | \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.186979] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.187211] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:263:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.187423] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.187625] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.187814] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.188003] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.188190] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.188440] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:262:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const Indices&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.188553] (lio_sam) StderrLine: {'line': b'  262 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.188609] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.188652] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:262:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.188699] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.188757] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.188799] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.188840] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.188882] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.188922] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:281:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 4, 4>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.188966] (lio_sam) StderrLine: {'line': b'  281 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.189017] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.189058] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:281:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.189100] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.189141] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.189190] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.189231] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.189271] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.189310] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:291:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, const pcl::PointIndices&, pcl::PointCloud<PointT>&, const Matrix4f&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.189351] (lio_sam) StderrLine: {'line': b'  291 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.189391] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.189430] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:291:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.189476] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.189525] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.190173] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.190411] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:493\x1b[m\x1b[K,\n'}
+[26.190609] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.190799] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.190988] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:407:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT, class Scalar> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Eigen::Matrix<Scalar, 3, 1>&, const Eigen::Quaternion<Scalar>&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.191180] (lio_sam) StderrLine: {'line': b'  407 | \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.191382] (lio_sam) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.191572] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:407:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.191784] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.191976] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.192165] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.192256] (lio_sam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/m/project/LIO-SAM/include/lio_sam/utility.hpp:29\x1b[m\x1b[K,\n'}
+[26.192308] (lio_sam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1\x1b[m\x1b[K:\n'}
+[26.192352] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> void pcl::transformPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, const Vector3f&, const Quaternionf&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.192433] (lio_sam) StderrLine: {'line': b'  404 |   \x1b[01;36m\x1b[KtransformPointCloud\x1b[m\x1b[K (const pcl::PointCloud<PointT> &cloud_in,\n'}
+[26.192480] (lio_sam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.192522] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/common/transforms.h:404:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[26.192571] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2055:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZI>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZI> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.192615] (lio_sam) StderrLine: {'line': b' 2055 |             *cloudOut = *\x1b[01;36m\x1b[KtransformPointCloud(cloudOut,  &thisPose6D)\x1b[m\x1b[K;\n'}
+[26.192657] (lio_sam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.192698] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2059:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpubPath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.192739] (lio_sam) StderrLine: {'line': b' 2059 |         if (\x1b[01;31m\x1b[KpubPath\x1b[m\x1b[K->get_subscription_count() != 0)\n'}
+[26.192780] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.201403] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2061:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KglobalPath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[26.201596] (lio_sam) StderrLine: {'line': b' 2061 |             \x1b[01;31m\x1b[KglobalPath\x1b[m\x1b[K.header.stamp = timeLaserInfoStamp;\n'}
+[26.201880] (lio_sam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.202139] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:\x1b[m\x1b[K At global scope:\n'}
+[26.202380] (lio_sam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:2066:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[26.202483] (lio_sam) StderrLine: {'line': b' 2066 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[26.202540] (lio_sam) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[26.213522] (-) TimerEvent: {}
+[26.315004] (-) TimerEvent: {}
+[26.415854] (-) TimerEvent: {}
+[26.516988] (-) TimerEvent: {}
+[26.618054] (-) TimerEvent: {}
+[26.719171] (-) TimerEvent: {}
+[26.820590] (-) TimerEvent: {}
+[26.921551] (-) TimerEvent: {}
+[27.022191] (-) TimerEvent: {}
+[27.123233] (-) TimerEvent: {}
+[27.224048] (-) TimerEvent: {}
+[27.324944] (-) TimerEvent: {}
+[27.425736] (-) TimerEvent: {}
+[27.526406] (-) TimerEvent: {}
+[27.627447] (-) TimerEvent: {}
+[27.728501] (-) TimerEvent: {}
+[27.829949] (-) TimerEvent: {}
+[27.931068] (-) TimerEvent: {}
+[28.031979] (-) TimerEvent: {}
+[28.133244] (-) TimerEvent: {}
+[28.234785] (-) TimerEvent: {}
+[28.335517] (-) TimerEvent: {}
+[28.436581] (-) TimerEvent: {}
+[28.537608] (-) TimerEvent: {}
+[28.638996] (-) TimerEvent: {}
+[28.740071] (-) TimerEvent: {}
+[28.841410] (-) TimerEvent: {}
+[28.942495] (-) TimerEvent: {}
+[29.044034] (-) TimerEvent: {}
+[29.144943] (-) TimerEvent: {}
+[29.245580] (-) TimerEvent: {}
+[29.347031] (-) TimerEvent: {}
+[29.448456] (-) TimerEvent: {}
+[29.549210] (-) TimerEvent: {}
+[29.650303] (-) TimerEvent: {}
+[29.751397] (-) TimerEvent: {}
+[29.852054] (-) TimerEvent: {}
+[29.952579] (-) TimerEvent: {}
+[30.053666] (-) TimerEvent: {}
+[30.154341] (-) TimerEvent: {}
+[30.254956] (-) TimerEvent: {}
+[30.355715] (-) TimerEvent: {}
+[30.456266] (-) TimerEvent: {}
+[30.557251] (-) TimerEvent: {}
+[30.657761] (-) TimerEvent: {}
+[30.758242] (-) TimerEvent: {}
+[30.858829] (-) TimerEvent: {}
+[30.959633] (-) TimerEvent: {}
+[31.060139] (-) TimerEvent: {}
+[31.160836] (-) TimerEvent: {}
+[31.261428] (-) TimerEvent: {}
+[31.362566] (-) TimerEvent: {}
+[31.463018] (-) TimerEvent: {}
+[31.564554] (-) TimerEvent: {}
+[31.665402] (-) TimerEvent: {}
+[31.766033] (-) TimerEvent: {}
+[31.866592] (-) TimerEvent: {}
+[31.967247] (-) TimerEvent: {}
+[32.067826] (-) TimerEvent: {}
+[32.168587] (-) TimerEvent: {}
+[32.269101] (-) TimerEvent: {}
+[32.370055] (-) TimerEvent: {}
+[32.470678] (-) TimerEvent: {}
+[32.571988] (-) TimerEvent: {}
+[32.672814] (-) TimerEvent: {}
+[32.773591] (-) TimerEvent: {}
+[32.874292] (-) TimerEvent: {}
+[32.975201] (-) TimerEvent: {}
+[33.075666] (-) TimerEvent: {}
+[33.176212] (-) TimerEvent: {}
+[33.276917] (-) TimerEvent: {}
+[33.377614] (-) TimerEvent: {}
+[33.479028] (-) TimerEvent: {}
+[33.579845] (-) TimerEvent: {}
+[33.680816] (-) TimerEvent: {}
+[33.781735] (-) TimerEvent: {}
+[33.884201] (-) TimerEvent: {}
+[33.985054] (-) TimerEvent: {}
+[34.085908] (-) TimerEvent: {}
+[34.186721] (-) TimerEvent: {}
+[34.287471] (-) TimerEvent: {}
+[34.387989] (-) TimerEvent: {}
+[34.488523] (-) TimerEvent: {}
+[34.589366] (-) TimerEvent: {}
+[34.690301] (-) TimerEvent: {}
+[34.790789] (-) TimerEvent: {}
+[34.891551] (-) TimerEvent: {}
+[34.992056] (-) TimerEvent: {}
+[35.092654] (-) TimerEvent: {}
+[35.194089] (-) TimerEvent: {}
+[35.294629] (-) TimerEvent: {}
+[35.395295] (-) TimerEvent: {}
+[35.496189] (-) TimerEvent: {}
+[35.597220] (-) TimerEvent: {}
+[35.698464] (-) TimerEvent: {}
+[35.798974] (-) TimerEvent: {}
+[35.899839] (-) TimerEvent: {}
+[36.000540] (-) TimerEvent: {}
+[36.101020] (-) TimerEvent: {}
+[36.202195] (-) TimerEvent: {}
+[36.302780] (-) TimerEvent: {}
+[36.403636] (-) TimerEvent: {}
+[36.504291] (-) TimerEvent: {}
+[36.604749] (-) TimerEvent: {}
+[36.705247] (-) TimerEvent: {}
+[36.805778] (-) TimerEvent: {}
+[36.906481] (-) TimerEvent: {}
+[37.007190] (-) TimerEvent: {}
+[37.108235] (-) TimerEvent: {}
+[37.208719] (-) TimerEvent: {}
+[37.309813] (-) TimerEvent: {}
+[37.410613] (-) TimerEvent: {}
+[37.511879] (-) TimerEvent: {}
+[37.613181] (-) TimerEvent: {}
+[37.714384] (-) TimerEvent: {}
+[37.815586] (-) TimerEvent: {}
+[37.916877] (-) TimerEvent: {}
+[38.017412] (-) TimerEvent: {}
+[38.118155] (-) TimerEvent: {}
+[38.219064] (-) TimerEvent: {}
+[38.319811] (-) TimerEvent: {}
+[38.420542] (-) TimerEvent: {}
+[38.521848] (-) TimerEvent: {}
+[38.622591] (-) TimerEvent: {}
+[38.723039] (-) TimerEvent: {}
+[38.823756] (-) TimerEvent: {}
+[38.924617] (-) TimerEvent: {}
+[39.025324] (-) TimerEvent: {}
+[39.125846] (-) TimerEvent: {}
+[39.226483] (-) TimerEvent: {}
+[39.327100] (-) TimerEvent: {}
+[39.427638] (-) TimerEvent: {}
+[39.528114] (-) TimerEvent: {}
+[39.628925] (-) TimerEvent: {}
+[39.729881] (-) TimerEvent: {}
+[39.830889] (-) TimerEvent: {}
+[39.931525] (-) TimerEvent: {}
+[40.032468] (-) TimerEvent: {}
+[40.132990] (-) TimerEvent: {}
+[40.233813] (-) TimerEvent: {}
+[40.334788] (-) TimerEvent: {}
+[40.435656] (-) TimerEvent: {}
+[40.536612] (-) TimerEvent: {}
+[40.637285] (-) TimerEvent: {}
+[40.738219] (-) TimerEvent: {}
+[40.839143] (-) TimerEvent: {}
+[40.939695] (-) TimerEvent: {}
+[41.040919] (-) TimerEvent: {}
+[41.141437] (-) TimerEvent: {}
+[41.242830] (-) TimerEvent: {}
+[41.344090] (-) TimerEvent: {}
+[41.444920] (-) TimerEvent: {}
+[41.545392] (-) TimerEvent: {}
+[41.646943] (-) TimerEvent: {}
+[41.747475] (-) TimerEvent: {}
+[41.848244] (-) TimerEvent: {}
+[41.948869] (-) TimerEvent: {}
+[42.049627] (-) TimerEvent: {}
+[42.150158] (-) TimerEvent: {}
+[42.251351] (-) TimerEvent: {}
+[42.352261] (-) TimerEvent: {}
+[42.453204] (-) TimerEvent: {}
+[42.553691] (-) TimerEvent: {}
+[42.654260] (-) TimerEvent: {}
+[42.754818] (-) TimerEvent: {}
+[42.855478] (-) TimerEvent: {}
+[42.956064] (-) TimerEvent: {}
+[43.057261] (-) TimerEvent: {}
+[43.157953] (-) TimerEvent: {}
+[43.258569] (-) TimerEvent: {}
+[43.359369] (-) TimerEvent: {}
+[43.460321] (-) TimerEvent: {}
+[43.561383] (-) TimerEvent: {}
+[43.662770] (-) TimerEvent: {}
+[43.763465] (-) TimerEvent: {}
+[43.864045] (-) TimerEvent: {}
+[43.964925] (-) TimerEvent: {}
+[44.065561] (-) TimerEvent: {}
+[44.166016] (-) TimerEvent: {}
+[44.267041] (-) TimerEvent: {}
+[44.367858] (-) TimerEvent: {}
+[44.468478] (-) TimerEvent: {}
+[44.569398] (-) TimerEvent: {}
+[44.669961] (-) TimerEvent: {}
+[44.770893] (-) TimerEvent: {}
+[44.871492] (-) TimerEvent: {}
+[44.972057] (-) TimerEvent: {}
+[45.072733] (-) TimerEvent: {}
+[45.173670] (-) TimerEvent: {}
+[45.274665] (-) TimerEvent: {}
+[45.375988] (-) TimerEvent: {}
+[45.476805] (-) TimerEvent: {}
+[45.577583] (-) TimerEvent: {}
+[45.678235] (-) TimerEvent: {}
+[45.779563] (-) TimerEvent: {}
+[45.880374] (-) TimerEvent: {}
+[45.980924] (-) TimerEvent: {}
+[46.081902] (-) TimerEvent: {}
+[46.183012] (-) TimerEvent: {}
+[46.283398] (-) TimerEvent: {}
+[46.384028] (-) TimerEvent: {}
+[46.484812] (-) TimerEvent: {}
+[46.585656] (-) TimerEvent: {}
+[46.686430] (-) TimerEvent: {}
+[46.787358] (-) TimerEvent: {}
+[46.888742] (-) TimerEvent: {}
+[46.989355] (-) TimerEvent: {}
+[47.090128] (-) TimerEvent: {}
+[47.191361] (-) TimerEvent: {}
+[47.292299] (-) TimerEvent: {}
+[47.392927] (-) TimerEvent: {}
+[47.493781] (-) TimerEvent: {}
+[47.594399] (-) TimerEvent: {}
+[47.695393] (-) TimerEvent: {}
+[47.796357] (-) TimerEvent: {}
+[47.896988] (-) TimerEvent: {}
+[47.997453] (-) TimerEvent: {}
+[48.098336] (-) TimerEvent: {}
+[48.198853] (-) TimerEvent: {}
+[48.299494] (-) TimerEvent: {}
+[48.400591] (-) TimerEvent: {}
+[48.501275] (-) TimerEvent: {}
+[48.602282] (-) TimerEvent: {}
+[48.703159] (-) TimerEvent: {}
+[48.804636] (-) TimerEvent: {}
+[48.905855] (-) TimerEvent: {}
+[49.006750] (-) TimerEvent: {}
+[49.107745] (-) TimerEvent: {}
+[49.208404] (-) TimerEvent: {}
+[49.309033] (-) TimerEvent: {}
+[49.409767] (-) TimerEvent: {}
+[49.510599] (-) TimerEvent: {}
+[49.611351] (-) TimerEvent: {}
+[49.712136] (-) TimerEvent: {}
+[49.812750] (-) TimerEvent: {}
+[49.913356] (-) TimerEvent: {}
+[50.014072] (-) TimerEvent: {}
+[50.115303] (-) TimerEvent: {}
+[50.216641] (-) TimerEvent: {}
+[50.317961] (-) TimerEvent: {}
+[50.418460] (-) TimerEvent: {}
+[50.519182] (-) TimerEvent: {}
+[50.619836] (-) TimerEvent: {}
+[50.720403] (-) TimerEvent: {}
+[50.821284] (-) TimerEvent: {}
+[50.922779] (-) TimerEvent: {}
+[51.024375] (-) TimerEvent: {}
+[51.125263] (-) TimerEvent: {}
+[51.226089] (-) TimerEvent: {}
+[51.327274] (-) TimerEvent: {}
+[51.427905] (-) TimerEvent: {}
+[51.528826] (-) TimerEvent: {}
+[51.629747] (-) TimerEvent: {}
+[51.730241] (-) TimerEvent: {}
+[51.831197] (-) TimerEvent: {}
+[51.931846] (-) TimerEvent: {}
+[52.032836] (-) TimerEvent: {}
+[52.134067] (-) TimerEvent: {}
+[52.234846] (-) TimerEvent: {}
+[52.335284] (-) TimerEvent: {}
+[52.436435] (-) TimerEvent: {}
+[52.537281] (-) TimerEvent: {}
+[52.637775] (-) TimerEvent: {}
+[52.738247] (-) TimerEvent: {}
+[52.839007] (-) TimerEvent: {}
+[52.940425] (-) TimerEvent: {}
+[53.041368] (-) TimerEvent: {}
+[53.142181] (-) TimerEvent: {}
+[53.243140] (-) TimerEvent: {}
+[53.344101] (-) TimerEvent: {}
+[53.444632] (-) TimerEvent: {}
+[53.545270] (-) TimerEvent: {}
+[53.645765] (-) TimerEvent: {}
+[53.746566] (-) TimerEvent: {}
+[53.847323] (-) TimerEvent: {}
+[53.948258] (-) TimerEvent: {}
+[54.048900] (-) TimerEvent: {}
+[54.149846] (-) TimerEvent: {}
+[54.250617] (-) TimerEvent: {}
+[54.351377] (-) TimerEvent: {}
+[54.452001] (-) TimerEvent: {}
+[54.552510] (-) TimerEvent: {}
+[54.653525] (-) TimerEvent: {}
+[54.754846] (-) TimerEvent: {}
+[54.856103] (-) TimerEvent: {}
+[54.956681] (-) TimerEvent: {}
+[55.057579] (-) TimerEvent: {}
+[55.158947] (-) TimerEvent: {}
+[55.260059] (-) TimerEvent: {}
+[55.361148] (-) TimerEvent: {}
+[55.462287] (-) TimerEvent: {}
+[55.562975] (-) TimerEvent: {}
+[55.663844] (-) TimerEvent: {}
+[55.764908] (-) TimerEvent: {}
+[55.865765] (-) TimerEvent: {}
+[55.966472] (-) TimerEvent: {}
+[56.067017] (-) TimerEvent: {}
+[56.167642] (-) TimerEvent: {}
+[56.268371] (-) TimerEvent: {}
+[56.369726] (-) TimerEvent: {}
+[56.470384] (-) TimerEvent: {}
+[56.571348] (-) TimerEvent: {}
+[56.672320] (-) TimerEvent: {}
+[56.772816] (-) TimerEvent: {}
+[56.874104] (-) TimerEvent: {}
+[56.974766] (-) TimerEvent: {}
+[57.075278] (-) TimerEvent: {}
+[57.175729] (-) TimerEvent: {}
+[57.277129] (-) TimerEvent: {}
+[57.377613] (-) TimerEvent: {}
+[57.478338] (-) TimerEvent: {}
+[57.578917] (-) TimerEvent: {}
+[57.679622] (-) TimerEvent: {}
+[57.780678] (-) TimerEvent: {}
+[57.881205] (-) TimerEvent: {}
+[57.981839] (-) TimerEvent: {}
+[58.082592] (-) TimerEvent: {}
+[58.183308] (-) TimerEvent: {}
+[58.284208] (-) TimerEvent: {}
+[58.384884] (-) TimerEvent: {}
+[58.485501] (-) TimerEvent: {}
+[58.586857] (-) TimerEvent: {}
+[58.687526] (-) TimerEvent: {}
+[58.788189] (-) TimerEvent: {}
+[58.889222] (-) TimerEvent: {}
+[58.989918] (-) TimerEvent: {}
+[59.090519] (-) TimerEvent: {}
+[59.191006] (-) TimerEvent: {}
+[59.292500] (-) TimerEvent: {}
+[59.393264] (-) TimerEvent: {}
+[59.494130] (-) TimerEvent: {}
+[59.594819] (-) TimerEvent: {}
+[59.695670] (-) TimerEvent: {}
+[59.797102] (-) TimerEvent: {}
+[59.897842] (-) TimerEvent: {}
+[59.998571] (-) TimerEvent: {}
+[60.098988] (-) TimerEvent: {}
+[60.199708] (-) TimerEvent: {}
+[60.300201] (-) TimerEvent: {}
+[60.400971] (-) TimerEvent: {}
+[60.501845] (-) TimerEvent: {}
+[60.602776] (-) TimerEvent: {}
+[60.703263] (-) TimerEvent: {}
+[60.804076] (-) TimerEvent: {}
+[60.905025] (-) TimerEvent: {}
+[61.006331] (-) TimerEvent: {}
+[61.030131] (lio_sam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76\xef\xbc\x9aCMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[61.032952] (lio_sam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:699\xef\xbc\x9aCMakeFiles/lio_sam_mapOptimization.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[61.033183] (lio_sam) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[61.035204] (lio_sam) CommandEnded: {'returncode': 2}
+[61.055552] (lio_sam) JobEnded: {'identifier': 'lio_sam', 'rc': 2}
+[61.066970] (-) EventReactorShutdown: {}

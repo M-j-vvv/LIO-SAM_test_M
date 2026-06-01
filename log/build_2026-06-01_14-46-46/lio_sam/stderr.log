@@ -1,0 +1,16 @@
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kbool mapOptimization::LMOptimization(int)[m[K’:
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1691:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat eignThre [6][m[K’
+ 1691 |             float [01;31m[KeignThre[m[K[6] = {100, 100, 100, 100, 100, 100};
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:19:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat eignThre [6][m[K’ previously declared here
+ 1625 |             float [01;36m[KeignThre[m[K[6] =
+      |                   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1693:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kbool degenerateDirection [6][m[K’
+ 1693 |             bool [01;31m[KdegenerateDirection[m[K[6] = {false, false, false, false, false, false};
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1630:18:[m[K [01;36m[Knote: [m[K‘[01m[Kbool degenerateDirection [6][m[K’ previously declared here
+ 1630 |             bool [01;36m[KdegenerateDirection[m[K[6] =
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76：CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:699：CMakeFiles/lio_sam_mapOptimization.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

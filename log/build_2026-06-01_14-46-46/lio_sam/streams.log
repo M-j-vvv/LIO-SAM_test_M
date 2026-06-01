@@ -1,0 +1,61 @@
+[0.022s] Invoking command in '/home/m/project/LIO-SAM/build/lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8
+[0.221s] [  2%] Built target lio_sam__cpp
+[0.223s] [  4%] Built target lio_sam__rs
+[0.251s] [ 12%] Built target lio_sam__rosidl_generator_c
+[0.255s] [ 12%] Built target ament_cmake_python_copy_lio_sam
+[0.292s] [ 14%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/msg/detail/cloud_info__type_support.cpp.o[0m
+[0.300s] [ 16%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/srv/save_map__type_support.cpp.o[0m
+[0.301s] [ 18%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/msg/cloud_info__type_support.cpp.o[0m
+[0.301s] [ 27%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[0.312s] [ 35%] Built target lio_sam__rosidl_typesupport_c
+[0.323s] [ 43%] Built target lio_sam__rosidl_typesupport_introspection_c
+[0.324s] [ 45%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/srv/detail/save_map__type_support.cpp.o[0m
+[0.334s] [ 54%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[0.840s] running egg_info
+[0.840s] writing lio_sam.egg-info/PKG-INFO
+[0.840s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[0.840s] writing top-level names to lio_sam.egg-info/top_level.txt
+[0.851s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.853s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[0.930s] [ 54%] Built target ament_cmake_python_build_lio_sam_egg
+[0.941s] [ 56%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_cpp.so[0m
+[1.057s] [ 58%] Built target lio_sam__rosidl_typesupport_cpp
+[1.132s] [35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[1.245s] [ 60%] [32m[1mLinking CXX executable lio_sam_imuPreintegration[0m
+[1.249s] [ 64%] [32m[1mLinking CXX executable lio_sam_imageProjection[0m
+[1.255s] [ 64%] [32m[1mLinking CXX executable lio_sam_featureExtraction[0m
+[1.257s] [ 66%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[1.364s] [ 68%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_introspection_cpp.so[0m
+[1.517s] [ 70%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[1.573s] [ 70%] Built target lio_sam
+[1.634s] [ 72%] Built target lio_sam__py
+[1.722s] [ 75%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/msg/_cloud_info_s.c.o[0m
+[1.731s] [ 77%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/srv/_save_map_s.c.o[0m
+[2.458s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/liblio_sam__rosidl_generator_py.so[0m
+[2.578s] [ 79%] Built target lio_sam__rosidl_generator_py
+[2.664s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.696s] [ 83%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.711s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.772s] [ 87%] Built target lio_sam__rosidl_typesupport_c__pyext
+[2.794s] [ 89%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[2.823s] [ 91%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[3.617s] [ 93%] Built target lio_sam_featureExtraction
+[3.683s] [ 95%] Built target lio_sam_imageProjection
+[3.761s] [ 97%] Built target lio_sam_imuPreintegration
+[25.864s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:[m[K In member function ‘[01m[Kbool mapOptimization::LMOptimization(int)[m[K’:
+[25.865s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1691:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat eignThre [6][m[K’
+[25.865s]  1691 |             float [01;31m[KeignThre[m[K[6] = {100, 100, 100, 100, 100, 100};
+[25.865s]       |                   [01;31m[K^~~~~~~~[m[K
+[25.865s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1625:19:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat eignThre [6][m[K’ previously declared here
+[25.866s]  1625 |             float [01;36m[KeignThre[m[K[6] =
+[25.866s]       |                   [01;36m[K^~~~~~~~[m[K
+[25.866s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1693:18:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kbool degenerateDirection [6][m[K’
+[25.867s]  1693 |             bool [01;31m[KdegenerateDirection[m[K[6] = {false, false, false, false, false, false};
+[25.867s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[25.867s] [01m[K/home/m/project/LIO-SAM/src/mapOptmization.cpp:1630:18:[m[K [01;36m[Knote: [m[K‘[01m[Kbool degenerateDirection [6][m[K’ previously declared here
+[25.867s]  1630 |             bool [01;36m[KdegenerateDirection[m[K[6] =
+[25.867s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[63.949s] gmake[2]: *** [CMakeFiles/lio_sam_mapOptimization.dir/build.make:76：CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o] 错误 1
+[63.950s] gmake[1]: *** [CMakeFiles/Makefile2:699：CMakeFiles/lio_sam_mapOptimization.dir/all] 错误 2
+[63.950s] gmake: *** [Makefile:146：all] 错误 2
+[63.953s] Invoked command in '/home/m/project/LIO-SAM/build/lio_sam' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/project/LIO-SAM/build/lio_sam -- -j8 -l8

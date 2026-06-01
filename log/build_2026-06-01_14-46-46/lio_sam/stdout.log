@@ -1,0 +1,43 @@
+[  2%] Built target lio_sam__cpp
+[  4%] Built target lio_sam__rs
+[ 12%] Built target lio_sam__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_lio_sam
+[ 14%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/msg/detail/cloud_info__type_support.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/srv/save_map__type_support.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lio_sam/msg/cloud_info__type_support.cpp.o[0m
+[ 27%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[ 35%] Built target lio_sam__rosidl_typesupport_c
+[ 43%] Built target lio_sam__rosidl_typesupport_introspection_c
+[ 45%] [32mBuilding CXX object CMakeFiles/lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lio_sam/srv/detail/save_map__type_support.cpp.o[0m
+[ 54%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+running egg_info
+writing lio_sam.egg-info/PKG-INFO
+writing dependency_links to lio_sam.egg-info/dependency_links.txt
+writing top-level names to lio_sam.egg-info/top_level.txt
+reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[ 54%] Built target ament_cmake_python_build_lio_sam_egg
+[ 56%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_cpp.so[0m
+[ 58%] Built target lio_sam__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target lio_sam_mapOptimization[0m
+[ 60%] [32m[1mLinking CXX executable lio_sam_imuPreintegration[0m
+[ 64%] [32m[1mLinking CXX executable lio_sam_imageProjection[0m
+[ 64%] [32m[1mLinking CXX executable lio_sam_featureExtraction[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library liblio_sam__rosidl_typesupport_introspection_cpp.so[0m
+[ 70%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[ 70%] Built target lio_sam
+[ 72%] Built target lio_sam__py
+[ 75%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/msg/_cloud_info_s.c.o[0m
+[ 77%] [32mBuilding C object CMakeFiles/lio_sam__rosidl_generator_py.dir/rosidl_generator_py/lio_sam/srv/_save_map_s.c.o[0m
+[ 79%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/liblio_sam__rosidl_generator_py.so[0m
+[ 79%] Built target lio_sam__rosidl_generator_py
+[ 81%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 83%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 85%] [32m[1mLinking C shared library rosidl_generator_py/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 87%] Built target lio_sam__rosidl_typesupport_c__pyext
+[ 89%] Built target lio_sam__rosidl_typesupport_introspection_c__pyext
+[ 91%] Built target lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target lio_sam_featureExtraction
+[ 95%] Built target lio_sam_imageProjection
+[ 97%] Built target lio_sam_imuPreintegration

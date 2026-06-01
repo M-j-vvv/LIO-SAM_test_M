@@ -143,7 +143,7 @@ public:
     bool isDegenerate = false;
     Eigen::Matrix<float, 6, 6> matP;
 
-    //----------------------------------------------------------------------------------------------------------------------------
+    //--------------------------------------------------------IQR----------------------------------------------------------------
         // ============================================================
     // IQR-based degeneracy monitor: detection and logging only
     // It does NOT modify isDegenerate, matP, matX or the pose.
@@ -178,7 +178,53 @@ public:
     };
 
     unsigned long long iqrFrameCounter = 0;
-    //-------------------------------------------------------------------------------------------------------------------------------
+    //-------------------------------------------------------IQR--------------------------------------------------------------------
+
+
+    //------------------------------------------------------IQR_add_IMUmerge--------------------------------------------------------
+    // Degeneracy compensation module
+
+    // updateInitialGuess() 后保存的 IMU / IMU预积分预测位姿
+    float imuPredictPose[6] = {0, 0, 0, 0, 0, 0};
+
+    bool imuPredictPoseAvailable = false;
+    bool imuPredictPoseHasRotation = false;
+    bool imuPredictPoseHasTranslation = false;
+
+    // 当前帧静态退化需要补偿的自由度
+    // 0 roll, 1 pitch, 2 yaw, 3 x, 4 y, 5 z
+    std::array<bool, 6> staticCompensateDof =
+    {
+        false, false, false, false, false, false
+    };
+
+    // IQR 触发后的动态补偿窗口
+    std::array<int, 6> iqrCompensateRemaining =
+    {
+        0, 0, 0, 0, 0, 0
+    };
+
+    std::array<int, 6> iqrCompensateElapsed =
+    {
+        0, 0, 0, 0, 0, 0
+    };
+
+    // 文献中 base 约为 0.01，max 设置为 0.1
+    float imuBaseWeight = 0.01f;
+    float imuStaticWeight = 0.10f;
+    float imuMaxWeight = 0.10f;
+
+    // IQR 动态补偿持续帧数
+    // 可以先用 36，与 IQR 窗口一致
+    int iqrCompensationDuration = 36;
+
+    // 根据特征向量选择主要退化自由度
+    float eigenVectorComponentThreshold = 0.25f;
+
+    // 是否启用补偿
+    bool enableDegeneracyProjection = true;
+    bool enableDegeneracyImuCompensation = true;    
+    //------------------------------------------------------IQR_add_IMUmerge--------------------------------------------------------
 
     int laserCloudCornerFromMapDSNum = 0;
     int laserCloudSurfFromMapDSNum = 0;
@@ -363,6 +409,11 @@ public:
             timeLastProcessing = timeLaserInfoCur;
 
             updateInitialGuess();
+
+    //-----------------------------IQR_add_IMUmerge-----------------------------
+            // 保存本帧 scan-to-map 优化之前的 IMU / IMU预积分预测位姿
+            saveImuPredictionForDegeneracyCompensation();
+    //-----------------------------IQR_add_IMUmerge-----------------------------
 
             extractSurroundingKeyFrames();
 
@@ -1387,9 +1438,98 @@ public:
             }
 
             iqrPreviousAlarmFlag[i] = iqrAlarmFlag[i];
+        }
     }
-}
-    //--------------------------------------------------------------------------------------------------------------------------
+    //---------------------------------------------------IQR-------------------------------------------------------------------
+
+
+    //---------------------------------------------------IQR_add_IMUmerge------------------------------------------------------
+    float normalizeAngle(float angle)
+    {
+        while (angle > M_PI)
+        {
+            angle -= 2.0f * M_PI;
+        }
+
+        while (angle < -M_PI)
+        {
+            angle += 2.0f * M_PI;
+        }
+
+        return angle;
+    }
+
+    void saveImuPredictionForDegeneracyCompensation()
+    {
+        /*
+        * updateInitialGuess() 执行后，transformTobeMapped 已经融合了
+        * IMU预积分或者IMU姿态，当前值可以作为本帧 IMU 预测位姿。
+        */
+        for (int i = 0; i < 6; ++i)
+        {
+            imuPredictPose[i] = transformTobeMapped[i];
+        }
+        imuPredictPoseAvailable = cloudInfo.odom_available || cloudInfo.imu_available;
+        imuPredictPoseHasTranslation = cloudInfo.odom_available;
+        imuPredictPoseHasRotation = cloudInfo.odom_available || cloudInfo.imu_available;
+    }
+
+    void markCompensationDofFromEigenVector(
+    const cv::Mat& matV,
+    int eigenIndex,
+    bool staticDetected,
+    bool iqrDetected)
+    {
+        /*
+        * matV 的第 eigenIndex 行是当前退化特征方向向量：
+        * [roll, pitch, yaw, x, y, z]
+        *
+        * 这里先采用工程上更稳妥的做法：
+        * 取绝对值最大的分量作为主要退化自由度。
+        */
+
+        int dominantDof = -1;
+        float maxAbsValue = 0.0f;
+
+        for (int j = 0; j < 6; ++j)
+        {
+            float value = std::fabs(matV.at<float>(eigenIndex, j));
+
+            if (value > maxAbsValue)
+            {
+                maxAbsValue = value;
+                dominantDof = j;
+            }
+        }
+
+        if (dominantDof < 0)
+        {
+            return;
+        }
+
+        if (maxAbsValue < eigenVectorComponentThreshold)
+        {
+            return;
+        }
+
+        if (staticDetected)
+        {
+            staticCompensateDof[dominantDof] = true;
+        }
+
+        if (iqrDetected)
+        {
+            /*
+            * IQR 触发后开启一个持续多帧的动态补偿窗口。
+            * 如果持续触发，则刷新窗口。
+            */
+            iqrCompensateRemaining[dominantDof] =
+                iqrCompensationDuration;
+
+            iqrCompensateElapsed[dominantDof] = 0;
+        }
+    }
+    //---------------------------------------------------IQR_add_IMUmerge------------------------------------------------------
 
     bool LMOptimization(int iterCount)
     {
@@ -1421,7 +1561,7 @@ public:
         cv::Mat matB(laserCloudSelNum, 1, CV_32F, cv::Scalar::all(0));
         cv::Mat matAtB(6, 1, CV_32F, cv::Scalar::all(0));
         cv::Mat matX(6, 1, CV_32F, cv::Scalar::all(0));
-        cv::Mat matP(6, 6, CV_32F, cv::Scalar::all(0));
+        static cv::Mat matP(6, 6, CV_32F, cv::Scalar::all(0));
 
         PointType pointOri, coeff;
 
@@ -1472,34 +1612,72 @@ public:
             cv::eigen(matAtA, matE, matV);
             matV.copyTo(matV2);
 
-            // ============================================================
-            // 一、原有静态阈值退化检测
-            // cv::eigen 输出顺序：
-            // V0 对应最大特征值，V5 对应最小特征值
-            // ============================================================
+            // 每一帧先清空静态补偿自由度
+            staticCompensateDof.fill(false);
+
+            /*
+            * 先更新 IQR 检测结果。
+            * 注意：这里只能调用一次。
+            * 该函数会更新 iqrAlarmFlag[i]。
+            */
+            monitorDegeneracyByIQR(matE, matV);
 
             isDegenerate = false;
 
-            float eignThre[6] = {100, 100, 100, 100, 100, 100};
+            float eignThre[6] =
+            {
+                100, 100, 100, 100, 100, 100
+            };
 
-            bool degenerateDirection[6] = {false, false, false, false, false, false};
+            bool degenerateDirection[6] =
+            {
+                false, false, false, false, false, false
+            };
 
+            /*
+            * 当前推荐策略：
+            *
+            * 1. matP 投影修正只由静态阈值触发
+            *    这样比较稳，不会因为 IQR 误触发而过度抑制优化方向。
+            *
+            * 2. IMU 补偿由静态阈值和 IQR 共同触发
+            *    这样可以实现文献 2.5 中的动态补偿逻辑。
+            */
             for (int i = 5; i >= 0; --i)
             {
-                if (matE.at<float>(0, i) < eignThre[i])
+                bool staticDetected = matE.at<float>(0, i) < eignThre[i];
+                bool iqrDetected = iqrAlarmFlag[i];
+
+                // 第一阶段建议：投影修正只用静态阈值
+                bool projectionDetected = staticDetected;
+
+                if (projectionDetected)
                 {
                     degenerateDirection[i] = true;
 
-                    for (int j = 0; j < 6; ++j)
+                    if (enableDegeneracyProjection)
                     {
-                        matV2.at<float>(i, j) = 0.0f;
-                    }
+                        for (int j = 0; j < 6; ++j)
+                        {
+                            matV2.at<float>(i, j) = 0.0f;
+                        }
 
-                    isDegenerate = true;
+                        isDegenerate = true;
+                    }
                 }
-                else
+
+                /*
+                * 记录需要 IMU 补偿的自由度。
+                * 静态阈值触发：使用静态权重补偿。
+                * IQR 触发：开启动态补偿窗口。
+                */
+                if (staticDetected || iqrDetected)
                 {
-                    break;
+                    markCompensationDofFromEigenVector(
+                        matV,
+                        i,
+                        staticDetected,
+                        iqrDetected);
                 }
             }
 
@@ -1507,6 +1685,12 @@ public:
 
             const char* stateName[6] = {"roll", "pitch", "yaw", "x", "y", "z"};
 
+            /*
+            * 静态阈值日志。
+            * 如果你已经加了 previousStaticDegenerateState，
+            * 可以把这里改成 STATIC_ENTER / STATIC_EXIT。
+            * 当前先保留最简单版本。
+            */
             if (isDegenerate)
             {
                 std::cout << "\033[1;31m"
@@ -1540,18 +1724,9 @@ public:
                     std::cout << "] ";
                 }
 
-                std::cout << "\033[0m" << std::endl;
+                std::cout << "\033[0m\n";
             }
-
-            // ============================================================
-            // 二、新增 IQR 动态监测
-            // 仅读取 matE 和 matV，并打印报警信息
-            // 不修改 isDegenerate，不修改 matP，不参与位姿修正
-            // ============================================================
-
-            monitorDegeneracyByIQR(matE, matV);
         }
-    
         if (isDegenerate)
         {
             cv::Mat matX2(6, 1, CV_32F, cv::Scalar::all(0));
@@ -1581,6 +1756,126 @@ public:
         return false; // keep optimizing
     }
 
+
+    //-----------------------------------------IQR_add_IMUmerge------------------------------------------------------
+    void applyDegeneracyImuCompensation()
+    {
+        if (!enableDegeneracyImuCompensation)
+        {
+            return;
+        }
+
+        if (!imuPredictPoseAvailable)
+        {
+            return;
+        }
+
+        bool compensated = false;
+
+        for (int i = 0; i < 6; ++i)
+        {
+            float weight = 0.0f;
+
+            /*
+            * 静态严重退化：
+            * 使用固定较大权重。
+            */
+            if (staticCompensateDof[i])
+            {
+                weight = imuStaticWeight;
+            }
+            /*
+            * IQR 渐进退化：
+            * 使用动态递增权重。
+            */
+            else if (iqrCompensateRemaining[i] > 0)
+            {
+                float ratio = 0.0f;
+
+                if (iqrCompensationDuration > 1)
+                {
+                    ratio =
+                        static_cast<float>(iqrCompensateElapsed[i]) /
+                        static_cast<float>(iqrCompensationDuration - 1);
+                }
+
+                ratio = std::min(1.0f, std::max(0.0f, ratio));
+
+                weight = imuBaseWeight + (imuMaxWeight - imuBaseWeight) * ratio;
+            }
+
+            if (weight <= 0.0f)
+            {
+                continue;
+            }
+
+            /*
+            * 没有 IMU 预积分平移时，不补偿 x/y/z。
+            */
+            if (i >= 3 && !imuPredictPoseHasTranslation)
+            {
+                continue;
+            }
+
+            /*
+            * 没有 IMU 姿态时，不补偿 roll/pitch/yaw。
+            */
+            if (i < 3 && !imuPredictPoseHasRotation)
+            {
+                continue;
+            }
+
+            float lidarValue = transformTobeMapped[i];
+            float imuValue = imuPredictPose[i];
+
+            /*
+            * roll/pitch/yaw 是角度，需要处理 ±pi 跳变。
+            */
+            if (i < 3)
+            {
+                float diff = normalizeAngle(imuValue - lidarValue);
+
+                transformTobeMapped[i] = normalizeAngle(lidarValue + weight * diff);
+            }
+            else
+            {
+                transformTobeMapped[i] = lidarValue + weight * (imuValue - lidarValue);
+            }
+
+            compensated = true;
+        }
+
+        /*
+        * 动态补偿窗口计数递减。
+        */
+        for (int i = 0; i < 6; ++i)
+        {
+            if (iqrCompensateRemaining[i] > 0)
+            {
+                --iqrCompensateRemaining[i];
+                ++iqrCompensateElapsed[i];
+            }
+        }
+
+        if (compensated)
+        {
+            std::cout << "\033[1;36m"
+                    << std::fixed << std::setprecision(6)
+                    << "[IMU_COMPENSATION] time="
+                    << timeLaserInfoCur
+                    << " pose=["
+                    << "roll:" << transformTobeMapped[0]
+                    << ", pitch:" << transformTobeMapped[1]
+                    << ", yaw:" << transformTobeMapped[2]
+                    << ", x:" << transformTobeMapped[3]
+                    << ", y:" << transformTobeMapped[4]
+                    << ", z:" << transformTobeMapped[5]
+                    << "]"
+                    << "\033[0m\n";
+        }
+    }
+//-----------------------------------------IQR_add_IMUmerge------------------------------------------------------
+
     void scan2MapOptimization()
     {
         if (cloudKeyPoses3D->points.empty())
@@ -1591,6 +1886,8 @@ public:
             kdtreeCornerFromMap->setInputCloud(laserCloudCornerFromMapDS);
             kdtreeSurfFromMap->setInputCloud(laserCloudSurfFromMapDS);
 
+
+    //--------------------------------------------IQR_add_IMUmerge------------------------------------------------------        
             for (int iterCount = 0; iterCount < 30; iterCount++)
             {
                 laserCloudOri->clear();
@@ -1602,10 +1899,20 @@ public:
                 combineOptimizationCoeffs();
 
                 if (LMOptimization(iterCount) == true)
-                    break;              
+                {
+                    break;
+                }
             }
 
+            /*
+            * 文献 2.5 的 IMU 补偿：
+            * 放在 scan-to-map 优化完成之后、transformUpdate() 之前。
+            */
+            applyDegeneracyImuCompensation();
+
             transformUpdate();
+    //---------------------------------------------IQR_add_IMUmerge------------------------------------------------------
+
         } else {
             RCLCPP_WARN(get_logger(), "Not enough features! Only %d edge and %d planar features available.", laserCloudCornerLastDSNum, laserCloudSurfLastDSNum);
         }

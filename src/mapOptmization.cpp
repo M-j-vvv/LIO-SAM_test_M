@@ -1857,7 +1857,7 @@ public:
             }
         }
 
-        if (compensated)
+        if (compensated) //打印频繁，会影响性能，先注释掉
         {
             std::cout << "\033[1;36m"
                     << std::fixed << std::setprecision(6)

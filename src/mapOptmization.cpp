@@ -1649,7 +1649,7 @@ public:
                 bool iqrDetected = iqrAlarmFlag[i];
 
                 // 第一阶段建议：投影修正只用静态阈值
-                bool projectionDetected = staticDetected;
+                bool projectionDetected = staticDetected; // || iqrDetected ; 这个加上后IQR触发后也会进行matP投影修正
 
                 if (projectionDetected)
                 {
